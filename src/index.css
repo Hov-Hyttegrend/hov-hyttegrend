@@ -1,1 +1,52 @@
 @import 'tailwindcss';
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --font-primary: 'Cabin', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+
+  --color-primary: #d4d4d0;
+  --color-secondary: #38462e;
+  --color-yellow: #dfbd61;
+
+  --shadow-sm: 0px 4px 5px 0px rgba(0, 0, 0, 0.9);
+  --text-shadow-sm: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+@layer utilities {
+  @keyframes slide-in-right {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    animation: slide-in-right 0.3s ease-out forwards;
+    transform-origin: top right;
+  }
+}
+
+@layer utilities {
+  @keyframes slide-bounce-out-right {
+    0% {
+      transform: scale(1) translateX(0);
+    }
+
+    100% {
+      transform: scale(1) translateX(100%);
+    }
+  }
+
+  .animate-slide-bounce-out {
+    animation: slide-bounce-out-right 0.4s ease-in forwards;
+    transform-origin: top right;
+  }
+}
