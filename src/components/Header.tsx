@@ -49,7 +49,7 @@ export default function Header() {
   }, [isMenuOpen]);
 
   return (
-    <header className=" text-white z-20 fixed w-full ">
+    <header className=" text-white z-50 fixed w-full">
       <nav className="bg-secondary flex items-center justify-between relative px-8 z-20 h-18">
         <img src={LOGO} alt="Hov Hyttegrend logo" className="h-12" />
 
