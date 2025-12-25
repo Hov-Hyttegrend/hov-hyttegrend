@@ -6,14 +6,23 @@ html {
 
 @theme {
   --font-primary: 'Cabin', sans-serif;
-  --font-secondary: 'Roboto', sans-serif;
+  --font-secondary: 'Caesar Dressing', sans-serif;
 
   --color-primary: #d4d4d0;
   --color-secondary: #38462e;
+  --color-light-green: #bcc4b6;
   --color-yellow: #dfbd61;
 
   --shadow-sm: 0px 4px 5px 0px rgba(0, 0, 0, 0.9);
   --text-shadow-sm: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-yellow {
+  @apply px-10 py-3 lg:px-24 lg:py-6 bg-yellow rounded-full text-sm lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black;
+}
+
+.section-container {
+  @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-5 py-40 lg:px-20;
 }
 
 @layer utilities {

@@ -2,5 +2,9 @@
   "welcome": {
     "title": "TYSK",
     "description": "tysk"
+  },
+  "test": {
+    "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
+    "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
   }
 }
