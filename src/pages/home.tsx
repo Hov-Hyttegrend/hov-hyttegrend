@@ -4,6 +4,7 @@ import VECTOR2 from '../assets/svg/Vector2.svg';
 import trees3 from '../assets/svg/3-trees.svg';
 
 import { useCookieConsent } from '../contexts/useCookieConsent';
+import GoogleMaps from '../components/GoogleMaps';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -112,6 +113,11 @@ export default function Home() {
             du:
           </p>
         </section>
+
+        {/* Section 9 */}
+        <div className="section-container">
+          <GoogleMaps />
+        </div>
       </div>
     </>
   );
