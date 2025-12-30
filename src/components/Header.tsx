@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import LOGO from '../assets/svg/Hov-Hyttegrend-NEG.svg';
-import VECTOR1 from '../assets/svg/Vector1.svg';
-import iconX from '../assets/svg/icon-X.svg';
-import iconMenu from '../assets/svg/icon-BurgerMenu.svg';
+
+import Vector1 from '../assets/svg/Vector1.svg?react';
+import IconX from '../assets/svg/icon-X.svg?react';
+import IconMenu from '../assets/svg/icon-BurgerMenu.svg?react';
+
 import LanguageSwitcher from './language/LanguageSwitcher';
 
 export default function Header() {
@@ -63,11 +65,11 @@ export default function Header() {
         </ul>
 
         <button ref={buttonRef} className="lg:hidden hover:cursor-pointer" onClick={toggleMenu}>
-          <img
-            src={isMenuOpen || animateOut ? iconX : iconMenu}
-            alt={isMenuOpen || animateOut ? 'Close menu' : 'Open menu'}
-            className="w-6 h-6"
-          />
+          {isMenuOpen || animateOut ? (
+            <IconX className="w-6 h-6" />
+          ) : (
+            <IconMenu className="w-6 h-6" />
+          )}
         </button>
 
         {(isMenuOpen || animateOut) && (
@@ -90,11 +92,7 @@ export default function Header() {
         )}
       </nav>
       <div className="w-250 md:w-full">
-        <img
-          src={VECTOR1}
-          alt="Vector pattern line"
-          className=" lg:w-full overflow-x-hidden w-full"
-        />
+        <Vector1 className=" lg:w-full overflow-x-hidden w-full text-secondary" />
       </div>
     </header>
   );
