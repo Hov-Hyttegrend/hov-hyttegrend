@@ -5,7 +5,7 @@ html {
 }
 
 @theme {
-  --font-primary: 'Cabin', sans-serif;
+  --font-primary: 'Inter', sans-serif;
   --font-secondary: 'Caesar Dressing', sans-serif;
 
   --color-primary: #d4d4d0;
@@ -23,6 +23,26 @@ html {
 
 .section-container {
   @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-5 py-40 lg:px-20;
+}
+
+h2 {
+  @apply text-xl sm:text-2xl lg:text-4xl font-bold text-secondary;
+}
+
+.icon-button {
+  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center cursor-pointer hover:scale-105 transition-all duration-300;
+}
+
+.icon-button-top {
+  @apply aspect-square;
+}
+
+.icon-button-bottom {
+  @apply aspect-square md:aspect-video;
+}
+
+.icon-button:hover svg {
+  color: white;
 }
 
 @layer utilities {
