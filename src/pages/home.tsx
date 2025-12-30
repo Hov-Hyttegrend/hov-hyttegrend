@@ -1,7 +1,17 @@
 import { useTranslation } from 'react-i18next';
 import HOV_1 from '../assets/images/hov1.webp';
-import VECTOR2 from '../assets/svg/Vector2.svg';
-import trees3 from '../assets/svg/3-trees.svg';
+
+import Vector2 from '../assets/svg/Vector2.svg?react';
+import Trees3 from '../assets/svg/3-trees.svg?react';
+import TreeGroup3 from '../assets/svg/Trees-group3.svg?react';
+import TreeGroup4 from '../assets/svg/Trees-group4.svg?react';
+
+import FishingIcon from '../assets/svg/fishing.svg?react';
+import HikeIcon from '../assets/svg/hike.svg?react';
+import MountainHikeIcon from '../assets/svg/mountain-hike.svg?react';
+import FrisbeeGolfIcon from '../assets/svg/frisbeegolf.svg?react';
+import PaddleIcon from '../assets/svg/paddle.svg?react';
+import SwimmingIcon from '../assets/svg/swimming.svg?react';
 
 import { useCookieConsent } from '../contexts/useCookieConsent';
 import GoogleMaps from '../components/GoogleMaps';
@@ -42,11 +52,7 @@ export default function Home() {
             </button>
           </div>
           <div className="w-full absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[50%]">
-            <img
-              src={VECTOR2}
-              alt=""
-              className=" lg:w-full overflow-x-hidden shadow-vector-up w-250 md:w-full"
-            />
+            <Vector2 className="w-full block text-secondary" />
           </div>
         </div>
       </header>
@@ -59,7 +65,7 @@ export default function Home() {
             <p className="text-3xl">{t('test.text')}</p>
 
             <div className="w-full flex justify-center">
-              <img src={trees3} alt="three trees" />
+              <Trees3 className="text-secondary" />
             </div>
           </section>
         </div>
@@ -88,16 +94,16 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center max-w-70 max-h-80 sm:max-w-100 sm:max-h-100 md:max-w-125 md:max-h-125 lg:max-w-150 lg:max-h-150 w-full h-full ">
-            <h2 className="h2">Om oss</h2>
+            <h2 className="h2">Om oss - Hov Hyttegend</h2>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Hov Hyttegrend, ein liten og fredfull hyttegrend midt i hjartet av vakre Fjord-Noreg.
+              Mellom fjell, fossar, fjordar og brear! Her får du eit perfekt utgangspunkt for å
+              oppleve noko av det finaste naturen i Vestland har å by på. .
             </p>
             <p className="text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Vi ligg like ved det verna Gaularvassdraget, kjent for sine mange fossar, stryk og
+              stille fjellvatn. Elva svingar seg gjennom landskapet og byr på både store
+              naturopplevingar og gode fiskemoglegheiter.
             </p>
             <div>
               <button className="button-green">Mer om oss</button>
@@ -112,6 +118,49 @@ export default function Home() {
             Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen. Her kan
             du:
           </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
+            <div className="icon-button icon-button-top">
+              <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button icon-button-top">
+              <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button icon-button-top">
+              <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button icon-button-top">
+              <FrisbeeGolfIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button icon-button-bottom md:col-span-2">
+              <FishingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button icon-button-bottom md:col-span-2">
+              <HikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+          </div>
+
+          <div className="w-full">
+            <div className="flex justify-between border-b-3 border-secondary">
+              <TreeGroup3 className="text-secondary" />
+              <TreeGroup4 className="text-secondary" />
+            </div>
+            <div className="flex justify-between rotate-x-180">
+              <TreeGroup3 className="text-secondary" />
+              <TreeGroup4 className="text-secondary" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
+            <div className="icon-button aspect-video">
+              <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button aspect-video">
+              <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+            <div className="icon-button aspect-video">
+              <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            </div>
+          </div>
         </section>
 
         {/* Section 9 */}
