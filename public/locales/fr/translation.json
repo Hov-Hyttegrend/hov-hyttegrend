@@ -1,10 +1,46 @@
 {
-  "welcome": {
-    "title": "FRANSK",
-    "description": "Fransk"
+  "common": {
+    "bookingButton": "Réservez votre voyage",
+    "cookies": "Ce site utilise des cookies pour la fonction de réservation et les cartes. En poursuivant, vous acceptez notre utilisation des cookies."
   },
-  "test": {
-    "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
-    "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
+  "welcome": {
+    "title": "Bienvenue à Hov Hyttegrend",
+    "description": "Une véritable expérience en pleine nature au cœur de la Norvège"
+  },
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend – un petit coin de Norvège authentique",
+      "text": "Bienvenue dans un endroit où la nature se fait plus proche, le silence plus profond et le quotidien plus lointain que jamais.\nÀ Hov Hyttegrend, vous séjournez au cœur d’un paysage naturel paisible et magnifique, entouré de forêts, de montagnes, de rivières et de lacs.\nIci, vous pouvez vivre le meilleur de la nature et de la vie en plein air norvégiennes – idéal pour les amateurs d’aventure, les familles, les couples et les groupes d’amis en quête d’une escapade authentique et tranquille."
+    },
+
+    "section_2": {
+      "title": "À propos de nous",
+      "text": "Hov Hyttegrend est une petite communauté de chalets paisible au cœur de la magnifique région des fjords de Norvège — entourée de montagnes, de cascades, de fjords et de glaciers.\nIci, vous disposez du point de départ idéal pour découvrir certaines des plus belles merveilles naturelles que le Vestland a à offrir.\nNous sommes situés juste à côté du cours d’eau protégé de Gaular, renommé pour ses nombreuses cascades, rapides et lacs de montagne paisibles. La rivière serpente à travers le paysage, offrant à la fois des expériences naturelles à couper le souffle et d’excellentes opportunités de pêche."
+    },
+
+    "section_3": {
+      "title": "Vie active en plein air",
+      "text": "La région autour des chalets est idéale pour ceux qui souhaitent rester actifs et profiter de la nature."
+    },
+
+    "section_4": {
+      "title": "Visites – Gastronomie – Shopping",
+      "text": "Découvrez et profitez des activités et des boutiques de la région."
+    },
+
+    "section_5": {
+      "title": "Pourquoi nous choisir?",
+      "text": "Courtes promenades locales et paysages naturels grandioses réunis en un seul séjour.\nUne atmosphère conviviale et adaptée aux familles.\nParfait pour les couples, les familles et les amoureux de la nature.\nPaix, tranquillité et nature authentique de la côte ouest, loin de la foule."
+    },
+
+    "section_6": {
+      "title": "Hébergement dans un cadre naturel idyllique",
+      "text": "À Hov Hyttegrend, nous proposons des hébergements simples mais confortables dans des chalets, ainsi que des emplacements pour camping-cars et caravanes. Ici, vous séjournez au plus près de la nature, avec le chant des oiseaux et le doux murmure de la rivière en toile de fond.",
+      "listItem1": "Places de parking pour 15 à 20 camping-cars/caravanes",
+      "listItem2": "Environnement magnifique et espace généreux entre les unités",
+      "listItem3": "À distance de marche des sentiers de randonnée et des lacs de pêche",
+      "listItem4": "Atmosphère conviviale, familiale et paisible"
+    }
   }
 }

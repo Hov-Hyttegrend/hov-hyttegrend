@@ -1,10 +1,46 @@
 {
-  "welcome": {
-    "title": "ENGELSK",
-    "description": "Engelsk"
+  "common": {
+    "bookingButton": "Book your trip",
+    "cookies": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies."
   },
-  "test": {
-    "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
-    "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
+  "welcome": {
+    "title": "Welcome to Hov Hyttegrend",
+    "description": "A true nature experience in the heart of Norway"
+  },
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend - a small piece of authentic Norway",
+      "text": "Welcome to a place where nature feels closer, the silence is deeper, and everyday life is farther away than ever.\nAt Hov Hyttegrend, you stay in the heart of a peaceful and beautiful natural landscape, surrounded by forests, mountains, rivers, and lakes.\nHere you can experience the very best of Norwegian nature and outdoor life – perfect for adventure seekers, families, couples, and groups of friends looking for a genuine and tranquil getaway."
+    },
+
+    "section_2": {
+      "title": "About Us",
+      "text": "Hov Hyttegrend is a small and peaceful cabin community in the heart of beautiful Fjord Norway — surrounded by mountains, waterfalls, fjords, and glaciers.\nHere you have the perfect starting point to experience some of the finest nature Vestland has to offer.\nWe are located right next to the protected Gaular Watercourse, renowned for its many waterfalls, rapids, and tranquil mountain lakes. The river winds its way through the landscape, offering both breathtaking nature experiences and excellent fishing opportunities."
+    },
+
+    "section_3": {
+      "title": "Active Outdoor Life",
+      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors."
+    },
+
+    "section_4": {
+      "title": "Sightseeing – Food – Shopping",
+      "text": "Experience and shopping in the local area"
+    },
+
+    "section_5": {
+      "title": "Why Choose Us?",
+      "text": "Short local walks and grand natural scenery in one single stay.\nA family-friendly and welcoming atmosphere.\nPerfect for couples, families, and nature lovers.\nPeace, tranquility, and authentic West Coast nature without the crowds."
+    },
+
+    "section_6": {
+      "title": "Accommodation in a Natural Idyll",
+      "text": "At Hov Hyttegrend we offer simple yet comfortable accommodation in cabins, as well as pitches for motorhomes and caravans. Here, you stay close to nature, with birdsong and the gentle sound of the river as your background music.",
+      "listItem1": "Parking spaces for 15–20 motorhomes/caravans",
+      "listItem2": "Beautiful surroundings and generous space between units",
+      "listItem3": "Walking distance to hiking trails and fishing lakes",
+      "listItem4": "Family-friendly and peaceful atmosphere"
+    }
   }
 }

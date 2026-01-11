@@ -1,10 +1,46 @@
 {
-  "welcome": {
-    "title": "TYSK",
-    "description": "tysk"
+  "common": {
+    "bookingButton": "Buchen Sie Ihre Reise",
+    "cookies": "Diese Website verwendet Cookies für Buchungsfunktionen und Karten. Wenn Sie fortfahren, müssen Sie der Verwendung von Cookies zustimmen."
   },
-  "test": {
-    "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
-    "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
+  "welcome": {
+    "title": "Willkommen bei Hov Hyttegrend",
+    "description": "Ein echter Naturerlebnis im Herzen Norwegen"
+  },
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend - ein kleines Stück echtes Norwegen",
+      "text": "Willkommen an einem Ort, an dem die Natur näher, die Stille intensiver und der Alltag weiter entfernt ist als je zuvor.\nBei Hov Hyttegrend wohnen Sie mitten in einem ruhigen und wunderschönen Naturgebiet, umgeben von Wäldern, Bergen, Flüssen und Seen.\nHier können Sie das Beste der norwegischen Natur und des Outdoor-Lebens erleben – perfekt für Abenteuerlustige, Familien, Paare und Freundesgruppen, die ein echtes und entspanntes Erlebnis suchen."
+    },
+
+    "section_2": {
+      "title": "Über uns",
+      "text": "Hov Hyttegrend, eine kleine und friedliche Ferienhaussiedlung im Herzen des wunderschönen Fjord-Norwegens.\nZwischen Bergen, Wasserfällen, Fjorden und Gletschern! Hier finden Sie den perfekten Ausgangspunkt, um einige der schönsten Naturerlebnisse zu genießen, die die Region Vestland zu bieten hat.\nWir liegen direkt am geschützten Gaular-Flussgebiet, bekannt für seine zahlreichen Wasserfälle, Stromschnellen und ruhigen Bergseen. Der Fluss schlängelt sich durch die Landschaft und bietet sowohl große Naturerlebnisse als auch ausgezeichnete Angelmöglichkeiten."
+    },
+
+    "section_3": {
+      "title": "Aktiver Outdoor-Spaß",
+      "text": "Die Umgebung der Hütten ist ideal für alle, die gerne aktiv draußen in der Natur sein möchten."
+    },
+
+    "section_4": {
+      "title": "Sightseeing – Essen – Shopping",
+      "text": "Erlebnisse und Einkaufsmöglichkeiten in der Umgebung."
+    },
+
+    "section_5": {
+      "title": "Warum uns wählen?",
+      "text": "Kurze Wanderungen und große Natur in einem einzigen Aufenthalt.\nFamilienfreundliche und gastfreundliche Atmosphäre.\nPerfekt für Paare, Familien, Angler und Naturliebhaber.\nRuhe, Frieden und echte Natur aus Vestland ohne Menschenmassen."
+    },
+
+    "section_6": {
+      "title": "Übernachtung in idyllischer Natur",
+      "text": "Bei Hov Hyttegrend bieten wir einfache, aber komfortableÜbernachtungsmöglichkeiten in Hütten sowie Stellplätze für Wohnmobile und Wohnwagen. Hier wohnen Sie ganz nah an der Natur, mit Vogelgezwitscher und dem Rauschen des Flusses als Hintergrundmusik.",
+      "listItem1": "Stellplätze für 15–20 Wohnmobile/Wohnwagen",
+      "listItem2": "Schöne Umgebung und viel Platz zwischen den Einheiten",
+      "listItem3": "Fußläufige Entfernung zu Wanderwegen und Angelgewässern",
+      "listItem4": "Familienfreundliche und ruhige Atmosphäre"
+    }
   }
 }

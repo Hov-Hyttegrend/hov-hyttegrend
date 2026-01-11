@@ -1,10 +1,46 @@
 {
+  "common": {
+    "bookingButton": "Book reisen din",
+    "cookies": ""
+  },
   "welcome": {
     "title": "Velkommen til Hov Hyttegrend",
     "description": "Ei ekte naturoppleving i hjartet av Noreg"
   },
-  "test": {
-    "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
-    "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend - eit lite stykke ekte Noreg",
+      "text": "Velkomen til ein stad der naturen er nærare, stillheita sterkare og kvardagen lengre borte enn nokon gong.\nHos Hov Hyttegrend bur du midt i eit stille og vakkert naturområde, omkransa av skog, fjell, elvar og innsjøar.\nHer får du oppleve det beste av norsk natur og friluftsliv, perfekt for både eventyrsøkande, familiar, par og vennegjengar som vil ha ei ekte og roleg oppleving."
+    },
+
+    "section_2": {
+      "title": "Om oss",
+      "text": "Hov Hyttegrend, ein liten og fredfull hyttegrend midt i hjartet av vakre Fjord-Noreg. Mellom fjell, fossar, fjordar og brear!\nHer får du eit perfekt utgangspunkt for å oppleve noko av det finaste naturen i Vestland har å by på.\nVi ligg like ved det verna Gaularvassdraget, kjent for sine mange fossar, stryk og stille fjellvatn. Elva svingar seg gjennom landskapet og byr på både store naturopplevingar og gode fiskemoglegheiter."
+    },
+
+    "section_3": {
+      "title": "Aktivt friluftsliv",
+      "text": "Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen."
+    },
+
+    "section_4": {
+      "title": "Sigthseeing - Mat – Shopping",
+      "text": "Opplevelser og shopping nærområdet"
+    },
+
+    "section_5": {
+      "title": "Kvifor velje oss?",
+      "text": "Nærtur og stor natur i eitt og same opphald.\nFamilievenleg og gjestfri atmosfære.\nPerfekt for par, familiar, fiskarar og naturelskarar.\nStillheit, ro og ekte vestlandsnatur utan trengsel"
+    },
+
+    "section_6": {
+      "title": "Overnatting i naturidyll",
+      "text": "På Hov Hyttegrend tilbyr vi enkel, men komfortabel overnatting i hytter og oppstillingsplassar for bubilar og campingvogner. Her bur du tett på naturen, med fuglesong og elvesus som bakgrunnsmusikk.",
+      "listItem1": "Oppstillingsplass for 15–20 bubilar / campingvogner",
+      "listItem2": "Flotte omgjevnader og god plass mellom einingane",
+      "listItem3": "Gangavstand til turstiar og fiskevatn",
+      "listItem4": "Familievenleg og roleg atmosfære"
+    }
   }
 }
