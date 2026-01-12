@@ -29,7 +29,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Section 1 */}
+      {/* Header */}
       <header className="flex h-screen w-full">
         <div className="relative w-full h-full">
           <img
@@ -65,22 +65,24 @@ export default function Home() {
       </header>
 
       <div className="main-content w-full">
-        {/* Section 2 */}
+        {/* Section 1 */}
 
         <div className="section-container">
-          <section className="flex flex-col max-w-7xl gap-12">
-            <h2 className="font-secondary text-5xl font-bold uppercase">
+          <section className="flex flex-col max-w-300 lg:p-10 gap-7 lg:gap-12">
+            <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-5xl font-bold uppercase text-secondary">
               {t('homePage.section_1.title')}
             </h2>
-            <div className="text-3xl">{renderTextWithParagraphs(t('homePage.section_1.text'))}</div>
+            <div className="text-base sm:text-lg md:text-xl xl:text-[32px] flex flex-col gap-10">
+              {renderTextWithParagraphs(t('homePage.section_1.text'))}
+            </div>
 
             <div className="w-full flex justify-center">
-              <Trees3 className="text-secondary" />
+              <Trees3 className="text-secondary max-w-28 md:max-w-40 lg:max-w-48 xl:max-w-64" />
             </div>
           </section>
         </div>
 
-        {/* Section 3 */}
+        {/* Section 2 */}
         <div className="section-container bg-light-green">
           <div className="flex flex-col md:flex-row items-center bg-red-300 gap-20">
             <div className="relative bg-yellow-200 max-w-48 max-h-48 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
@@ -126,7 +128,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* section 4 */}
+        {/* section 3 */}
         <section className="section-container">
           <h2 className="h2">{t('homePage.section_3.title')}</h2>
           <p className="text">{t('homePage.section_3.text')}</p>
