@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import LOGO from '../assets/svg/Hov-Hyttegrend-NEG.svg';
+import HovLogo from '../assets/svg/Hov-logo.svg?react';
 
 import Vector1 from '../assets/svg/Vector1.svg?react';
 import IconX from '../assets/svg/icon-X.svg?react';
@@ -53,7 +53,7 @@ export default function Header() {
   return (
     <header className=" text-white z-50 fixed w-full">
       <nav className="bg-secondary flex items-center justify-between relative px-8 z-20 h-18">
-        <img src={LOGO} alt="Hov Hyttegrend logo" className="h-12" />
+        <HovLogo className="h-12" />
 
         <ul className="gap-10 text-xl hidden lg:flex">
           <li>Om oss</li>
