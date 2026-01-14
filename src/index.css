@@ -18,11 +18,11 @@ html {
 }
 
 .button-yellow {
-  @apply px-10 py-3 lg:px-24 lg:py-6 bg-yellow rounded-full text-sm  lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black shadow-2xl shadow-black/50;
+  @apply py-3 lg:py-6 w-full max-w-48 lg:max-w-96 bg-yellow rounded-full text-sm lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black shadow-xl shadow-black/50;
 }
 
 .button-green {
-  @apply px-10 py-3 lg:px-24 lg:py-6 w-full md:max-w-96 bg-secondary rounded-full text-sm lg:text-xl xl:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-white shadow-xl shadow-black/25;
+  @apply py-3 lg:py-6 w-full md:max-w-96 bg-secondary rounded-full text-sm lg:text-xl xl:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-white shadow-xl shadow-black/25;
 }
 
 .section-container {
