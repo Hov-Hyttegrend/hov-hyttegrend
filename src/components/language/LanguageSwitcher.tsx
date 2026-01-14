@@ -53,7 +53,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative" ref={menuRef}>
       <button onClick={() => setMenuOpen(!isMenuOpen)} className="flex items-center justify-center">
-        <img src={currentLanguage.flag} alt={currentLanguage.alt} />
+        <img src={currentLanguage.flag} alt={currentLanguage.alt} className="rounded" />
       </button>
 
       {isMenuOpen && (
@@ -64,7 +64,7 @@ export default function LanguageSwitcher() {
               onClick={() => handleLanguageChange(lang.code)}
               className="flex mb-2 justify-center rounded w-full hover:cursor-pointer"
             >
-              <img src={lang.flag} alt={lang.alt} />
+              <img src={lang.flag} alt={lang.alt} className="rounded" />
             </button>
           ))}
         </div>
