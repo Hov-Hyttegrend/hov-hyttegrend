@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import HOV_1 from '../assets/images/hov1.webp';
+import HOV_2 from '../assets/images/hov2.jpg';
 
 // import Vector2 from '../assets/svg/Vector2.svg?react';
 import Vector3 from '../assets/svg/Vector3.svg';
@@ -94,7 +95,7 @@ export default function Home() {
               <div className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-5">
                 <div className="w-full h-full overflow-hidden">
                   <img
-                    src={HOV_1}
+                    src={HOV_2}
                     alt="Top"
                     className="w-full h-full object-cover scale-150 -rotate-45"
                   />
