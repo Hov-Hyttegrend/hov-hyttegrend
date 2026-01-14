@@ -7,8 +7,8 @@ import HOV_6 from '../assets/images/hov6.jpg';
 // import Vector2 from '../assets/svg/Vector2.svg?react';
 import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
-// import TreeGroup3 from '../assets/svg/Trees-group3.svg?react';
-// import TreeGroup4 from '../assets/svg/Trees-group4.svg?react';
+import GroupTrees1 from '../assets/svg/GroupTrees1.svg?react';
+import GroupTrees2 from '../assets/svg/GroupTrees2.svg?react';
 
 import FishingIcon from '../assets/svg/fishing.svg?react';
 import HikeIcon from '../assets/svg/hike.svg?react';
@@ -76,7 +76,7 @@ export default function Home() {
       <div className="main-content w-full">
         {/* Section 1 */}
 
-        <div className="section-container">
+        <div className="section-container bg-primary">
           <section className="flex flex-col max-w-300 lg:p-10 gap-7 lg:gap-12">
             <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-5xl font-bold uppercase text-secondary">
               {t('homePage.section_1.title')}
@@ -104,56 +104,83 @@ export default function Home() {
         </div>
 
         {/* section 3 */}
-        <section className="section-container my-10 md:my-0">
-          <h2 className="h2">{t('homePage.section_3.title')}</h2>
-          <p className="text">{t('homePage.section_3.text')}</p>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
-            <div className="icon-button icon-button-top">
-              <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+        <div className="bg-primary">
+          <section className="w-full flex flex-col justify-center items-center px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20">
+            <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
+            <p className="text pb-8">{t('homePage.section_3.text')}</p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
+              <div className="icon-button icon-button-top">
+                <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button icon-button-top">
+                <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button icon-button-top">
+                <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button icon-button-top">
+                <FrisbeeGolfIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button icon-button-bottom md:col-span-2">
+                <FishingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button icon-button-bottom md:col-span-2">
+                <HikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
             </div>
-            <div className="icon-button icon-button-top">
-              <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-            <div className="icon-button icon-button-top">
-              <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-            <div className="icon-button icon-button-top">
-              <FrisbeeGolfIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-            <div className="icon-button icon-button-bottom md:col-span-2">
-              <FishingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-            <div className="icon-button icon-button-bottom md:col-span-2">
-              <HikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+          </section>
+
+          <div className="w-full flex justify-center p-6   sm:p-10  md:p-20  bg-primary">
+            <div className="w-full max-w-7xl">
+              <div className="flex justify-between border-b-3 border-secondary">
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+              </div>
+              <div className="flex justify-between rotate-x-180">
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+              </div>
             </div>
           </div>
 
-          <div className="w-full">
-            {/* <div className="flex justify-between border-b-3 border-secondary">
-              <TreeGroup3 className="text-secondary" />
-              <TreeGroup4 className="text-secondary" />
+          {/* Section 4 */}
+          <section className="relative w-full flex flex-col justify-center items-center px-6 py-10 sm:px-10 md:px-20 xl:pt-40 xl:pb-80 lg:px-20">
+            <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
+            <p className="text pb-8">{t('homePage.section_4.text')}</p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
+              <div className="icon-button aspect-video">
+                <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button aspect-video">
+                <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
+              <div className="icon-button aspect-video">
+                <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              </div>
             </div>
-            <div className="flex justify-between rotate-x-180">
-              <TreeGroup3 className="text-secondary" />
-              <TreeGroup4 className="text-secondary" />
-            </div> */}
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
-            <div className="icon-button aspect-video">
-              <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+            <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
+              <img
+                src={Vector3}
+                alt="Decorative wave divider"
+                className="lg:w-full w-250 md:w-full text-secondary block"
+              />
             </div>
-            <div className="icon-button aspect-video">
-              <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-            <div className="icon-button aspect-video">
-              <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* Section 5 */}
-        <div className="section-container bg-light-green">
+        <div className="relative flex flex-col justify-center min-h-screen">
+          <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
+            <img
+              src={Vector3}
+              alt="Decorative wave divider"
+              className="lg:w-full w-250 md:w-full text-secondary block"
+            />
+          </div>
+        </div>
+
+        {/* Section 6 */}
+        <div className="section-container bg-primary">
           <ImageTextSection
             imageSrc={HOV_5}
             imageAlt="Top"
@@ -162,8 +189,8 @@ export default function Home() {
           />
         </div>
 
-        {/* Section 6 */}
-        <div className="section-container">
+        {/* Section 7 */}
+        <div className="section-container bg-light-green">
           <ImageTextSection
             imageSrc={HOV_6}
             imageAlt="Top"
@@ -174,7 +201,7 @@ export default function Home() {
         </div>
 
         {/* Section 9 */}
-        <div className="section-container">
+        <div className="section-container bg-primary">
           <GoogleMaps />
         </div>
       </div>
