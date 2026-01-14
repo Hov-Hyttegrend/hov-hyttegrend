@@ -18,7 +18,7 @@ html {
 }
 
 .button-yellow {
-  @apply px-10 py-3 lg:px-24 lg:py-6 bg-yellow rounded-full text-sm lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black;
+  @apply px-10 py-3 lg:px-24 lg:py-6 bg-yellow rounded-full text-sm  lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black shadow-2xl shadow-black/50;
 }
 
 .button-green {
