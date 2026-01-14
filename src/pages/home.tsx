@@ -89,28 +89,9 @@ export default function Home() {
 
         {/* Section 2 */}
         <div className="section-container bg-light-green">
-          <div className="flex flex-col md:flex-row items-center bg-red-300 gap-20">
-            <div className="relative bg-yellow-200 max-w-48 max-h-48 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
-              <div className="absolute sm:top-0 sm:left-1/2 sm:-translate-x-1/2 aspect-square rotate-45 flex items-center justify-center bg-secondary p-1">
-                <div className="w-full h-full overflow-hidden">
-                  <img
-                    src={HOV_1}
-                    alt="Top"
-                    className="w-full h-full object-cover scale-150 -rotate-45"
-                  />
-                </div>
-              </div>
-              {/* <div className="relative max-w-60 max-h-60 sm:max-w-100 sm:max-h-100 md:max-w-125 md:max-h-125 lg:max-w-150 lg:max-h-150 w-full h-full aspect-square flex items-center justify-center">
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] aspect-square -mt-7.5 rotate-45 flex items-center justify-center bg-secondary p-2">
-                <div className="w-full h-full overflow-hidden">
-                  <img
-                    src={HOV_1}
-                    alt="Top"
-                    className="w-full h-full object-cover scale-150 -rotate-45"
-                  />
-                </div>
-              </div> */}
-              <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[40%] aspect-square rotate-45 items-center justify-center bg-secondary p-1 hidden sm:flex">
+          <div className="flex flex-col lg:flex-row max-w-7xl items-center gap-20 md:gap-28 lg:gap-32  md:mx-11">
+            <div className="relative max-w-64 max-h-64 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
+              <div className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-5">
                 <div className="w-full h-full overflow-hidden">
                   <img
                     src={HOV_1}
@@ -120,11 +101,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center max-w-70 max-h-80 sm:max-w-100 sm:max-h-100 md:max-w-125 md:max-h-125 lg:max-w-150 lg:max-h-150 w-full h-full "> */}
             <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center  w-full h-full ">
               <h2 className="h2">{t('homePage.section_2.title')}</h2>
-              <p className="text">{t('homePage.section_2.text')}</p>
+              <div className="text flex flex-col gap-10">
+                {renderTextWithParagraphs(t('homePage.section_2.text'))}
+              </div>
 
               <div>
                 <button className="button-green">{t('common.bookingButton')}</button>
