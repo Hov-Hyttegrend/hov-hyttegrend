@@ -61,7 +61,9 @@ export default function Header() {
           <li>Booking</li>
           <li>Info</li>
           <li>Aktiviteter</li>
-          <LanguageSwitcher />
+          <li>
+            <LanguageSwitcher />
+          </li>
         </ul>
 
         <button ref={buttonRef} className="lg:hidden hover:cursor-pointer" onClick={toggleMenu}>
@@ -85,7 +87,9 @@ export default function Header() {
                 <li>Booking</li>
                 <li>Info</li>
                 <li>Aktiviteter</li>
-                <LanguageSwitcher />
+                <li>
+                  <LanguageSwitcher />
+                </li>
               </ul>
             </div>
           </div>
