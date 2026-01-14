@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
 import HOV_1 from '../assets/images/hov1.webp';
 import HOV_2 from '../assets/images/hov2.jpg';
+import HOV_5 from '../assets/images/hov5.jpg';
+import HOV_6 from '../assets/images/hov6.jpg';
 
 // import Vector2 from '../assets/svg/Vector2.svg?react';
 import Vector3 from '../assets/svg/Vector3.svg';
@@ -97,11 +99,12 @@ export default function Home() {
             title={t('homePage.section_2.title')}
             text={t('homePage.section_2.text')}
             buttonText={t('common.bookingButton')}
+            className="my-10"
           />
         </div>
 
         {/* section 3 */}
-        <section className="section-container">
+        <section className="section-container my-10 md:my-0">
           <h2 className="h2">{t('homePage.section_3.title')}</h2>
           <p className="text">{t('homePage.section_3.text')}</p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
@@ -148,6 +151,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Section 5 */}
+        <div className="section-container bg-light-green">
+          <ImageTextSection
+            imageSrc={HOV_5}
+            imageAlt="Top"
+            title={t('homePage.section_5.title')}
+            text={renderTextWithParagraphs(t('homePage.section_5.text'))}
+          />
+        </div>
+
+        {/* Section 6 */}
+        <div className="section-container">
+          <ImageTextSection
+            imageSrc={HOV_6}
+            imageAlt="Top"
+            title={t('homePage.section_6.title')}
+            text={renderTextWithParagraphs(t('homePage.section_6.text'))}
+            className="lg:flex-row-reverse"
+          />
+        </div>
 
         {/* Section 9 */}
         <div className="section-container">
