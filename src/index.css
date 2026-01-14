@@ -34,7 +34,7 @@ html {
 }
 
 .text {
-  @apply text-base md:text-lg lg:text-2xl;
+  @apply text-base sm:text-lg md:text-lg xl:text-2xl;
 }
 
 .icon-button {
