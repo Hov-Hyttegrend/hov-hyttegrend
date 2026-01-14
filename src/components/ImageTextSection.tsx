@@ -3,7 +3,7 @@ interface ImageTextSectionProps {
   imageAlt: string;
   title: string;
   text: string;
-  buttonText: string;
+  buttonText?: string;
 }
 
 export default function ImageTextSection({
