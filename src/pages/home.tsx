@@ -103,7 +103,7 @@ export default function Home() {
           />
         </div>
 
-        {/* section 3 */}
+        {/* section 3 and 4 */}
         <div className="bg-primary">
           <section className="w-full flex flex-col justify-center items-center px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
