@@ -17,6 +17,7 @@ import SwimmingIcon from '../assets/svg/swimming.svg?react';
 
 import { useCookieConsent } from '../contexts/useCookieConsent';
 import GoogleMaps from '../components/GoogleMaps';
+import ImageTextSection from '../components/ImageTextSection';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -90,29 +91,13 @@ export default function Home() {
 
         {/* Section 2 */}
         <div className="section-container bg-light-green">
-          <div className="flex flex-col lg:flex-row max-w-7xl items-center gap-20 md:gap-28 lg:gap-32  md:mx-11">
-            <div className="relative max-w-64 max-h-64 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
-              <div className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-5">
-                <div className="w-full h-full overflow-hidden">
-                  <img
-                    src={HOV_2}
-                    alt="Top"
-                    className="w-full h-full object-cover scale-150 -rotate-45"
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center  w-full h-full ">
-              <h2 className="h2">{t('homePage.section_2.title')}</h2>
-              <div className="text flex flex-col gap-10">
-                {renderTextWithParagraphs(t('homePage.section_2.text'))}
-              </div>
-
-              <div>
-                <button className="button-green">{t('common.bookingButton')}</button>
-              </div>
-            </div>
-          </div>
+          <ImageTextSection
+            imageSrc={HOV_2}
+            imageAlt="Top"
+            title={t('homePage.section_2.title')}
+            text={t('homePage.section_2.text')}
+            buttonText={t('common.bookingButton')}
+          />
         </div>
 
         {/* section 3 */}
