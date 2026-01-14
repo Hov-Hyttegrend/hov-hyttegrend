@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import HOV_1 from '../assets/images/hov1.webp';
 
 // import Vector2 from '../assets/svg/Vector2.svg?react';
+import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
 // import TreeGroup3 from '../assets/svg/Trees-group3.svg?react';
 // import TreeGroup4 from '../assets/svg/Trees-group4.svg?react';
@@ -58,9 +59,13 @@ export default function Home() {
               {t('common.bookingButton')}
             </button>
           </div>
-          {/* <div className="w-full absolute left-1/2 bottom-0 translate-x-[-50%] translate-y-[50%]">
-            <Vector2 className="w-full text-secondary" />
-          </div> */}
+          <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
+            <img
+              src={Vector3}
+              alt="Decorative wave divider"
+              className="lg:w-full w-250 md:w-full text-secondary block"
+            />
+          </div>
         </div>
       </header>
 
