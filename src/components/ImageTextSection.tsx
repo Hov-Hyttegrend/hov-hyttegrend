@@ -1,10 +1,13 @@
+import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
+
 interface ImageTextSectionProps {
   imageSrc: string;
   imageAlt: string;
   title: string;
-  text: string | React.ReactNode[];
+  text: string;
   buttonText?: string;
   className?: string;
+  listItems?: string[];
 }
 
 export default function ImageTextSection({
@@ -14,6 +17,7 @@ export default function ImageTextSection({
   text,
   buttonText,
   className,
+  listItems,
 }: ImageTextSectionProps) {
   return (
     <div
@@ -32,7 +36,15 @@ export default function ImageTextSection({
       </div>
       <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center  w-full h-full ">
         <h2 className="h2">{title}</h2>
-        <div className="text flex flex-col gap-10">{text}</div>
+        <div className="text flex flex-col gap-5 lg:gap-10">{renderTextWithParagraphs(text)}</div>
+
+        {listItems && (
+          <ul className="list-disc list-inside flex flex-col gap-2 text-sm sm:text-base xl:text-xl">
+            {listItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
 
         {buttonText && (
           <div>
