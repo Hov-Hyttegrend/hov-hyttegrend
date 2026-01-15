@@ -26,7 +26,7 @@ html {
 }
 
 .section-container {
-  @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-6 sm:px-10 md:px-20 xl:py-40 lg:px-20 min-h-screen;
+  @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20 min-h-screen;
 }
 
 .h2 {
