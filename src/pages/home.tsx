@@ -1,10 +1,14 @@
 import { useTranslation } from 'react-i18next';
+import { useCookieConsent } from '../contexts/useCookieConsent';
+import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
+import GoogleMaps from '../components/GoogleMaps';
+import ImageTextSection from '../components/ImageTextSection';
+
 import HOV_1 from '../assets/images/hov1.webp';
 import HOV_2 from '../assets/images/hov2.jpg';
 import HOV_5 from '../assets/images/hov5.jpg';
 import HOV_6 from '../assets/images/hov6.jpg';
 
-// import Vector2 from '../assets/svg/Vector2.svg?react';
 import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
 import GroupTrees1 from '../assets/svg/GroupTrees1.svg?react';
@@ -17,20 +21,9 @@ import FrisbeeGolfIcon from '../assets/svg/frisbeegolf.svg?react';
 import PaddleIcon from '../assets/svg/paddle.svg?react';
 import SwimmingIcon from '../assets/svg/swimming.svg?react';
 
-import { useCookieConsent } from '../contexts/useCookieConsent';
-import GoogleMaps from '../components/GoogleMaps';
-import ImageTextSection from '../components/ImageTextSection';
-
 export default function Home() {
   const { t } = useTranslation();
   const { cookiesAccepted } = useCookieConsent();
-
-  function renderTextWithParagraphs(text: string): React.ReactNode[] {
-    return text
-      .split('\n')
-      .filter((line) => line.trim())
-      .map((paragraph, index) => <p key={index}>{paragraph}</p>);
-  }
 
   return (
     <>
@@ -81,7 +74,7 @@ export default function Home() {
             <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-5xl font-bold uppercase text-secondary">
               {t('homePage.section_1.title')}
             </h2>
-            <div className="text-base sm:text-lg md:text-xl xl:text-[32px] flex flex-col gap-10">
+            <div className="text-base sm:text-lg md:text-xl xl:text-[32px] flex flex-col gap-5 lg:gap-10">
               {renderTextWithParagraphs(t('homePage.section_1.text'))}
             </div>
 
@@ -185,7 +178,7 @@ export default function Home() {
             imageSrc={HOV_5}
             imageAlt="Top"
             title={t('homePage.section_5.title')}
-            text={renderTextWithParagraphs(t('homePage.section_5.text'))}
+            text={t('homePage.section_5.text')}
           />
         </div>
 
@@ -195,8 +188,14 @@ export default function Home() {
             imageSrc={HOV_6}
             imageAlt="Top"
             title={t('homePage.section_6.title')}
-            text={renderTextWithParagraphs(t('homePage.section_6.text'))}
+            text={t('homePage.section_6.text')}
             className="lg:flex-row-reverse"
+            listItems={[
+              t('homePage.section_6.listItem1'),
+              t('homePage.section_6.listItem2'),
+              t('homePage.section_6.listItem3'),
+              t('homePage.section_6.listItem4'),
+            ]}
           />
         </div>
 
