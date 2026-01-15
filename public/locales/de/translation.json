@@ -42,5 +42,103 @@
       "listItem3": "Fußläufige Entfernung zu Wanderwegen und Angelgewässern",
       "listItem4": "Familienfreundliche und ruhige Atmosphäre"
     }
+  },
+
+  "termsPage": {
+    "title": "Allgemeine Geschäftsbedingungen – Hüttenvermietung und Campingplatz",
+    "description": "Gültig für alle Buchungen bei HOV-HYTTEGREND AS – Org.-Nr. 935 623 642 MwSt.",
+    "adress": "Adresse: Gaularfjellsvegen 2203, 6978 VIKSDALEN, Norwegen",
+    "part_1": {
+      "title": "1. Buchung und Bestätigung",
+      "text": "Die Buchung erfolgt über unsere Website, telefonisch oder per E-Mail. Eine Buchung ist verbindlich, sobald Sie eine schriftliche Bestätigung von uns erhalten haben. Der Kunde ist selbst dafür verantwortlich, dass die angegebenen Kontaktdaten korrekt sind."
+    },
+    "part_2": {
+      "title": "2. Zahlung",
+      "listItem1": "Die Rechnung wird nach der Buchung oder bei Ankunft ausgestellt, je nach Vereinbarung.",
+      "listItem2": "Zahlungsfrist: 14 Tage ab Rechnungsdatum oder vor Anreise, wenn der Aufenthalt unmittelbar bevorsteht.",
+      "listItem3": "Bei verspäteter Zahlung werden Verzugszinsen und Mahngebühren berechnet."
+    },
+    "part_3": {
+      "title": "3. Preise",
+      "text": "Alle Preise sind in norwegischen Kronen (NOK) angegeben und enthalten die gesetzliche Mehrwertsteuer (MwSt.). Die Preise beinhalten Strom sowie den üblichen Verbrauch von Brennholz, sofern nichts anderes vereinbart wurde."
+    },
+    "part_4": {
+      "title": "4. Stornierung – unterschiedliche Preiskategorien",
+      "listItem1": "Mehr als 1 Tag vor Anreise: Voll flexibel",
+      "listItem2": "Weniger als 30 Tage vor Anreise: Nicht erstattungsfähig",
+      "text": "Im Falle von Krankheit oder höherer Gewalt können nach Vorlage entsprechender Nachweise Ausnahmen gewährt werden"
+    },
+    "part_5": {
+      "title": "5. Check-in und Check-out",
+      "listItem1": "Check-in: ab 15:00 Uhr",
+      "listItem2": "Check-out: spätestens um 11:00 Uhr am Abreisetag",
+      "text": "Ein später Check-out muss im Voraus vereinbart werden und kann mit zusätzlichen Kosten verbunden sein."
+    },
+    "part_6": {
+      "title": "6. Reinigung und Ordnung",
+      "text1": "Die Hütte ist in ordentlichem Zustand zu hinterlassen. Die Endreinigung ist nicht im Preis inbegriffen, sofern sie nicht im Voraus vereinbart und bezahlt wurde. Sollte die Hütte beim Check-out nicht ausreichend gereinigt sein, wird eine zusätzliche Reinigungsgebühr berechnet.",
+      "text2": "Alternative: Wir bieten eine Endreinigung gegen Aufpreis an"
+    },
+    "part_7": {
+      "title": "7. Schlüssel und Zugang",
+      "text": "Die Schlüssel werden beim Check-in ausgehändigt und müssen beim Check-out zurückgegeben werden. Der Verlust eines Schlüssels zieht eine Gebühr von NOK 500 für den Austausch von Schloss oder Schlüssel nach sich."
+    },
+    "part_8": {
+      "title": "8. Schäden und Haftung",
+      "text": "Der Kunde haftet finanziell für Schäden an Inventar, Eigentum oder Gebäuden, die durch Fahrlässigkeit oder Verstöße gegen die Hausordnung entstehen. Etwaige Schäden sind unverzüglich zu melden. Rauchen ist in Innenräumen nicht gestattet. Haustiere sind in ausgewählten Hütten gegen eine zusätzliche Gebühr erlaubt."
+    },
+    "part_9": {
+      "title": "9. Höhere Gewalt",
+      "text": "Wir übernehmen keine Haftung für Umstände außerhalb unserer Kontrolle, wie z. B. extreme Wetterbedingungen, Stromausfälle, Straßensperrungen oder ähnliche Ereignisse, die die Durchführung des Aufenthalts wie geplant unmöglich machen"
+    },
+    "part_10": {
+      "title": "10. Beschwerden und Streitigkeiten",
+      "text": "Beschwerden müssen so schnell wie möglich und spätestens innerhalb von 7 Tagen nach Abreise schriftlich eingereicht werden. Bei Meinungsverschiedenheiten bemühen wir uns um eine einvernehmliche Lösung. Streitigkeiten, die nicht durch Dialog gelöst werden können, werden vor dem Bezirksgericht Sunnfjord als zuständigem Gerichtsstand verhandelt."
+    },
+    "contactInfo": {
+      "title": "Kontaktinformationen",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Norwegen",
+      "email": "E-mail: post@hovhyttegrend.no",
+      "phone": "Telefon: +47 400 67 568",
+      "website": "Webseite:www.hovhyttegrend.no"
+    }
+  },
+
+  "privacyPage": {
+    "title": "Datenschutz und Cookies",
+    "updated": "Zuletzt aktualisiert: 04.11.25",
+    "intro": "Bei Hov Hyttegrend nehmen wir den Schutz Ihrer personenbezogenen Daten sehr ernst. Nachfolgend finden Sie eine kurze Erklärung, wie wir personenbezogene Daten verarbeiten und Cookies auf unserer Website verwenden.",
+    "part_1": {
+      "title": "Personenbezogene Daten",
+      "text": "Wenn Sie mit uns Kontakt aufnehmen, eine Anfrage senden oder einen Aufenthalt buchen, speichern wir Informationen wie Name, E-Mail-Adresse, Telefonnummer und Buchungsdetails.\nDiese Daten verwenden wir ausschließlich, um:",
+      "listItem1": "Buchungen zu verwalten und Ihnen den bestmöglichen Service zu bieten",
+      "listItem2": "Notwendige Informationen zu Ihrem Aufenthalt bereitzustellen",
+      "listItem3": "Gesetzlichen Verpflichtungen nachzukommen (z. B. Buchhaltung)"
+    },
+    "part_2": {
+      "title": "Weitergabe von personenbezogenen Daten",
+      "text": "Wir geben personenbezogene Daten nicht an Dritte weiter, außer wenn dies zur Erbringung unserer Dienstleistungen erforderlich ist, etwa an Zahlungsanbieter, Buchhalter oder technische Dienstleistungspartner. Alle unsere Partner halten sich an die DSGVO und verarbeiten Daten auf sichere Weise."
+    },
+    "part_3": {
+      "title": "Speicherung und Löschung",
+      "text": "Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck erforderlich ist oder gesetzlich vorgeschrieben wird. Sie können jederzeit Auskunft über Ihre Daten verlangen sowie deren Berichtigung oder Löschung beantragen, indem Sie uns unter post@hovhyttegrend.no kontaktieren."
+    },
+    "part_4": {
+      "title": "Cookies",
+      "text": "Wir verwenden Cookies, um Ihnen ein besseres Nutzererlebnis auf unserer Website zu bieten. Cookies helfen uns dabei:",
+      "listItem1": "Einstellungen und Präferenzen zu speichern",
+      "listItem2": "Zu verstehen, wie die Website genutzt wird (zu Statistik- und Verbesserungszwecken)",
+      "text2": "Sie können die Verwendung von Cookies in den Einstellungen Ihres Browsers deaktivieren oder einschränken. In diesem Fall können einige Funktionen der Website möglicherweise eingeschränkt sein."
+    },
+    "contactInfo": {
+      "title": "Kontakt",
+      "intro": "Haben Sie Fragen zum Datenschutz oder zu Cookies? Kontaktieren Sie uns gerne:",
+      "name": "Hov Hyttegrend",
+      "email": "E-Mail: post@hovhyttegrend.no",
+      "phone": "Telefon: +47 400 67 568",
+      "address": "Adresse: Gaularfjellsvegen 2203, 6978 Viksdalen"
+    }
   }
 }
