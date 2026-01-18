@@ -1,8 +1,55 @@
 {
   "common": {
     "bookingButton": "Book your trip",
-    "cookies": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies."
+    "cookies": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
+
+    "contact": {
+      "title": "Contact us",
+      "addressTitle": "Address",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "informationTitle": "Information",
+      "openingHoursTitle": "Opening hours now",
+      "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
+      "phone": "Phone: +47 400 67 568",
+      "email": "Email: post@hovhyttegrend.no"
+    },
+
+    "address": {
+      "title": "Address",
+      "line1": "Hov Hyttegrend",
+      "line2": "Gaularfjellsvegen 2203",
+      "line3": "6978 Viksdalen",
+      "line4": "Norway"
+    },
+
+    "followUs": {
+      "title": "Follow us"
+    },
+
+    "findUs": {
+      "title": "Find us"
+    },
+
+    "links": {
+      "title": "Links",
+      "terms": "Terms and conditions",
+      "privacy": "Privacy Policy"
+    },
+
+    "cookieConcent": {
+      "description": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
+      "buttonAccept": "Accept",
+      "buttonDecline": "Decline"
+    },
+
+    "cookiesMapOverlay": {
+      "title": "Cookie required",
+      "description": "To use the map, you must accept cookies",
+      "buttonAccept": "Accept cookies"
+    }
   },
+
   "welcome": {
     "title": "Welcome to Hov Hyttegrend",
     "description": "A true nature experience in the heart of Norway"

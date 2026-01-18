@@ -1,7 +1,53 @@
 {
   "common": {
     "bookingButton": "Réservez votre voyage",
-    "cookies": "Ce site utilise des cookies pour la fonction de réservation et les cartes. En poursuivant, vous acceptez notre utilisation des cookies."
+    "cookies": "Ce site utilise des cookies pour la fonction de réservation et les cartes. En poursuivant, vous acceptez notre utilisation des cookies.",
+
+    "contact": {
+      "title": "Contactez-nous",
+      "addressTitle": "Adresse",
+      "phoneTitle": "Téléphone",
+      "emailTitle": "E-mail",
+      "informationTitle": "Informations",
+      "openingHoursTitle": "Heures d'ouverture maintenant",
+      "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
+      "phone": "Téléphone: +47 400 67 568",
+      "email": "E-mail: post@hovhyttegrend.no"
+    },
+
+    "address": {
+      "title": "Adresse",
+      "line1": "Hov Hyttegrend",
+      "line2": "Gaularfjellsvegen 2203",
+      "line3": "6978 Viksdalen",
+      "line4": "Norvège"
+    },
+
+    "followUs": {
+      "title": "Suivez-nous"
+    },
+
+    "findUs": {
+      "title": "Trouvez-nous"
+    },
+
+    "links": {
+      "title": "Liens",
+      "terms": "Conditions générales",
+      "privacy": "Politique de confidentialité"
+    },
+
+    "cookieConcent": {
+      "description": "Ce site web utilise des cookies pour les réservations et les cartes. En poursuivant votre navigation, vous acceptez l'utilisation de cookies.",
+      "buttonAccept": "Accepter",
+      "buttonDecline": "Refuser"
+    },
+
+    "cookiesMapOverlay": {
+      "title": "Cookie requis",
+      "description": "Pour utiliser la carte, vous devez accepter les cookies.",
+      "buttonAccept": "Accepter cookies"
+    }
   },
   "welcome": {
     "title": "Bienvenue à Hov Hyttegrend",

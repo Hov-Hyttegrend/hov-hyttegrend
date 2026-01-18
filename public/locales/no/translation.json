@@ -3,13 +3,13 @@
     "bookingButton": "Book reisen din",
     "cookies": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
 
-    "links": {
-      "terms": "Vilkår og betingelser",
-      "privacy": "Personvern"
-    },
-
     "contact": {
       "title": "Kontakt oss",
+      "addressTitle": "Adresse",
+      "phoneTitle": "Telefon",
+      "emailTitle": "E-post",
+      "informationTitle": "Informasjon",
+      "openingHoursTitle": "Åpningstider nå",
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Telefon: +47 400 67 568",
       "email": "E-post: post@hovhyttegrend.no"
@@ -23,8 +23,30 @@
       "line4": "Noreg"
     },
 
-    "FollowUs": {
+    "followUs": {
       "title": "Følg oss"
+    },
+
+    "findUs": {
+      "title": "Finn oss"
+    },
+
+    "links": {
+      "title": "Lenker",
+      "terms": "Vilkår og betingelser",
+      "privacy": "Personvern"
+    },
+
+    "cookieConcent": {
+      "description": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
+      "buttonAccept": "Aksepter",
+      "buttonDecline": "Avslå"
+    },
+
+    "cookiesMapOverlay": {
+      "title": "Cookie kreves",
+      "description": "For å bruke kartet må du akseptere cookies",
+      "buttonAccept": "Aksepter cookies"
     }
   },
 
@@ -161,9 +183,9 @@
       "title": "Kontakt oss",
       "intro": "Har du spørsmål om personvern eller informasjonskapslar? Ta gjerne kontakt:",
       "name": "Hov Hyttegrend",
-      "email": "post@hovhyttegrend.no",
-      "phone": "400 67 568",
-      "address": "Gaularfjellsvegen 2203, 6978 Viksdalen"
+      "email": "E-post: post@hovhyttegrend.no",
+      "phone": "Telefon: 400 67 568",
+      "address": "Nettside: Gaularfjellsvegen 2203, 6978 Viksdalen"
     }
   }
 }
