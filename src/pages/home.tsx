@@ -205,7 +205,7 @@ export default function Home() {
         </div>
 
         {/* Section 9 */}
-        <div className="section-container bg-primary">
+        <div className="flex flex-col justify-center items-center pt-10 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
           <GoogleMaps />
         </div>
 
