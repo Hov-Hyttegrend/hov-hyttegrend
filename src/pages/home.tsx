@@ -20,6 +20,9 @@ import MountainHikeIcon from '../assets/svg/mountain-hike.svg?react';
 import FrisbeeGolfIcon from '../assets/svg/frisbeegolf.svg?react';
 import PaddleIcon from '../assets/svg/paddle.svg?react';
 import SwimmingIcon from '../assets/svg/swimming.svg?react';
+import FoodIcon from '../assets/svg/food.svg?react';
+import ShopIcon from '../assets/svg/shop.svg?react';
+import BinocularsIcon from '../assets/svg/binoculars.svg?react';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -142,13 +145,13 @@ export default function Home() {
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
               <div className="icon-button aspect-video">
-                <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <BinocularsIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
               </div>
               <div className="icon-button aspect-video">
-                <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <FoodIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
               </div>
               <div className="icon-button aspect-video">
-                <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <ShopIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
               </div>
             </div>
             <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
