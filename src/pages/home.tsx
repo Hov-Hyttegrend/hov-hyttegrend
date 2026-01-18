@@ -131,12 +131,12 @@ export default function Home() {
           <div className="w-full flex justify-center p-6   sm:p-10  md:p-20  bg-primary">
             <div className="w-full max-w-7xl">
               <div className="flex justify-between border-b-3 border-secondary">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pr-1 md:pr-6" />
               </div>
               <div className="flex justify-between rotate-x-180">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pr-1 md:pr-6" />
               </div>
             </div>
           </div>
