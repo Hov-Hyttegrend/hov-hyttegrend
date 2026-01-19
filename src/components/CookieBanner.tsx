@@ -8,16 +8,21 @@ export default function CookieBanner() {
   const { t } = useTranslation();
 
   useEffect(() => {
+    let timer: ReturnType<typeof setTimeout> | undefined;
+
     const consent = localStorage.getItem('cookieConsent');
-    if (!consent) {
-      const timer = setTimeout(() => setShowBanner(true), 0);
-      return () => clearTimeout(timer);
+
+    if (consent === null) {
+      timer = setTimeout(() => setShowBanner(true), 0);
     }
 
     const handleShowBanner = () => setShowBanner(true);
     window.addEventListener('showCookieBanner', handleShowBanner);
 
-    return () => window.removeEventListener('showCookieBanner', handleShowBanner);
+    return () => {
+      if (timer) clearTimeout(timer);
+      window.removeEventListener('showCookieBanner', handleShowBanner);
+    };
   }, []);
 
   if (!showBanner) return null;
