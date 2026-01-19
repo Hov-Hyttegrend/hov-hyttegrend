@@ -16,7 +16,10 @@ export { CookieConsentContext };
 const MEWS_CONFIG_ID = import.meta.env.VITE_MEWS_CONFIG_ID;
 
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
-  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+  const [cookiesAccepted, setCookiesAccepted] = useState(() => {
+    const stored = localStorage.getItem('cookieConsent');
+    return stored === 'true';
+  });
 
   useEffect(() => {
     if (cookiesAccepted) {

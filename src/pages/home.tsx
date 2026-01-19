@@ -97,6 +97,13 @@ export default function Home() {
             title={t('homePage.section_2.title')}
             text={t('homePage.section_2.text')}
             buttonText={t('common.bookingButton')}
+            onClickButton={(e) => {
+              if (!cookiesAccepted) {
+                e.preventDefault();
+                window.dispatchEvent(new Event('showCookieBanner'));
+              }
+            }}
+            buttonClassName="distributor"
             className="my-10"
           />
         </div>
