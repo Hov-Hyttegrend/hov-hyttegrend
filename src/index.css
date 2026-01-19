@@ -29,6 +29,10 @@ html {
   @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20 min-h-screen;
 }
 
+.terms-privacy {
+  @apply flex flex-col justify-center items-center h-full w-full px-6 sm:px-10 md:px-20 pb-25 pt-35 md:pt-40 lg:pt-50 xl:pb-60 xl:pt-65 2xl:pt-80;
+}
+
 .h2 {
   @apply text-xl sm:text-2xl lg:text-4xl font-bold text-secondary;
 }

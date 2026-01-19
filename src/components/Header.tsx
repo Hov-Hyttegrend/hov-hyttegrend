@@ -6,6 +6,7 @@ import IconX from '../assets/svg/icon-X.svg?react';
 import IconMenu from '../assets/svg/icon-BurgerMenu.svg?react';
 
 import LanguageSwitcher from './language/LanguageSwitcher';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -53,7 +54,9 @@ export default function Header() {
   return (
     <header className=" text-white z-50 fixed w-full">
       <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-18 lg:h-24">
-        <HovLogo className="h-12 lg:h-16" />
+        <Link to="/">
+          <HovLogo className="h-12 lg:h-16" />
+        </Link>
 
         <ul className="gap-10 text-xl hidden lg:flex">
           <li>Om oss</li>
