@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import HovLogo from '../assets/svg/Hov-logo.svg?react';
 
 export default function Footer() {
@@ -12,8 +13,16 @@ export default function Footer() {
           <div>
             <h3 className="font-bold uppercase">{t('common.links.title')}</h3>
             <ul>
-              <li>{t('common.links.terms')}</li>
-              <li>{t('common.links.privacy')}</li>
+              <li>
+                <Link to="/terms_and_conditions" className="hover:underline">
+                  {t('common.links.terms')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/privacy_policy" className="hover:underline">
+                  {t('common.links.privacy')}
+                </Link>
+              </li>
             </ul>
           </div>
 
