@@ -5,11 +5,13 @@ import Terms from './pages/terms';
 import Privacy from './pages/privacy';
 import { CookieConsentProvider } from './contexts/CookieConsentProvider';
 import CookieBanner from './components/CookieBanner';
+import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   return (
     <CookieConsentProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
