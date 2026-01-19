@@ -6,6 +6,8 @@ interface ImageTextSectionProps {
   title: string;
   text: string;
   buttonText?: string;
+  onClickButton?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  buttonClassName?: string;
   className?: string;
   listItems?: string[];
 }
@@ -16,6 +18,8 @@ export default function ImageTextSection({
   title,
   text,
   buttonText,
+  onClickButton,
+  buttonClassName,
   className,
   listItems,
 }: ImageTextSectionProps) {
@@ -48,7 +52,9 @@ export default function ImageTextSection({
 
         {buttonText && (
           <div>
-            <button className="button-green">{buttonText}</button>
+            <button onClick={onClickButton} className={`button-green ${buttonClassName}`}>
+              {buttonText}
+            </button>
           </div>
         )}
       </div>
