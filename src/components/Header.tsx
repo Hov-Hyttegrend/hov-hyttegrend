@@ -52,8 +52,8 @@ export default function Header() {
 
   return (
     <header className=" text-white z-50 fixed w-full">
-      <nav className="bg-secondary flex items-center justify-between relative px-8 z-20 h-18">
-        <HovLogo className="h-12" />
+      <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-18 lg:h-24">
+        <HovLogo className="h-12 lg:h-16" />
 
         <ul className="gap-10 text-xl hidden lg:flex">
           <li>Om oss</li>
