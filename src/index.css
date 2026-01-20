@@ -57,6 +57,14 @@ html {
   color: white;
 }
 
+.footer-ul {
+  @apply min-w-40 md:min-w-0;
+}
+
+.footer-list {
+  @apply text-sm md:text-base font-normal mb-1.5;
+}
+
 @layer utilities {
   @keyframes slide-in-right {
     0% {
