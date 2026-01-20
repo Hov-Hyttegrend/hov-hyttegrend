@@ -13,8 +13,6 @@ import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
 import GroupTrees1 from '../assets/svg/GroupTrees1.svg?react';
 import GroupTrees2 from '../assets/svg/GroupTrees2.svg?react';
-import GroupTrees3 from '../assets/svg/GroupTrees3.svg?react';
-import GroupTrees4 from '../assets/svg/GroupTrees4.svg?react';
 
 import FishingIcon from '../assets/svg/fishing.svg?react';
 import HikeIcon from '../assets/svg/hike.svg?react';
@@ -214,12 +212,6 @@ export default function Home() {
         {/* Section 9 */}
         <div className="flex flex-col justify-center items-center pt-10 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
           <GoogleMaps />
-        </div>
-
-        {/* Decorative Bottom Trees */}
-        <div className="w-full bg-primary flex justify-between items-baseline max-h-">
-          <GroupTrees3 className="text-secondary max-h-14 md:max-h-28 xl:max-h-56" />
-          <GroupTrees4 className="text-secondary max-h-12 md:max-h-24 xl:max-h-48" />
         </div>
       </div>
     </>
