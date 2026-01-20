@@ -42,7 +42,15 @@ html {
 }
 
 .icon-button {
-  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center cursor-pointer hover:scale-105 transition-all duration-300;
+  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center cursor-pointer hover:scale-102 transition-all duration-300;
+}
+
+.icon-button svg {
+  @apply flex items-center justify-center h-[40%];
+}
+
+.icon-button:hover svg {
+  @apply text-white;
 }
 
 .icon-button-top {
@@ -51,10 +59,6 @@ html {
 
 .icon-button-bottom {
   @apply aspect-square md:aspect-video;
-}
-
-.icon-button:hover svg {
-  color: white;
 }
 
 .footer-ul {

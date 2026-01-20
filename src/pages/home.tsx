@@ -108,57 +108,57 @@ export default function Home() {
 
         {/* section 3 and 4 */}
         <div className="bg-primary">
-          <section className="w-full flex flex-col justify-center items-center px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20">
+          <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('homePage.section_3.text')}</p>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
               <div className="icon-button icon-button-top">
-                <MountainHikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <MountainHikeIcon className="text-primary" />
               </div>
               <div className="icon-button icon-button-top">
-                <PaddleIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <PaddleIcon className="text-primary" />
               </div>
               <div className="icon-button icon-button-top">
-                <SwimmingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <SwimmingIcon className="text-primary" />
               </div>
               <div className="icon-button icon-button-top">
-                <FrisbeeGolfIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <FrisbeeGolfIcon className="text-primary" />
               </div>
               <div className="icon-button icon-button-bottom md:col-span-2">
-                <FishingIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <FishingIcon className="text-primary" />
               </div>
               <div className="icon-button icon-button-bottom md:col-span-2">
-                <HikeIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+                <HikeIcon className="text-primary" />
               </div>
             </div>
           </section>
 
-          <div className="w-full flex justify-center p-6   sm:p-10  md:p-20  bg-primary">
+          <div className="w-full flex justify-center py-20 sm:py-25 md:py-30 lg:py-40 px-6 sm:px-10 md:px-20 bg-primary">
             <div className="w-full max-w-7xl">
               <div className="flex justify-between border-b-3 border-secondary">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pl-1 md:pl-6" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pr-1 md:pr-6" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pr-1 md:pr-6" />
               </div>
               <div className="flex justify-between rotate-x-180">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pl-1 md:pl-6" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 lg:h-20 xl:h-32 pr-1 md:pr-6" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pr-1 md:pr-6" />
               </div>
             </div>
           </div>
 
           {/* Section 4 */}
-          <section className="relative w-full flex flex-col justify-center items-center px-6 py-10 sm:px-10 md:px-20 xl:pt-40 xl:pb-80 lg:px-20">
+          <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
-              <div className="icon-button aspect-video">
-                <BinocularsIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
+                <BinocularsIcon className="text-primary" />
               </div>
-              <div className="icon-button aspect-video">
-                <FoodIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
+                <FoodIcon className="text-primary" />
               </div>
-              <div className="icon-button aspect-video">
-                <ShopIcon className="max-h-12 md:max-h-20 lg:max-h-28 text-primary" />
+              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
+                <ShopIcon className="text-primary" />
               </div>
             </div>
             <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
@@ -183,7 +183,7 @@ export default function Home() {
         </div>
 
         {/* Section 6 */}
-        <div className="section-container bg-primary">
+        <div className="section-container  bg-primary">
           <ImageTextSection
             imageSrc={HOV_5}
             imageAlt="Top"
