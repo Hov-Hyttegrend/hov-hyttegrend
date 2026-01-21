@@ -99,7 +99,10 @@ export default function Header() {
         )}
       </nav>
       <div className="w-250 md:w-full">
-        <Vector1 className=" lg:w-full overflow-x-hidden w-full text-secondary" />
+        <Vector1
+          className="lg:w-full overflow-x-hidden w-full text-secondary"
+          style={{ filter: 'drop-shadow(0 10px 15px rgba(0, 0, 0, 0.25))' }}
+        />
       </div>
     </header>
   );
