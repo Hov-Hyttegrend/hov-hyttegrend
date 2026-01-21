@@ -28,7 +28,12 @@ export default function ImageTextSection({
       className={`flex flex-col lg:flex-row max-w-7xl w-full items-center gap-20 md:gap-28 lg:gap-32 md:mx-11 ${className}`}
     >
       <div className="relative max-w-80 max-h-80 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
-        <div className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-10">
+        <div
+          className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-10"
+          style={{
+            boxShadow: '0 5px 20px rgba(0, 0, 0, 0.50),  5px 0 20px rgba(0, 0, 0, 0.50)',
+          }}
+        >
           <div className="w-full h-full overflow-hidden">
             <img
               src={imageSrc}
