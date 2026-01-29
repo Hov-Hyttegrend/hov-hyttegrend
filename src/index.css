@@ -66,7 +66,7 @@ html {
 }
 
 .footer-list {
-  @apply text-sm md:text-base font-normal mb-1.5;
+  @apply text-sm md:text-base font-light mb-1.5;
 }
 
 @layer utilities {
