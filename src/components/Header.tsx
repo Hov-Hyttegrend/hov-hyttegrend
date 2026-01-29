@@ -53,12 +53,12 @@ export default function Header() {
 
   return (
     <header className=" text-white z-50 fixed w-full">
-      <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-18 lg:h-24">
+      <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-14 lg:h-18 2xl:h-24">
         <Link to="/">
-          <HovLogo className="h-12 lg:h-16" />
+          <HovLogo className="h-9 lg:h-12 2xl:h-16" />
         </Link>
 
-        <ul className="gap-10 text-xl hidden lg:flex">
+        <ul className="gap-10 text-lg 2xl:text-xl hidden lg:flex">
           <li>Om oss</li>
           <li>Kontakt</li>
           <li>Booking</li>
@@ -80,10 +80,10 @@ export default function Header() {
         {(isMenuOpen || animateOut) && (
           <div
             ref={menuRef}
-            className={`fixed right-0 top-18.5 z-50 w-64 h-screen bg-secondary flex flex-col 
+            className={`fixed right-0 top-14 z-50 w-64 h-screen bg-secondary flex flex-col 
       ${animateOut ? 'animate-slide-bounce-out' : 'animate-slide-in'}`}
           >
-            <div className="flex-1 overflow-y-auto overscroll-contain [--tw:1] [-webkit-overflow-scrolling:touch]">
+            <div className="flex-1 ">
               <ul className="flex flex-col items-end gap-6 px-8 py-8 text-white">
                 <li>Om oss</li>
                 <li>Kontakt</li>
