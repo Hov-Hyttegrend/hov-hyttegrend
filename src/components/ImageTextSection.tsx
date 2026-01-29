@@ -4,7 +4,10 @@ interface ImageTextSectionProps {
   imageSrc: string;
   imageAlt: string;
   title: string;
+  titleClassName?: string;
   text: string;
+  textClassName?: string;
+  textBoxClassName?: string;
   buttonText?: string;
   onClickButton?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   buttonClassName?: string;
@@ -16,7 +19,10 @@ export default function ImageTextSection({
   imageSrc,
   imageAlt,
   title,
+  titleClassName,
   text,
+  textClassName,
+  textBoxClassName,
   buttonText,
   onClickButton,
   buttonClassName,
@@ -25,7 +31,7 @@ export default function ImageTextSection({
 }: ImageTextSectionProps) {
   return (
     <div
-      className={`flex flex-col lg:flex-row max-w-7xl w-full items-center gap-20 md:gap-28 lg:gap-32 md:mx-11 ${className}`}
+      className={`flex flex-col lg:flex-row max-w-7xl w-full items-center justify-center gap-20 md:gap-28 lg:gap-32 md:mx-11 ${className}`}
     >
       <div className="relative max-w-80 max-h-80 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
         <div
@@ -43,10 +49,9 @@ export default function ImageTextSection({
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-5 lg:gap-10 lg:justify-center  w-full h-full ">
-        <h2 className="h2">{title}</h2>
-        <div className="text flex flex-col gap-5 lg:gap-10">{renderTextWithParagraphs(text)}</div>
-
+      <div className={textBoxClassName}>
+        <h2 className={titleClassName}>{title}</h2>
+        <div className={textClassName}>{renderTextWithParagraphs(text)}</div>
         {listItems && (
           <ul className="list-disc list-inside flex flex-col gap-2 text-sm sm:text-base xl:text-xl">
             {listItems.map((item, index) => (
