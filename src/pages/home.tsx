@@ -116,7 +116,7 @@ export default function Home() {
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('homePage.section_3.text')}</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl 2xl:max-w-7xl">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
               <div className="icon-button icon-button-top">
                 <MountainHikeIcon className="text-primary" />
               </div>
@@ -139,7 +139,7 @@ export default function Home() {
           </section>
 
           <div className="w-full flex justify-center py-20 sm:py-25 md:py-30 lg:py-40 px-6 sm:px-10 md:px-20 bg-primary">
-            <div className="w-full xl:max-w-4xl 2xl:max-w-7xl">
+            <div className="w-full ">
               <div className="flex justify-between border-b-3 border-secondary">
                 <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pl-1 md:pl-6" />
                 <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pr-1 md:pr-6" />
@@ -155,7 +155,7 @@ export default function Home() {
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl 2xl:max-w-7xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
               <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
                 <BinocularsIcon className="text-primary" />
               </div>
