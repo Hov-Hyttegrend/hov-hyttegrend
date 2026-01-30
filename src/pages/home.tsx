@@ -40,7 +40,7 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-[#00000035]"></div>
 
-          <div className="absolute z-10 top-1/2 left-1/2 w-full translate-x-[-50%] translate-y-[-50%] text-center text-white gap-20 flex flex-col items-center px-8">
+          <div className="absolute z-10 top-1/2 left-1/2 w-full translate-x-[-50%] translate-y-[-50%] text-center text-white gap-10 lg:gap-15 2xl:gap-20 flex flex-col items-center px-8">
             <div className="flex flex-col gap-5">
               <h1 className="text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl text-shadow-sm tracking-widest font-bold">
                 {t('welcome.title')}
