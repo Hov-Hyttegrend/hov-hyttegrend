@@ -18,15 +18,15 @@ html {
 }
 
 .button-yellow {
-  @apply py-3 lg:py-6 w-full max-w-48 lg:max-w-96 bg-yellow rounded-full text-sm lg:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black shadow-xl shadow-black/50;
+  @apply py-4 xl:py-5 2xl:py-6 w-full max-w-48 sm:max-w-64 lg:max-w-80 2xl:max-w-96 bg-yellow rounded-full text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-black shadow-xl shadow-black/50;
 }
 
 .button-green {
-  @apply py-3 lg:py-6 w-full md:max-w-96 bg-secondary rounded-full text-sm lg:text-xl xl:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-white shadow-xl shadow-black/25;
+  @apply py-4 xl:py-5 2xl:py-6 w-full md:max-w-96 bg-secondary rounded-full text-sm sm:text-lg lg:text-xl 2xl:text-2xl font-bold cursor-pointer hover:scale-105 transition-all duration-500 text-white shadow-xl shadow-black/25;
 }
 
 .section-container {
-  @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full px-6 py-10 sm:px-10 md:px-20 xl:py-40 lg:px-20 min-h-screen;
+  @apply flex flex-col justify-center items-center gap-16 lg:gap-28 h-full w-full py-16 sm:py-30 xl:py-40 px-6 sm:px-10 md:px-20 min-h-screen;
 }
 
 .terms-privacy {
@@ -66,7 +66,7 @@ html {
 }
 
 .footer-list {
-  @apply text-sm md:text-base font-normal mb-1.5;
+  @apply text-sm md:text-base font-light mb-1.5;
 }
 
 @layer utilities {

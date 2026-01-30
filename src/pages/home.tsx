@@ -40,12 +40,14 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-[#00000035]"></div>
 
-          <div className="absolute z-10 top-1/2 left-1/2 w-full translate-x-[-50%] translate-y-[-50%] text-center text-white gap-20 flex flex-col items-center px-8">
+          <div className="absolute z-10 top-1/2 left-1/2 w-full translate-x-[-50%] translate-y-[-50%] text-center text-white gap-10 lg:gap-15 2xl:gap-20 flex flex-col items-center px-8">
             <div className="flex flex-col gap-5">
-              <h1 className="text-2xl lg:text-6xl text-shadow-sm tracking-widest font-bold">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl text-shadow-sm tracking-widest font-bold">
                 {t('welcome.title')}
               </h1>
-              <p className="text-base lg:text-3xl text-shadow-sm">{t('welcome.description')}</p>
+              <p className="text-base sm:text-xl lg:text-3xl text-shadow-sm">
+                {t('welcome.description')}
+              </p>
             </div>
             <button
               className="button-yellow distributor"
@@ -73,16 +75,16 @@ export default function Home() {
         {/* Section 1 */}
 
         <div className="section-container bg-primary">
-          <section className="flex flex-col max-w-300 lg:p-10 gap-7 lg:gap-12">
-            <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-5xl font-bold uppercase text-secondary">
+          <section className="flex flex-col max-w-200 2xl:max-w-250 lg:p-10 gap-7 lg:gap-12">
+            <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold uppercase text-secondary">
               {t('homePage.section_1.title')}
             </h2>
-            <div className="text-base sm:text-lg md:text-xl xl:text-[32px] flex flex-col gap-5 lg:gap-10">
+            <div className="text flex flex-col gap-5 lg:gap-10">
               {renderTextWithParagraphs(t('homePage.section_1.text'))}
             </div>
 
             <div className="w-full flex justify-center">
-              <Trees3 className="text-secondary max-w-28 md:max-w-40 lg:max-w-48 xl:max-w-64" />
+              <Trees3 className="text-secondary max-w-28 md:max-w-40 lg:max-w-48 2xl:max-w-64" />
             </div>
           </section>
         </div>
@@ -93,7 +95,10 @@ export default function Home() {
             imageSrc={HOV_2}
             imageAlt="Top"
             title={t('homePage.section_2.title')}
+            titleClassName="h2"
             text={t('homePage.section_2.text')}
+            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             buttonText={t('common.bookingButton')}
             onClickButton={(e) => {
               if (!cookiesAccepted) {
@@ -111,7 +116,7 @@ export default function Home() {
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('homePage.section_3.text')}</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full max-w-7xl">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
               <div className="icon-button icon-button-top">
                 <MountainHikeIcon className="text-primary" />
               </div>
@@ -134,14 +139,14 @@ export default function Home() {
           </section>
 
           <div className="w-full flex justify-center py-20 sm:py-25 md:py-30 lg:py-40 px-6 sm:px-10 md:px-20 bg-primary">
-            <div className="w-full max-w-7xl">
+            <div className="w-full ">
               <div className="flex justify-between border-b-3 border-secondary">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pl-1 md:pl-6" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pr-1 md:pr-6" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pr-1 md:pr-6" />
               </div>
               <div className="flex justify-between rotate-x-180">
-                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pl-1 md:pl-6" />
-                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 xl:h-32 pr-1 md:pr-6" />
+                <GroupTrees1 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pl-1 md:pl-6" />
+                <GroupTrees2 className="text-secondary h-9 sm:h-12 md:h-14 lg:h-20 2xl:h-32 pr-1 md:pr-6" />
               </div>
             </div>
           </div>
@@ -150,7 +155,7 @@ export default function Home() {
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full max-w-7xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
               <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
                 <BinocularsIcon className="text-primary" />
               </div>
@@ -188,7 +193,10 @@ export default function Home() {
             imageSrc={HOV_5}
             imageAlt="Top"
             title={t('homePage.section_5.title')}
+            titleClassName="h2"
             text={t('homePage.section_5.text')}
+            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textBoxClassName="flex flex-col gap-5 lg:gap-10 h-full"
           />
         </div>
 
@@ -198,7 +206,10 @@ export default function Home() {
             imageSrc={HOV_6}
             imageAlt="Top"
             title={t('homePage.section_6.title')}
+            titleClassName="h2"
             text={t('homePage.section_6.text')}
+            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             className="lg:flex-row-reverse"
             listItems={[
               t('homePage.section_6.listItem1'),
@@ -210,7 +221,7 @@ export default function Home() {
         </div>
 
         {/* Section 9 */}
-        <div className="flex flex-col justify-center items-center pt-10 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
+        <div className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
           <GoogleMaps />
         </div>
       </div>
