@@ -1,7 +1,6 @@
 {
   "common": {
     "bookingButton": "Book reisen din",
-    "cookies": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
 
     "contact": {
       "title": "Kontakt oss",
@@ -34,19 +33,63 @@
     "links": {
       "title": "Lenker",
       "terms": "Vilkår og betingelser",
-      "privacy": "Personvern"
-    },
-
-    "cookieConcent": {
-      "description": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
-      "buttonAccept": "Aksepter",
-      "buttonDecline": "Avslå"
+      "privacy": "Personvern",
+      "cookieSettings": "Cookie innstillinger"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie kreves",
-      "description": "For å bruke kartet må du akseptere cookies",
-      "buttonAccept": "Aksepter cookies"
+      "title": "Kart er blokkert",
+      "description": "For å vise Google Maps må du godta markedsføringsinformasjonskapsler. Dette vil kun aktivere Google Maps, ikke andre tjenester.",
+      "buttonAccept": "Godta og vis kart"
+    },
+
+    "cookieBanner": {
+      "description": "Vi bruker informasjonskapsler for å forbedre nettstedet. Du kan velge hvilke kategorier du vil godta.",
+      "customize": "Tilpass innstillinger",
+      "acceptAll": "Godta alle",
+      "declineAll": "Bare nødvendige",
+      "back": "Tilbake",
+      "savePreferences": "Lagre innstillinger",
+      "alwaysActive": "Alltid aktiv",
+
+      "customizeTitle": "Tilpass informasjonskapsler",
+      "customizeDescription": "Velg hvilke typer informasjonskapsler du vil godta. Du kan endre dette når som helst.",
+
+      "essential": {
+        "title": "Nødvendige informasjonskapsler",
+        "description": "Disse er nødvendige for at nettstedet skal fungere, inkludert bookingmotoren."
+      },
+
+      "analytics": {
+        "title": "Analyse-informasjonskapsler",
+        "description": "Hjelper oss å forstå hvordan besøkende bruker nettstedet via Mews-analyse."
+      },
+
+      "marketing": {
+        "title": "Markedsførings-informasjonskapsler",
+        "description": "Brukes til å vise Google Maps og forbedre brukeropplevelsen."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Innstillinger for informasjonskapsler",
+      "description": "Administrer dine preferanser for informasjonskapsler. Du kan endre eller trekke tilbake samtykket når som helst.",
+      "saved": "Innstillingene dine er lagret!",
+      "saveButton": "Lagre innstillinger",
+      "resetButton": "Tilbakestill alt",
+      "resetConfirm": "Er du sikker på at du vil tilbakestille alle informasjonskapselinnstillinger? Informasjonskapselbanderen vil vises igjen.",
+
+      "essential": {
+        "details": "Inkluderer: Øktinformasjonskapsler, sikkerhetsinformasjonskapsler, og grunnleggende bookingfunksjonalitet."
+      },
+
+      "analytics": {
+        "details": "Vi bruker Mews Systems for å samle inn anonymisert brukerstatistikk for å forbedre bookingopplevelsen."
+      },
+
+      "marketing": {
+        "details": "Google Maps samler inn IP-adresse, nettleserinformasjon og plasseringsdata når kartet lastes."
+      }
     }
   },
 

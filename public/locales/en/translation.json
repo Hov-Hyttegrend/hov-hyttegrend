@@ -1,7 +1,6 @@
 {
   "common": {
     "bookingButton": "Book your trip",
-    "cookies": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
 
     "contact": {
       "title": "Contact us",
@@ -34,19 +33,63 @@
     "links": {
       "title": "Links",
       "terms": "Terms and conditions",
-      "privacy": "Privacy Policy"
-    },
-
-    "cookieConcent": {
-      "description": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
-      "buttonAccept": "Accept",
-      "buttonDecline": "Decline"
+      "privacy": "Privacy Policy",
+      "cookieSettings": "Cookie settings"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie required",
-      "description": "To use the map, you must accept cookies",
-      "buttonAccept": "Accept cookies"
+      "title": "Map blocked",
+      "description": "To display Google Maps, you need to accept marketing cookies. This will only enable Google Maps, not other services.",
+      "buttonAccept": "Accept and show map"
+    },
+
+    "cookieBanner": {
+      "description": "We use cookies to improve the website. You can choose which categories you want to accept.",
+      "customize": "Customize settings",
+      "acceptAll": "Accept all",
+      "declineAll": "Only necessary",
+      "back": "Back",
+      "savePreferences": "Save settings",
+      "alwaysActive": "Always active",
+
+      "customizeTitle": "Customize cookies",
+      "customizeDescription": "Choose which types of cookies you want to accept. You can change this anytime.",
+
+      "essential": {
+        "title": "Essential cookies",
+        "description": "These are necessary for the website to function, including the booking engine."
+      },
+
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "Helps us understand how visitors use the website via Mews analytics."
+      },
+
+      "marketing": {
+        "title": "Marketing cookies",
+        "description": "Used to display Google Maps and improve user experience."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Cookie settings",
+      "description": "Manage your cookie preferences. You can change or withdraw consent anytime.",
+      "saved": "Your settings have been saved!",
+      "saveButton": "Save settings",
+      "resetButton": "Reset all",
+      "resetConfirm": "Are you sure you want to reset all cookie settings? The cookie banner will appear again.",
+
+      "essential": {
+        "details": "Includes: Session cookies, security cookies, and basic booking functionality."
+      },
+
+      "analytics": {
+        "details": "We use Mews Systems to collect anonymized user statistics to improve the booking experience."
+      },
+
+      "marketing": {
+        "details": "Google Maps collects IP address, browser information, and location data when the map is loaded."
+      }
     }
   },
 

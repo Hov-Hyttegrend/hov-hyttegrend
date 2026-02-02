@@ -1,7 +1,6 @@
 {
   "common": {
     "bookingButton": "Réservez votre voyage",
-    "cookies": "Ce site utilise des cookies pour la fonction de réservation et les cartes. En poursuivant, vous acceptez notre utilisation des cookies.",
 
     "contact": {
       "title": "Contactez-nous",
@@ -34,19 +33,63 @@
     "links": {
       "title": "Liens",
       "terms": "Conditions générales",
-      "privacy": "Politique de confidentialité"
-    },
-
-    "cookieConcent": {
-      "description": "Ce site web utilise des cookies pour les réservations et les cartes. En poursuivant votre navigation, vous acceptez l'utilisation de cookies.",
-      "buttonAccept": "Accepter",
-      "buttonDecline": "Refuser"
+      "privacy": "Politique de confidentialité",
+      "cookieSettings": "Paramètres des cookies"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie requis",
-      "description": "Pour utiliser la carte, vous devez accepter les cookies.",
-      "buttonAccept": "Accepter cookies"
+      "title": "Carte bloquée",
+      "description": "Pour afficher Google Maps, vous devez accepter les cookies marketing. Cela activera uniquement Google Maps, pas les autres services.",
+      "buttonAccept": "Accepter et afficher la carte"
+    },
+
+    "cookieBanner": {
+      "description": "Nous utilisons des cookies pour améliorer le site web. Vous pouvez choisir les catégories que vous souhaitez accepter.",
+      "customize": "Personnaliser les paramètres",
+      "acceptAll": "Tout accepter",
+      "declineAll": "Uniquement nécessaires",
+      "back": "Retour",
+      "savePreferences": "Enregistrer les paramètres",
+      "alwaysActive": "Toujours actif",
+
+      "customizeTitle": "Personnaliser les cookies",
+      "customizeDescription": "Choisissez les types de cookies que vous souhaitez accepter. Vous pouvez modifier ce choix à tout moment.",
+
+      "essential": {
+        "title": "Cookies essentiels",
+        "description": "Ils sont nécessaires au bon fonctionnement du site web, y compris le moteur de réservation."
+      },
+
+      "analytics": {
+        "title": "Cookies d’analyse",
+        "description": "Nous aident à comprendre comment les visiteurs utilisent le site web via Mews Analytics."
+      },
+
+      "marketing": {
+        "title": "Cookies marketing",
+        "description": "Utilisés pour afficher Google Maps et améliorer l’expérience utilisateur."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Paramètres des cookies",
+      "description": "Gérez vos préférences en matière de cookies. Vous pouvez modifier ou retirer votre consentement à tout moment.",
+      "saved": "Vos paramètres ont été enregistrés !",
+      "saveButton": "Enregistrer les paramètres",
+      "resetButton": "Tout réinitialiser",
+      "resetConfirm": "Êtes-vous sûr de vouloir réinitialiser tous les paramètres des cookies ? La bannière de cookies réapparaîtra.",
+
+      "essential": {
+        "details": "Comprend : cookies de session, cookies de sécurité et fonctionnalités de réservation de base."
+      },
+
+      "analytics": {
+        "details": "Nous utilisons Mews Systems pour collecter des statistiques d’utilisation anonymisées afin d’améliorer l’expérience de réservation."
+      },
+
+      "marketing": {
+        "details": "Google Maps collecte l’adresse IP, les informations du navigateur et les données de localisation lorsque la carte est chargée."
+      }
     }
   },
   "welcome": {
