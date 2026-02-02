@@ -1,51 +1,162 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect, useRef } from 'react';
 import type { ReactNode } from 'react';
-import { loadMewsScript } from '../utils/loadMewsScript';
-import { initializeMews } from '../utils/initializeMews';
+import { initializeMews, setMewsTracking } from '../utils/initializeMews';
 
 interface CookieConsentContextType {
-  cookiesAccepted: boolean;
-  acceptCookies: () => void;
-  declineCookies: () => void;
+  // Granular consent states
+  analyticsAccepted: boolean; // For Mews tracking
+  marketingAccepted: boolean; // For Google Maps
+
+  // Helper: Check if any non-essential cookies accepted
+  hasAcceptedAnyCookies: boolean;
+
+  // Actions
+  acceptAll: () => void;
+  declineAll: () => void;
+  setAnalytics: (accepted: boolean) => void;
+  setMarketing: (accepted: boolean) => void;
+  savePreferences: (analytics: boolean, marketing: boolean) => void;
+
+  // Reset to show banner again
+  resetConsent: () => void;
 }
 
 const CookieConsentContext = createContext<CookieConsentContextType | undefined>(undefined);
 
 export { CookieConsentContext };
 
-const MEWS_CONFIG_ID = import.meta.env.VITE_MEWS_CONFIG_ID;
+const MEWS_CONFIG_ID = '708640f3-a347-4f8f-8852-b32800e0651d';
+
+interface CookiePreferences {
+  analytics: boolean;
+  marketing: boolean;
+}
 
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
-  const [cookiesAccepted, setCookiesAccepted] = useState(() => {
-    const stored = localStorage.getItem('cookieConsent');
-    return stored === 'true';
+  // Load saved preferences
+  const [preferences, setPreferences] = useState<CookiePreferences>(() => {
+    const stored = localStorage.getItem('cookiePreferences');
+    if (stored) {
+      try {
+        return JSON.parse(stored);
+      } catch {
+        return { analytics: false, marketing: false };
+      }
+    }
+    return { analytics: false, marketing: false };
   });
 
-  useEffect(() => {
-    if (cookiesAccepted) {
-      loadMewsScript()
-        .then(() => {
-          setTimeout(() => {
-            initializeMews(MEWS_CONFIG_ID);
-          }, 100);
-        })
-        .catch((err) => console.error('Failed to load Mews:', err));
-    }
-  }, [cookiesAccepted]);
+  const [mewsInitialized, setMewsInitialized] = useState(false);
+  const initializationAttempted = useRef(false);
+  const lastTrackingState = useRef<boolean | null>(null);
 
-  const acceptCookies = () => {
-    setCookiesAccepted(true);
-    localStorage.setItem('cookieConsent', 'true');
+  // Initialize Mews ONCE (essential functionality - no consent needed)
+  useEffect(() => {
+    if (initializationAttempted.current) return;
+    initializationAttempted.current = true;
+
+    const initializeMewsEngine = () => {
+      if ((window as { mewsApi?: unknown }).mewsApi || mewsInitialized) return;
+
+      initializeMews(MEWS_CONFIG_ID)
+        .then(() => {
+          setMewsInitialized(true);
+
+          // Apply analytics preference
+          lastTrackingState.current = preferences.analytics;
+          setMewsTracking(preferences.analytics);
+        })
+        .catch((err) => {
+          console.error('❌ Failed to initialize Mews:', err);
+        });
+    };
+
+    if ((window as { Mews?: unknown }).Mews) {
+      initializeMewsEngine();
+    } else {
+      const checkInterval = setInterval(() => {
+        if ((window as { Mews?: unknown }).Mews) {
+          clearInterval(checkInterval);
+          initializeMewsEngine();
+        }
+      }, 100);
+
+      const timeout = setTimeout(() => {
+        clearInterval(checkInterval);
+        if (!(window as { Mews?: unknown }).Mews) {
+          console.error('❌ Mews script failed to load');
+        }
+      }, 10000);
+
+      return () => {
+        clearInterval(checkInterval);
+        clearTimeout(timeout);
+      };
+    }
+  }, []);
+
+  // Update Mews tracking when analytics preference changes
+  useEffect(() => {
+    if (!mewsInitialized) return;
+
+    if (lastTrackingState.current !== preferences.analytics) {
+      lastTrackingState.current = preferences.analytics;
+      setMewsTracking(preferences.analytics);
+    }
+  }, [preferences.analytics, mewsInitialized]);
+
+  // Save preferences to localStorage whenever they change
+  const saveToStorage = (prefs: CookiePreferences) => {
+    setPreferences(prefs);
+    localStorage.setItem('cookiePreferences', JSON.stringify(prefs));
+    localStorage.setItem('cookieConsent', 'true'); // Mark that user made a choice
   };
 
-  const declineCookies = () => {
-    setCookiesAccepted(false);
-    localStorage.setItem('cookieConsent', 'false');
+  // Accept all cookies
+  const acceptAll = () => {
+    saveToStorage({ analytics: true, marketing: true });
+  };
+
+  // Decline all non-essential cookies
+  const declineAll = () => {
+    saveToStorage({ analytics: false, marketing: false });
+  };
+
+  // Set analytics only
+  const setAnalytics = (accepted: boolean) => {
+    saveToStorage({ ...preferences, analytics: accepted });
+  };
+
+  // Set marketing only
+  const setMarketing = (accepted: boolean) => {
+    saveToStorage({ ...preferences, marketing: accepted });
+  };
+
+  // Save custom preferences
+  const savePreferences = (analytics: boolean, marketing: boolean) => {
+    saveToStorage({ analytics, marketing });
+  };
+
+  // Reset consent (show banner again)
+  const resetConsent = () => {
+    localStorage.removeItem('cookieConsent');
+    localStorage.removeItem('cookiePreferences');
+    setPreferences({ analytics: false, marketing: false });
+  };
+
+  const contextValue: CookieConsentContextType = {
+    analyticsAccepted: preferences.analytics,
+    marketingAccepted: preferences.marketing,
+    hasAcceptedAnyCookies: preferences.analytics || preferences.marketing,
+    acceptAll,
+    declineAll,
+    setAnalytics,
+    setMarketing,
+    savePreferences,
+    resetConsent,
   };
 
   return (
-    <CookieConsentContext.Provider value={{ cookiesAccepted, acceptCookies, declineCookies }}>
-      {children}
-    </CookieConsentContext.Provider>
+    <CookieConsentContext.Provider value={contextValue}>{children}</CookieConsentContext.Provider>
   );
 }
