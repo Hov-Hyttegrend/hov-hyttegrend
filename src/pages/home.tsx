@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import { useCookieConsent } from '../contexts/useCookieConsent';
 import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
-import GoogleMaps from '../components/GoogleMaps';
+import GoogleMaps from '../components/map/GoogleMaps';
 import ImageTextSection from '../components/ImageTextSection';
 
 import HOV_1 from '../assets/images/hov1.webp';
@@ -26,7 +25,6 @@ import BinocularsIcon from '../assets/svg/binoculars.svg?react';
 
 export default function Home() {
   const { t } = useTranslation();
-  const { cookiesAccepted } = useCookieConsent();
 
   return (
     <>
@@ -93,7 +91,7 @@ export default function Home() {
         <div className="section-container bg-light-green">
           <ImageTextSection
             imageSrc={HOV_2}
-            imageAlt="Top"
+            imageAlt="Mann og hund går langs en elv i mellom skog og fjell"
             title={t('homePage.section_2.title')}
             titleClassName="h2"
             text={t('homePage.section_2.text')}
@@ -191,7 +189,7 @@ export default function Home() {
         <div className="section-container  bg-primary">
           <ImageTextSection
             imageSrc={HOV_5}
-            imageAlt="Top"
+            imageAlt="Likholefossen med strømmende vann som renner over steiner og ned i en elv, omgitt av skog og blå himmel"
             title={t('homePage.section_5.title')}
             titleClassName="h2"
             text={t('homePage.section_5.text')}
@@ -204,7 +202,7 @@ export default function Home() {
         <div className="section-container bg-light-green">
           <ImageTextSection
             imageSrc={HOV_6}
-            imageAlt="Top"
+            imageAlt="Litlevatnet omgitt av skog og fjell, med stille vann som speiler blå himmel og skyer"
             title={t('homePage.section_6.title')}
             titleClassName="h2"
             text={t('homePage.section_6.text')}
@@ -220,7 +218,7 @@ export default function Home() {
           />
         </div>
 
-        {/* Section 9 */}
+        {/* Section 9 - Map */}
         <div className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
           <GoogleMaps />
         </div>
