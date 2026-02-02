@@ -31,6 +31,14 @@ export default function Footer() {
                     {t('common.links.privacy')}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/cookie_settings"
+                    className="footer-list hover:underline cursor-pointer"
+                  >
+                    {t('common.links.cookieSettings')}
+                  </Link>
+                </li>
               </ul>
             </div>
 
