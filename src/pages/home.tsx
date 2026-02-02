@@ -47,17 +47,7 @@ export default function Home() {
                 {t('welcome.description')}
               </p>
             </div>
-            <button
-              className="button-yellow distributor"
-              onClick={(e) => {
-                if (!cookiesAccepted) {
-                  e.preventDefault();
-                  window.dispatchEvent(new Event('showCookieBanner'));
-                }
-              }}
-            >
-              {t('common.bookingButton')}
-            </button>
+            <button className="button-yellow distributor">{t('common.bookingButton')}</button>
           </div>
           <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
             <img
@@ -98,12 +88,6 @@ export default function Home() {
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             buttonText={t('common.bookingButton')}
-            onClickButton={(e) => {
-              if (!cookiesAccepted) {
-                e.preventDefault();
-                window.dispatchEvent(new Event('showCookieBanner'));
-              }
-            }}
             buttonClassName="distributor"
             className="my-10"
           />
