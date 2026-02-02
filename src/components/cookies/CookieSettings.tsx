@@ -1,0 +1,104 @@
+import { useTranslation } from 'react-i18next';
+import { useCookieConsent } from '../../contexts/useCookieConsent';
+import { useState } from 'react';
+
+export default function CookieSettings() {
+  const { analyticsAccepted, marketingAccepted, savePreferences, resetConsent } =
+    useCookieConsent();
+  const { t } = useTranslation();
+
+  const [analytics, setAnalytics] = useState(analyticsAccepted);
+  const [marketing, setMarketing] = useState(marketingAccepted);
+  const [saved, setSaved] = useState(false);
+
+  const handleSave = () => {
+    savePreferences(analytics, marketing);
+    setSaved(true);
+    setTimeout(() => setSaved(false), 3000);
+  };
+
+  const handleReset = () => {
+    if (confirm(t('common.cookieSettings.resetConfirm'))) {
+      resetConsent();
+      window.location.reload();
+    }
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-4">{t('common.cookieSettings.title')}</h1>
+      <p className="text-gray-600 mb-8">{t('common.cookieSettings.description')}</p>
+
+      {/* Saved Message */}
+      {saved && (
+        <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg">
+          ✅ {t('common.cookieSettings.saved')}
+        </div>
+      )}
+
+      {/* Essential Cookies */}
+      <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-xl font-semibold">{t('common.cookieBanner.essential.title')}</h2>
+          <span className="text-sm bg-green-600 text-white px-3 py-1 rounded-full">
+            {t('common.cookieBanner.alwaysActive')}
+          </span>
+        </div>
+        <p className="text-gray-600 mb-2">{t('common.cookieBanner.essential.description')}</p>
+        <p className="text-sm text-gray-500">{t('common.cookieSettings.essential.details')}</p>
+      </div>
+
+      {/* Analytics Cookies */}
+      <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-xl font-semibold">{t('common.cookieBanner.analytics.title')}</h2>
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={analytics}
+              onChange={(e) => setAnalytics(e.target.checked)}
+              className="sr-only peer"
+            />
+            <div className="w-14 h-7 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-yellow-500"></div>
+          </label>
+        </div>
+        <p className="text-gray-600 mb-2">{t('common.cookieBanner.analytics.description')}</p>
+        <p className="text-sm text-gray-500">{t('common.cookieSettings.analytics.details')}</p>
+      </div>
+
+      {/* Marketing Cookies */}
+      <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-xl font-semibold">{t('common.cookieBanner.marketing.title')}</h2>
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input
+              type="checkbox"
+              checked={marketing}
+              onChange={(e) => setMarketing(e.target.checked)}
+              className="sr-only peer"
+            />
+            <div className="w-14 h-7 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-yellow-500"></div>
+          </label>
+        </div>
+        <p className="text-gray-600 mb-2">{t('common.cookieBanner.marketing.description')}</p>
+        <p className="text-sm text-gray-500">{t('common.cookieSettings.marketing.details')}</p>
+      </div>
+
+      {/* Buttons */}
+      <div className="flex gap-4">
+        <button
+          onClick={handleSave}
+          className="flex-1 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-lg transition"
+        >
+          {t('common.cookieSettings.saveButton')}
+        </button>
+        <button
+          onClick={handleReset}
+          className="px-6 py-3 bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold rounded-lg transition"
+        >
+          {t('common.cookieSettings.resetButton')}
+        </button>
+      </div>
+    </div>
+  );
+}
