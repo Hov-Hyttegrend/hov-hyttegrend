@@ -118,12 +118,14 @@
 
     "section_3": {
       "title": "Vie active en plein air",
-      "text": "La région autour des chalets est idéale pour ceux qui souhaitent rester actifs et profiter de la nature."
+      "text": "La région autour des chalets est idéale pour ceux qui souhaitent rester actifs et profiter de la nature.",
+      "tempMessage": "Plus d'informations à venir."
     },
 
     "section_4": {
       "title": "Visites – Gastronomie – Shopping",
-      "text": "Découvrez et profitez des activités et des boutiques de la région."
+      "text": "Découvrez et profitez des activités et des boutiques de la région.",
+      "tempMessage": "Plus d'informations à venir."
     },
 
     "section_5": {

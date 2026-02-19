@@ -119,12 +119,14 @@
 
     "section_3": {
       "title": "Active Outdoor Life",
-      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors."
+      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors.",
+      "tempMessage": "More information coming soon."
     },
 
     "section_4": {
       "title": "Sightseeing – Food – Shopping",
-      "text": "Experience and shopping in the local area"
+      "text": "Experience and shopping in the local area",
+      "tempMessage": "More information coming soon."
     },
 
     "section_5": {

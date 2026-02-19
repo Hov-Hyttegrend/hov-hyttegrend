@@ -119,12 +119,14 @@
 
     "section_3": {
       "title": "Aktiver Outdoor-Spaß",
-      "text": "Die Umgebung der Hütten ist ideal für alle, die gerne aktiv draußen in der Natur sein möchten."
+      "text": "Die Umgebung der Hütten ist ideal für alle, die gerne aktiv draußen in der Natur sein möchten.",
+      "tempMessage": "Weitere Informationen folgen in Kürze."
     },
 
     "section_4": {
       "title": "Sightseeing – Essen – Shopping",
-      "text": "Erlebnisse und Einkaufsmöglichkeiten in der Umgebung."
+      "text": "Erlebnisse und Einkaufsmöglichkeiten in der Umgebung.",
+      "tempMessage": "Weitere Informationen folgen in Kürze."
     },
 
     "section_5": {

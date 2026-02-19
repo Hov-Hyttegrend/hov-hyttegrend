@@ -98,6 +98,9 @@ export default function Home() {
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('homePage.section_3.text')}</p>
+            <span className="text-sm lg:text-lg mb-10 text-gray-700">
+              {t('homePage.section_3.tempMessage')}
+            </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
               <div className="icon-button icon-button-top">
                 <MountainHikeIcon className="text-primary" />
@@ -137,6 +140,9 @@ export default function Home() {
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
+            <span className="text-sm lg:text-lg mb-10 text-gray-700">
+              {t('homePage.section_4.tempMessage')}
+            </span>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
               <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
                 <BinocularsIcon className="text-primary" />

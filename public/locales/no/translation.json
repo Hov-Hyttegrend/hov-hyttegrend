@@ -119,12 +119,14 @@
 
     "section_3": {
       "title": "Aktivt friluftsliv",
-      "text": "Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen."
+      "text": "Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen.",
+      "tempMessage": "Mer informasjon kommer etter hvert."
     },
 
     "section_4": {
       "title": "Sigthseeing - Mat – Shopping",
-      "text": "Opplevelser og shopping nærområdet"
+      "text": "Opplevelser og shopping nærområdet",
+      "tempMessage": "Mer informasjon kommer etter hvert."
     },
 
     "section_5": {
