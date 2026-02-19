@@ -1,15 +1,35 @@
 import { useTranslation } from 'react-i18next';
 import { useCookieConsent } from '../../contexts/useCookieConsent';
-import { useState } from 'react';
+import { getConsentTimestamp } from '../../utils/cookieTimestamp';
+import { useState, useMemo } from 'react';
 
 export default function CookieSettings() {
   const { analyticsAccepted, marketingAccepted, savePreferences, resetConsent } =
     useCookieConsent();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [analytics, setAnalytics] = useState(analyticsAccepted);
   const [marketing, setMarketing] = useState(marketingAccepted);
   const [saved, setSaved] = useState(false);
+
+  const consentDate = useMemo(() => {
+    const timestamp = getConsentTimestamp();
+    if (timestamp) {
+      const date = new Date(timestamp);
+      if (isNaN(date.getTime())) {
+        return null;
+      }
+      const formatted = date.toLocaleDateString(i18n.language, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+      return formatted;
+    }
+    return null;
+  }, [i18n.language]);
 
   const handleSave = () => {
     savePreferences(analytics, marketing);
@@ -25,7 +45,7 @@ export default function CookieSettings() {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6">
+    <div className="max-w-4xl mx-auto p-6 mt-25 lg:mt-37.5 2xl:mt-50">
       <h1 className="text-3xl font-bold mb-4">{t('common.cookieSettings.title')}</h1>
       <p className="text-gray-600 mb-8">{t('common.cookieSettings.description')}</p>
 
@@ -33,6 +53,16 @@ export default function CookieSettings() {
       {saved && (
         <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg">
           ✅ {t('common.cookieSettings.saved')}
+        </div>
+      )}
+
+      {/* GDPR Consent Info */}
+      {consentDate && (
+        <div className="mb-6 p-4 bg-blue-50 text-blue-800 rounded-lg border border-blue-200">
+          <p className="text-sm">
+            <strong>ℹ️ {t('common.cookieSettings.consentInfo')}</strong>
+            {consentDate}
+          </p>
         </div>
       )}
 

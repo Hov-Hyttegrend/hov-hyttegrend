@@ -30,6 +30,7 @@ const MEWS_CONFIG_ID = '708640f3-a347-4f8f-8852-b32800e0651d';
 interface CookiePreferences {
   analytics: boolean;
   marketing: boolean;
+  consentTimestamp?: string;
 }
 
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
@@ -51,6 +52,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
   const lastTrackingState = useRef<boolean | null>(null);
 
   // Initialize Mews ONCE (essential functionality - no consent needed)
+  // We use a ref to ensure this runs only once, ignoring dependency warnings
   useEffect(() => {
     if (initializationAttempted.current) return;
     initializationAttempted.current = true;
@@ -62,7 +64,6 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
         .then(() => {
           setMewsInitialized(true);
 
-          // Apply analytics preference
           lastTrackingState.current = preferences.analytics;
           setMewsTracking(preferences.analytics);
         })
@@ -93,6 +94,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
         clearTimeout(timeout);
       };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Update Mews tracking when analytics preference changes
@@ -107,9 +109,13 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
 
   // Save preferences to localStorage whenever they change
   const saveToStorage = (prefs: CookiePreferences) => {
+    const prefsWithTimestamp = {
+      ...prefs,
+      consentTimestamp: prefs.consentTimestamp || new Date().toISOString(),
+    };
     setPreferences(prefs);
-    localStorage.setItem('cookiePreferences', JSON.stringify(prefs));
-    localStorage.setItem('cookieConsent', 'true'); // Mark that user made a choice
+    localStorage.setItem('cookiePreferences', JSON.stringify(prefsWithTimestamp));
+    localStorage.setItem('cookieConsent', 'true');
   };
 
   // Accept all cookies

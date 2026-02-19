@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { useCookieConsent } from '../contexts/useCookieConsent';
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function CookieBanner() {
@@ -122,12 +123,21 @@ export default function CookieBanner() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex-1">
             <p className="text-sm mb-2">{t('common.cookieBanner.description')}</p>
-            <button
-              onClick={() => setShowCustomize(true)}
-              className="text-xs text-yellow-500 hover:text-yellow-400 underline"
-            >
-              {t('common.cookieBanner.customize')}
-            </button>
+            <div className="flex gap-4 text-xs">
+              <button
+                onClick={() => setShowCustomize(true)}
+                className="text-yellow-500 hover:text-yellow-400 underline"
+              >
+                {t('common.cookieBanner.customize')}
+              </button>
+              <span className="text-gray-500">•</span>
+              <Link
+                to="/cookie_settings"
+                className="text-yellow-500 hover:text-yellow-400 underline"
+              >
+                {t('common.cookieBanner.manageConsent')}
+              </Link>
+            </div>
           </div>
           <div className="flex gap-3">
             <button
