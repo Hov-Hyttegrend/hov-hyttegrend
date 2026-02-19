@@ -46,6 +46,7 @@
     "cookieBanner": {
       "description": "We use cookies to improve the website. You can choose which categories you want to accept.",
       "customize": "Customize settings",
+      "manageConsent": "Manage cookies",
       "acceptAll": "Accept all",
       "declineAll": "Only necessary",
       "back": "Back",
@@ -62,12 +63,12 @@
 
       "analytics": {
         "title": "Analytics cookies",
-        "description": "Helps us understand how visitors use the website via Mews analytics."
+        "description": "Helps us understand how visitors use the website via Mews analytics. Data is retained for 13 months."
       },
 
       "marketing": {
         "title": "Marketing cookies",
-        "description": "Used to display Google Maps and improve user experience."
+        "description": "Used to display Google Maps. Google (third-party) collects and processes: IP address, location data, browser/device information. See Google's Privacy Policy for data retention details."
       }
     },
 
@@ -78,17 +79,18 @@
       "saveButton": "Save settings",
       "resetButton": "Reset all",
       "resetConfirm": "Are you sure you want to reset all cookie settings? The cookie banner will appear again.",
+      "consentInfo": "Your current consent was recorded on: ",
 
       "essential": {
-        "details": "Includes: Session cookies, security cookies, and basic booking functionality."
+        "details": "Includes: Session cookies, security cookies, and basic booking functionality. Essential cookies are always active and do not require consent."
       },
 
       "analytics": {
-        "details": "We use Mews Systems to collect anonymized user statistics to improve the booking experience."
+        "details": "We use Mews Systems (third-party processor) to collect anonymized user statistics to improve the booking experience. Data retention: 13 months. No data is shared for marketing purposes."
       },
 
       "marketing": {
-        "details": "Google Maps collects IP address, browser information, and location data when the map is loaded."
+        "details": "Google Maps (third-party processor) collects and processes: IP address, browser/device information, and location data when the map is loaded. Google retains this data according to its own retention policy (see Google Privacy Policy). Data is used for service analytics, improvement, and potentially personalized content. Visit Google's Privacy Policy and Cookie Policy for detailed information on data processing and retention."
       }
     }
   },

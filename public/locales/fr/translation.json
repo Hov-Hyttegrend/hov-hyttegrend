@@ -46,6 +46,7 @@
     "cookieBanner": {
       "description": "Nous utilisons des cookies pour améliorer le site web. Vous pouvez choisir les catégories que vous souhaitez accepter.",
       "customize": "Personnaliser les paramètres",
+      "manageConsent": "Gérer les cookies",
       "acceptAll": "Tout accepter",
       "declineAll": "Uniquement nécessaires",
       "back": "Retour",
@@ -62,12 +63,12 @@
 
       "analytics": {
         "title": "Cookies d’analyse",
-        "description": "Nous aident à comprendre comment les visiteurs utilisent le site web via Mews Analytics."
+        "description": "Nous aident à comprendre comment les visiteurs utilisent le site web via Mews Analytics. Conservation des données : 13 mois."
       },
 
       "marketing": {
         "title": "Cookies marketing",
-        "description": "Utilisés pour afficher Google Maps et améliorer l’expérience utilisateur."
+        "description": "Utilisés pour afficher Google Maps. Google (tiers) collecte et traite : adresse IP, données de localisation, informations sur le navigateur/appareil. Consultez la Politique de confidentialité de Google pour les détails sur la conservation des données."
       }
     },
 
@@ -78,17 +79,18 @@
       "saveButton": "Enregistrer les paramètres",
       "resetButton": "Tout réinitialiser",
       "resetConfirm": "Êtes-vous sûr de vouloir réinitialiser tous les paramètres des cookies ? La bannière de cookies réapparaîtra.",
+      "consentInfo": "Votre consentement actuel a été enregistré le : ",
 
       "essential": {
-        "details": "Comprend : cookies de session, cookies de sécurité et fonctionnalités de réservation de base."
+        "details": "Comprend : cookies de session, cookies de sécurité et fonctionnalités de réservation de base. Les cookies essentiels sont toujours actifs et ne nécessitent pas de consentement."
       },
 
       "analytics": {
-        "details": "Nous utilisons Mews Systems pour collecter des statistiques d’utilisation anonymisées afin d’améliorer l’expérience de réservation."
+        "details": "Nous utilisons Mews Systems (tiers responsable du traitement) pour collecter des statistiques d'utilisation anonymisées afin d'améliorer l'expérience de réservation. Conservation des données : 13 mois. Les données ne sont pas partagées à des fins marketing."
       },
 
       "marketing": {
-        "details": "Google Maps collecte l’adresse IP, les informations du navigateur et les données de localisation lorsque la carte est chargée."
+        "details": "Google Maps (tiers responsable du traitement) collecte et traite : adresse IP, informations sur le navigateur/appareil et données de localisation lors du chargement de la carte. Google conserve ces données conformément à sa propre politique de conservation (voir la Politique de confidentialité de Google). Les données sont utilisées pour l'amélioration des services, l'analyse et potentiellement le contenu personnalisé. Consultez la Politique de confidentialité et la Politique relative aux cookies de Google pour des informations détaillées sur le traitement et la conservation des données."
       }
     }
   },

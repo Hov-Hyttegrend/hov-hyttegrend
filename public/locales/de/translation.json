@@ -46,6 +46,7 @@
     "cookieBanner": {
       "description": "Wir verwenden Cookies, um die Website zu verbessern. Sie können auswählen, welche Kategorien Sie akzeptieren möchten.",
       "customize": "Einstellungen anpassen",
+      "manageConsent": "Cookies verwalten",
       "acceptAll": "Alle akzeptieren",
       "declineAll": "Nur notwendige",
       "back": "Zurück",
@@ -62,12 +63,12 @@
 
       "analytics": {
         "title": "Analyse-Cookies",
-        "description": "Helfen uns zu verstehen, wie Besucher die Website mithilfe von Mews Analytics nutzen."
+        "description": "Helfen uns zu verstehen, wie Besucher die Website mithilfe von Mews Analytics nutzen. Datenspeicherung: 13 Monate."
       },
 
       "marketing": {
         "title": "Marketing-Cookies",
-        "description": "Werden verwendet, um Google Maps anzuzeigen und die Benutzererfahrung zu verbessern."
+        "description": "Werden verwendet, um Google Maps anzuzeigen. Google (Drittanbieter) erfasst und verarbeitet: IP-Adresse, Standortdaten, Browser-/Geräteinformationen. Weitere Informationen zur Datenspeicherung finden Sie in Googles Datenschutzrichtlinie."
       }
     },
 
@@ -78,17 +79,18 @@
       "saveButton": "Einstellungen speichern",
       "resetButton": "Alle zurücksetzen",
       "resetConfirm": "Möchten Sie wirklich alle Cookie-Einstellungen zurücksetzen? Das Cookie-Banner wird erneut angezeigt.",
+      "consentInfo": "Ihre aktuelle Zustimmung wurde aufgezeichnet am: ",
 
       "essential": {
-        "details": "Beinhaltet: Session-Cookies, Sicherheits-Cookies und grundlegende Buchungsfunktionen."
+        "details": "Beinhaltet: Session-Cookies, Sicherheits-Cookies und grundlegende Buchungsfunktionen. Notwendige Cookies sind immer aktiv und erfordern keine Zustimmung."
       },
 
       "analytics": {
-        "details": "Wir verwenden Mews Systems, um anonymisierte Nutzungsstatistiken zu sammeln und das Buchungserlebnis zu verbessern."
+        "details": "Wir verwenden Mews Systems (Drittanbieter-Datenverarbeiter), um anonymisierte Nutzungsstatistiken zu sammeln und das Buchungserlebnis zu verbessern. Datenspeicherung: 13 Monate. Daten werden nicht für Marketingzwecke weitergegeben."
       },
 
       "marketing": {
-        "details": "Google Maps erfasst IP-Adresse, Browserinformationen und Standortdaten, wenn die Karte geladen wird."
+        "details": "Google Maps (Drittanbieter-Datenverarbeiter) erfasst und verarbeitet: IP-Adresse, Browser-/Geräteinformationen und Standortdaten beim Laden der Karte. Google speichert diese Daten gemäß seiner eigenen Datenspeicherungsrichtlinie (siehe Googles Datenschutzrichtlinie). Die Daten werden für Serviceverbesserung, Analytik und möglicherweise personalisierte Inhalte verwendet. Besuchen Sie Googles Datenschutzrichtlinie und Cookie-Richtlinie für detaillierte Informationen zur Datenverarbeitung und -speicherung."
       }
     }
   },

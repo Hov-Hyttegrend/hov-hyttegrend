@@ -46,6 +46,7 @@
     "cookieBanner": {
       "description": "Vi bruker informasjonskapsler for å forbedre nettstedet. Du kan velge hvilke kategorier du vil godta.",
       "customize": "Tilpass innstillinger",
+      "manageConsent": "Administrer informasjonskapsler",
       "acceptAll": "Godta alle",
       "declineAll": "Bare nødvendige",
       "back": "Tilbake",
@@ -62,12 +63,12 @@
 
       "analytics": {
         "title": "Analyse-informasjonskapsler",
-        "description": "Hjelper oss å forstå hvordan besøkende bruker nettstedet via Mews-analyse."
+        "description": "Hjelper oss å forstå hvordan besøkende bruker nettstedet via Mews-analyse. Data oppbevares i 13 måneder."
       },
 
       "marketing": {
         "title": "Markedsførings-informasjonskapsler",
-        "description": "Brukes til å vise Google Maps og forbedre brukeropplevelsen."
+        "description": "Brukes til å vise Google Maps. Google (tredjepart) samler inn og behandler: IP-adresse, plasseringsdata, nettleser-/enhetsinformasjon. Se Googles personvernpolicy for detaljer om dataoppbevaring."
       }
     },
 
@@ -78,17 +79,18 @@
       "saveButton": "Lagre innstillinger",
       "resetButton": "Tilbakestill alt",
       "resetConfirm": "Er du sikker på at du vil tilbakestille alle informasjonskapselinnstillinger? Informasjonskapselbanderen vil vises igjen.",
+      "consentInfo": "Ditt gjeldende samtykke ble registrert den: ",
 
       "essential": {
-        "details": "Inkluderer: Øktinformasjonskapsler, sikkerhetsinformasjonskapsler, og grunnleggende bookingfunksjonalitet."
+        "details": "Inkluderer: Øktinformasjonskapsler, sikkerhetsinformasjonskapsler, og grunnleggende bookingfunksjonalitet. Nødvendige informasjonskapsler er alltid aktive og krever ikke samtykke."
       },
 
       "analytics": {
-        "details": "Vi bruker Mews Systems for å samle inn anonymisert brukerstatistikk for å forbedre bookingopplevelsen."
+        "details": "Vi bruker Mews Systems (tredjeparts databehandler) for å samle inn anonymisert brukerstatistikk for å forbedre bookingopplevelsen. Dataoppbevaring: 13 måneder. Data deles ikke for markedsføringsformål."
       },
 
       "marketing": {
-        "details": "Google Maps samler inn IP-adresse, nettleserinformasjon og plasseringsdata når kartet lastes."
+        "details": "Google Maps (tredjeparts databehandler) samler inn og behandler: IP-adresse, nettleser-/enhetsinformasjon og plasseringsdata når kartet lastes. Google oppbevarer disse dataene i samsvar med sin egen oppbevaringspolicy (se Googles personvernpolicy). Data brukes til tjenestestabilisering, forbedring og muligens personalisert innhold. Besøk Googles personvernpolicy og informasjonskapselspolicy for detaljert informasjon om databehandling og oppbevaring."
       }
     }
   },
