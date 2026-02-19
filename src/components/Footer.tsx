@@ -66,8 +66,24 @@ export default function Footer() {
             <div className="footer-ul">
               <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.followUs.title')}</h3>
               <ul>
-                <li className="footer-list hover:underline cursor-pointer">Instagram</li>
-                <li className="footer-list hover:underline cursor-pointer">Facebook</li>
+                <li className="footer-list hover:underline cursor-pointer">
+                  <a
+                    href="https://www.instagram.com/hovhyttegrend/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li className="footer-list hover:underline cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61577866881745"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
