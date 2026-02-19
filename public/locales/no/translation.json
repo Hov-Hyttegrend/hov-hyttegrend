@@ -2,6 +2,12 @@
   "common": {
     "bookingButton": "Book reisen din",
 
+    "header": {
+      "about": "Om oss",
+      "contact": "Kontakt",
+      "booking": "Booking"
+    },
+
     "contact": {
       "title": "Kontakt oss",
       "addressTitle": "Adresse",

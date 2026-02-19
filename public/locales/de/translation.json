@@ -2,6 +2,12 @@
   "common": {
     "bookingButton": "Buchen Sie Ihre Reise",
 
+    "header": {
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "booking": "Buchung"
+    },
+
     "contact": {
       "title": "Kontaktieren Sie uns",
       "addressTitle": "Adresse",

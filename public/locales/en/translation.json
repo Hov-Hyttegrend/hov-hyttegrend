@@ -2,6 +2,12 @@
   "common": {
     "bookingButton": "Book your trip",
 
+    "header": {
+      "about": "About us",
+      "contact": "Contact",
+      "booking": "Booking"
+    },
+
     "contact": {
       "title": "Contact us",
       "addressTitle": "Address",
