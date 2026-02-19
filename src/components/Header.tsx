@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import { useEffect, useRef, useState } from 'react';
 import HovLogo from '../assets/svg/Hov-logo.svg?react';
 
@@ -9,6 +11,8 @@ import LanguageSwitcher from './language/LanguageSwitcher';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [animateOut, setAnimateOut] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -59,11 +63,13 @@ export default function Header() {
         </Link>
 
         <ul className="gap-10 text-lg 2xl:text-xl hidden lg:flex">
-          <li>Om oss</li>
-          <li>Kontakt</li>
-          <li>Booking</li>
-          <li>Info</li>
-          <li>Aktiviteter</li>
+          <li>
+            <a href="#about">{t('common.header.about')}</a>
+          </li>
+          <li>
+            <a href="#contact">{t('common.header.contact')}</a>
+          </li>
+          <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
           <li>
             <LanguageSwitcher />
           </li>

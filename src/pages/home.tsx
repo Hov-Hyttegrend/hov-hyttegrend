@@ -78,7 +78,7 @@ export default function Home() {
         </div>
 
         {/* Section 2 */}
-        <div className="section-container bg-light-green">
+        <div className="section-container bg-light-green" id="about">
           <ImageTextSection
             imageSrc={HOV_2}
             imageAlt="Mann og hund går langs en elv i mellom skog og fjell"
@@ -203,7 +203,10 @@ export default function Home() {
         </div>
 
         {/* Section 9 - Map */}
-        <div className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
+        <div
+          className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary"
+          id="contact"
+        >
           <GoogleMaps />
         </div>
       </div>
