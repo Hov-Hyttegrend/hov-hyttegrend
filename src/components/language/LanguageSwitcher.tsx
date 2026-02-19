@@ -7,8 +7,8 @@ import DE_flag from '../../assets/svg/Flagg-Tysk.svg';
 import FR_flag from '../../assets/svg/Flagg-Fransk.svg';
 
 const languages = [
-  { code: 'en', flag: EN_flag, alt: 'English flag' },
   { code: 'no', flag: NO_flag, alt: 'Norwegian flag' },
+  { code: 'en', flag: EN_flag, alt: 'English flag' },
   { code: 'de', flag: DE_flag, alt: 'German flag' },
   { code: 'fr', flag: FR_flag, alt: 'French flag' },
 ];
