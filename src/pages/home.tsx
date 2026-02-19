@@ -7,6 +7,7 @@ import HOV_1 from '../assets/images/hov1.webp';
 import HOV_2 from '../assets/images/hov2.jpg';
 import HOV_5 from '../assets/images/hov5.jpg';
 import HOV_6 from '../assets/images/hov6.jpg';
+import HOV_7 from '../assets/images/hov7.webp';
 
 import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
@@ -22,12 +23,17 @@ import SwimmingIcon from '../assets/svg/swimming.svg?react';
 import FoodIcon from '../assets/svg/food.svg?react';
 import ShopIcon from '../assets/svg/shop.svg?react';
 import BinocularsIcon from '../assets/svg/binoculars.svg?react';
+import Background from '../components/Background';
 
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <>
+      <Background
+        imageUrl={HOV_7}
+        imageAlt="Waterfall down to a lake surrounded by mountain and trees"
+      />
       {/* Header */}
       <header className="flex h-screen w-full">
         <div className="relative w-full h-full">
