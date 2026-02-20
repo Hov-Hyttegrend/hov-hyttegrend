@@ -55,7 +55,11 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative" ref={menuRef}>
       <button onClick={() => setMenuOpen(!isMenuOpen)} className="flex items-center justify-center">
-        <img src={currentLanguage.flag} alt={currentLanguage.alt} className="rounded" />
+        <img
+          src={currentLanguage.flag}
+          alt={currentLanguage.alt}
+          className="rounded cursor-pointer"
+        />
       </button>
 
       {isMenuOpen && (
