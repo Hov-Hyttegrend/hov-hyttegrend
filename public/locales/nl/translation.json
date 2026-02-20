@@ -14,7 +14,9 @@
       "phoneTitle": "Telefoon",
       "emailTitle": "E-mail",
       "informationTitle": "Informatie",
-      "openingHoursTitle": "Openingstijden nu",
+      "openingHoursTitle": "Openingstijden nu:",
+      "openingHoursDescription": "Op verzoek",
+
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Telefoon: +47 400 67 568",
       "email": "E-mail: post@hovhyttegrend.no"

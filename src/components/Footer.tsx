@@ -58,7 +58,7 @@ export default function Footer() {
                 <li className="footer-list">+47 400 67 568</li>
                 <li className="footer-list flex flex-col">
                   {t('common.contact.openingHoursTitle')}
-                  <span className="text-xs">09:00 - 11:00 | 18:30 - 20:00</span>
+                  <span className="text-xs">{t('common.contact.openingHoursDescription')}</span>
                 </li>
               </ul>
             </div>
