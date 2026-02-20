@@ -64,10 +64,10 @@ export default function Header() {
 
         <ul className="gap-10 text-lg 2xl:text-xl hidden lg:flex">
           <li>
-            <a href="#about">{t('common.header.about')}</a>
+            <Link to="/#about">{t('common.header.about')}</Link>
           </li>
           <li>
-            <a href="#contact">{t('common.header.contact')}</a>
+            <Link to="/#contact">{t('common.header.contact')}</Link>
           </li>
           <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
           <li>
@@ -91,11 +91,13 @@ export default function Header() {
           >
             <div className="flex-1 ">
               <ul className="flex flex-col items-end gap-6 px-8 py-8 text-white">
-                <li>Om oss</li>
-                <li>Kontakt</li>
-                <li>Booking</li>
-                <li>Info</li>
-                <li>Aktiviteter</li>
+                <li>
+                  <Link to="/#about">{t('common.header.about')}</Link>
+                </li>
+                <li>
+                  <Link to="/#contact">{t('common.header.contact')}</Link>
+                </li>
+                <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
                 <li>
                   <LanguageSwitcher />
                 </li>
