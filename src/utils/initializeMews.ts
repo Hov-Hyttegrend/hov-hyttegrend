@@ -43,7 +43,7 @@ export const initializeMews = (configurationId: string): Promise<MewsAPI> => {
 
         api.disableTracking();
 
-        console.log('Mews booking engine initialized with tracking disabled');
+        // console.log('Mews booking engine initialized with tracking disabled');
         resolve(api);
       },
     );
@@ -52,16 +52,15 @@ export const initializeMews = (configurationId: string): Promise<MewsAPI> => {
 
 export const setMewsTracking = (enabled: boolean): void => {
   if (!mewsApiInstance) {
-    console.warn('Mews API not initialized yet - cannot set tracking');
     return;
   }
 
   if (enabled) {
     mewsApiInstance.enableTracking();
-    console.log('✅ Mews tracking ENABLED (analytics active)');
+    // console.log('✅ Mews tracking ENABLED (analytics active)');
   } else {
     mewsApiInstance.disableTracking();
-    console.log('🔒 Mews tracking DISABLED (analytics off, booking still works)');
+    // console.log('🔒 Mews tracking DISABLED (analytics off, booking still works)');
   }
 };
 

@@ -3,21 +3,17 @@ import type { ReactNode } from 'react';
 import { initializeMews, setMewsTracking } from '../utils/initializeMews';
 
 interface CookieConsentContextType {
-  // Granular consent states
-  analyticsAccepted: boolean; // For Mews tracking
-  marketingAccepted: boolean; // For Google Maps
+  analyticsAccepted: boolean;
+  marketingAccepted: boolean;
 
-  // Helper: Check if any non-essential cookies accepted
   hasAcceptedAnyCookies: boolean;
 
-  // Actions
   acceptAll: () => void;
   declineAll: () => void;
   setAnalytics: (accepted: boolean) => void;
   setMarketing: (accepted: boolean) => void;
   savePreferences: (analytics: boolean, marketing: boolean) => void;
 
-  // Reset to show banner again
   resetConsent: () => void;
 }
 
