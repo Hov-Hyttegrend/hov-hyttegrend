@@ -85,7 +85,10 @@
       "saved": "Innstillingene dine er lagret!",
       "saveButton": "Lagre innstillinger",
       "resetButton": "Tilbakestill alt",
+      "resetConfirmTitle": "Tilbakestille cookie innstillinger?",
       "resetConfirm": "Er du sikker på at du vil tilbakestille alle informasjonskapselinnstillinger? Informasjonskapselbanderen vil vises igjen.",
+      "resetCancel": "Avbryt",
+      "resetConfirmButton": "Ja, tilbakestill",
       "consentInfo": "Ditt gjeldende samtykke ble registrert den: ",
 
       "essential": {

@@ -86,7 +86,10 @@
       "saved": "Uw instellingen zijn opgeslagen!",
       "saveButton": "Instellingen opslaan",
       "resetButton": "Alles opnieuw instellen",
+      "resetConfirmTitle": "Cookie-instellingen terugzetten?",
       "resetConfirm": "Weet u zeker dat u alle cookie-instellingen opnieuw wilt instellen? De cookie-banner verschijnt opnieuw.",
+      "resetCancel": "Annuleren",
+      "resetConfirmButton": "Ja, terugzetten",
       "consentInfo": "Uw huidige toestemming werd geregistreerd op: ",
 
       "essential": {

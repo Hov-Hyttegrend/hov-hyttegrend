@@ -86,7 +86,10 @@
       "saved": "Vos paramètres ont été enregistrés !",
       "saveButton": "Enregistrer les paramètres",
       "resetButton": "Tout réinitialiser",
+      "resetConfirmTitle": "Réinitialiser les paramètres des cookies ?",
       "resetConfirm": "Êtes-vous sûr de vouloir réinitialiser tous les paramètres des cookies ? La bannière de cookies réapparaîtra.",
+      "resetCancel": "Annuler",
+      "resetConfirmButton": "Oui, réinitialiser",
       "consentInfo": "Votre consentement actuel a été enregistré le : ",
 
       "essential": {

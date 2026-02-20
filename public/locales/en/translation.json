@@ -86,7 +86,10 @@
       "saved": "Your settings have been saved!",
       "saveButton": "Save settings",
       "resetButton": "Reset all",
+      "resetConfirmTitle": "Reset cookie settings?",
       "resetConfirm": "Are you sure you want to reset all cookie settings? The cookie banner will appear again.",
+      "resetCancel": "Cancel",
+      "resetConfirmButton": "Yes, reset",
       "consentInfo": "Your current consent was recorded on: ",
 
       "essential": {

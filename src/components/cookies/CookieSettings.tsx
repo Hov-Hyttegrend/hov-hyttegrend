@@ -11,6 +11,7 @@ export default function CookieSettings() {
   const [analytics, setAnalytics] = useState(analyticsAccepted);
   const [marketing, setMarketing] = useState(marketingAccepted);
   const [saved, setSaved] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
 
   const consentDate = useMemo(() => {
     const timestamp = getConsentTimestamp();
@@ -38,10 +39,13 @@ export default function CookieSettings() {
   };
 
   const handleReset = () => {
-    if (confirm(t('common.cookieSettings.resetConfirm'))) {
-      resetConsent();
-      window.location.reload();
-    }
+    setShowResetModal(true);
+  };
+
+  const confirmReset = () => {
+    setShowResetModal(false);
+    resetConsent();
+    window.location.reload();
   };
 
   return (
@@ -145,6 +149,31 @@ export default function CookieSettings() {
           </button>
         </div>
       </div>
+
+      {showResetModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-white rounded-2xl shadow-2xl max-w-sm w-full mx-4 p-6 flex flex-col gap-4">
+            <h2 className="text-lg font-bold text-gray-900">
+              {t('common.cookieSettings.resetConfirmTitle')}
+            </h2>
+            <p className="text-sm text-gray-600">{t('common.cookieSettings.resetConfirm')}</p>
+            <div className="flex gap-3 mt-2">
+              <button
+                onClick={() => setShowResetModal(false)}
+                className="flex-1 px-4 py-2.5 bg-gray-100 hover:bg-gray-200 text-gray-800 font-semibold rounded-lg transition cursor-pointer"
+              >
+                {t('common.cookieSettings.resetCancel')}
+              </button>
+              <button
+                onClick={confirmReset}
+                className="flex-1 px-4 py-2.5 bg-green-700 hover:bg-green-800 text-white font-semibold rounded-lg transition cursor-pointer"
+              >
+                {t('common.cookieSettings.resetConfirmButton')}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

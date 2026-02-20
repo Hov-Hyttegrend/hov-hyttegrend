@@ -86,7 +86,10 @@
       "saved": "Ihre Einstellungen wurden gespeichert!",
       "saveButton": "Einstellungen speichern",
       "resetButton": "Alle zurücksetzen",
+      "resetConfirmTitle": "Cookie-Einstellungen zurücksetzen?",
       "resetConfirm": "Möchten Sie wirklich alle Cookie-Einstellungen zurücksetzen? Das Cookie-Banner wird erneut angezeigt.",
+      "resetCancel": "Abbrechen",
+      "resetConfirmButton": "Ja, zurücksetzen",
       "consentInfo": "Ihre aktuelle Zustimmung wurde aufgezeichnet am: ",
 
       "essential": {
