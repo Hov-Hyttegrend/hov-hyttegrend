@@ -50,7 +50,7 @@ export default function CookieBanner() {
           <div className="mb-4 p-4 bg-gray-800 rounded-lg">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold">{t('common.cookieBanner.essential.title')}</h3>
-              <span className="text-xs bg-green-600 px-2 py-1 rounded">
+              <span className="text-xs text-center bg-green-700 px-2 py-1 rounded">
                 {t('common.cookieBanner.alwaysActive')}
               </span>
             </div>
@@ -63,9 +63,14 @@ export default function CookieBanner() {
           <div className="mb-4 p-4 bg-gray-800 rounded-lg">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold">{t('common.cookieBanner.analytics.title')}</h3>
-              <label className="relative inline-flex items-center cursor-pointer">
+              <label
+                htmlFor="analytics"
+                className="relative inline-flex items-center cursor-pointer"
+              >
                 <input
                   type="checkbox"
+                  id="analytics"
+                  name="analytics"
                   checked={analytics}
                   onChange={(e) => setAnalytics(e.target.checked)}
                   className="sr-only peer"
@@ -82,9 +87,14 @@ export default function CookieBanner() {
           <div className="mb-6 p-4 bg-gray-800 rounded-lg">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold">{t('common.cookieBanner.marketing.title')}</h3>
-              <label className="relative inline-flex items-center cursor-pointer">
+              <label
+                htmlFor="marketing"
+                className="relative inline-flex items-center cursor-pointer"
+              >
                 <input
                   type="checkbox"
+                  id="marketing"
+                  name="marketing"
                   checked={marketing}
                   onChange={(e) => setMarketing(e.target.checked)}
                   className="sr-only peer"
@@ -126,7 +136,7 @@ export default function CookieBanner() {
             <div className="flex gap-4 text-xs">
               <button
                 onClick={() => setShowCustomize(true)}
-                className="text-yellow-500 hover:text-yellow-400 underline"
+                className="text-yellow-500 hover:text-yellow-400 underline cursor-pointer"
               >
                 {t('common.cookieBanner.customize')}
               </button>
@@ -148,7 +158,7 @@ export default function CookieBanner() {
             </button>
             <button
               onClick={handleAcceptAll}
-              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-full text-sm font-semibold transition text-black hover:text-white cursor-pointer whitespace-nowrap"
+              className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 rounded-full text-sm font-semibold transition text-black cursor-pointer whitespace-nowrap"
             >
               {t('common.cookieBanner.acceptAll')}
             </button>
