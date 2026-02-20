@@ -58,7 +58,7 @@ export default function Header() {
   return (
     <header className=" text-white z-50 fixed w-full">
       <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-14 lg:h-18 2xl:h-24">
-        <Link to="/">
+        <Link to="/" aria-label="Home page">
           <HovLogo className="h-9 lg:h-12 2xl:h-16" />
         </Link>
 
