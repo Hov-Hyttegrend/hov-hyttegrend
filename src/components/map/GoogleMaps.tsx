@@ -133,7 +133,9 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.openingHoursTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">09:00 - 11:00 | 18:30 - 20:00</p>
+                <p className="text-sm md:text-base xl:text-lg">
+                  {t('common.contact.openingHoursDescription')}
+                </p>
               </div>
             </li>
           </ul>
