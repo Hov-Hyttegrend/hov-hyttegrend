@@ -1,5 +1,11 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Einen Moment",
+      "bookingLoadingDescription": "Das Buchungssystem wird noch geladen, bitte versuchen Sie es in einem Moment erneut.",
+      "bookingUnavailableTitle": "Buchung nicht verfügbar",
+      "bookingUnavailableDescription": "Unser Buchungssystem ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+    },
     "bookingButton": "Buchen Sie Ihre Reise",
 
     "header": {

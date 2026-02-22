@@ -1,5 +1,12 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Just a moment",
+      "bookingLoadingDescription": "The booking system is still loading, please try again in a moment.",
+      "bookingUnavailableTitle": "Booking unavailable",
+      "bookingUnavailableDescription": "Our booking system is temporarily unavailable. Please try again later or contact us directly."
+    },
+
     "bookingButton": "Book your trip",
 
     "header": {

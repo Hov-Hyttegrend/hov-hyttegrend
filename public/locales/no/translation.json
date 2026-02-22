@@ -1,5 +1,11 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Eit øyeblikk",
+      "bookingLoadingDescription": "Bookinsmotoren laster enno, vær snill og prøv igjen om litt.",
+      "bookingUnavailableTitle": "Booking utilgjengelig",
+      "bookingUnavailableDescription": "Bookinsmotoren vår er midlertidig utilgjengelig. Prøv igjen seinare eller kontakt oss direkte."
+    },
     "bookingButton": "Book reisen din",
 
     "header": {

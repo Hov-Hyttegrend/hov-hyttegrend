@@ -1,5 +1,11 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Een moment",
+      "bookingLoadingDescription": "Het boekingssysteem wordt nog geladen, probeer het over een moment opnieuw.",
+      "bookingUnavailableTitle": "Boeking niet beschikbaar",
+      "bookingUnavailableDescription": "Ons boekingssysteem is momenteel niet beschikbaar. Probeer het later opnieuw of neem rechtstreeks contact met ons op."
+    },
     "bookingButton": "Boek uw reis",
 
     "header": {

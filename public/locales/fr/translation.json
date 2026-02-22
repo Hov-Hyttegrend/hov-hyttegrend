@@ -1,5 +1,11 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Un moment",
+      "bookingLoadingDescription": "Le système de réservation se charge toujours, veuillez réessayer dans un instant.",
+      "bookingUnavailableTitle": "Réservation indisponible",
+      "bookingUnavailableDescription": "Notre système de réservation est temporairement indisponible. Veuillez réessayer plus tard ou nous contacter directement."
+    },
     "bookingButton": "Réservez votre voyage",
 
     "header": {
