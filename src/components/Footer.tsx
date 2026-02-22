@@ -89,9 +89,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="w-full md:text-center text-xs text-gray-300 mt-10">
-          &copy; {new Date().getFullYear()} Hov Hyttegrend. All rights reserved.
-        </p>
+        <div className="flex flex-col">
+          <small className="w-full md:text-center text-xs text-gray-300 mt-10">
+            &copy; {new Date().getFullYear()} Hov Hyttegrend. All rights reserved.
+          </small>
+          <small className="w-full md:text-center text-xs text-gray-300 mt-2">
+            Developed by{' '}
+            <a
+              href="https://haugedev.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              HaugeDevelopment
+            </a>
+          </small>
+        </div>
       </div>
     </footer>
   );
