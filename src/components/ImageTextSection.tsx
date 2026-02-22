@@ -1,0 +1,73 @@
+import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
+
+interface ImageTextSectionProps {
+  imageSrc: string;
+  imageAlt: string;
+  title: string;
+  titleClassName?: string;
+  text: string;
+  textClassName?: string;
+  textBoxClassName?: string;
+  buttonText?: string;
+  onClickButton?: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  buttonClassName?: string;
+  className?: string;
+  listItems?: string[];
+}
+
+export default function ImageTextSection({
+  imageSrc,
+  imageAlt,
+  title,
+  titleClassName,
+  text,
+  textClassName,
+  textBoxClassName,
+  buttonText,
+  onClickButton,
+  buttonClassName,
+  className,
+  listItems,
+}: ImageTextSectionProps) {
+  return (
+    <div
+      className={`flex flex-col lg:flex-row max-w-7xl w-full items-center justify-center gap-20 md:gap-28 lg:gap-32 md:mx-11 ${className}`}
+    >
+      <div className="relative max-w-80 max-h-80 sm:max-w-100 sm:max-h-100 w-full h-full aspect-square flex items-center justify-center">
+        <div
+          className="absolute aspect-square rotate-45 flex items-center justify-center bg-secondary p-1 mx-10"
+          style={{
+            boxShadow: '0 5px 20px rgba(0, 0, 0, 0.50),  5px 0 20px rgba(0, 0, 0, 0.50)',
+          }}
+        >
+          <div className="w-full h-full overflow-hidden">
+            <img
+              src={imageSrc}
+              alt={imageAlt}
+              className="w-full h-full object-cover scale-150 -rotate-45"
+            />
+          </div>
+        </div>
+      </div>
+      <div className={textBoxClassName}>
+        <h2 className={titleClassName}>{title}</h2>
+        <div className={textClassName}>{renderTextWithParagraphs(text)}</div>
+        {listItems && (
+          <ul className="list-disc list-inside flex flex-col gap-2 text-sm sm:text-base xl:text-xl">
+            {listItems.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        )}
+
+        {buttonText && (
+          <div>
+            <button onClick={onClickButton} className={`button-green ${buttonClassName}`}>
+              {buttonText}
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}

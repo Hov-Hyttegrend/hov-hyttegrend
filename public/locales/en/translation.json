@@ -1,0 +1,256 @@
+{
+  "common": {
+    "errors": {
+      "bookingLoadingTitle": "Just a moment",
+      "bookingLoadingDescription": "The booking system is still loading, please try again in a moment.",
+      "bookingUnavailableTitle": "Booking unavailable",
+      "bookingUnavailableDescription": "Our booking system is temporarily unavailable. Please try again later or contact us directly."
+    },
+
+    "bookingButton": "Book your trip",
+
+    "header": {
+      "about": "About us",
+      "contact": "Contact",
+      "booking": "Booking"
+    },
+
+    "contact": {
+      "title": "Contact us",
+      "addressTitle": "Address",
+      "phoneTitle": "Phone",
+      "emailTitle": "Email",
+      "informationTitle": "Information",
+      "openingHoursTitle": "Opening hours now:",
+      "openingHoursDescription": "Upon request",
+
+      "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
+      "phone": "Phone: +47 400 67 568",
+      "email": "Email: post@hovhyttegrend.no"
+    },
+
+    "address": {
+      "title": "Address",
+      "line1": "Hov Hyttegrend",
+      "line2": "Gaularfjellsvegen 2203",
+      "line3": "6978 Viksdalen",
+      "line4": "Norway"
+    },
+
+    "followUs": {
+      "title": "Follow us"
+    },
+
+    "findUs": {
+      "title": "Find us"
+    },
+
+    "links": {
+      "title": "Links",
+      "terms": "Terms and conditions",
+      "privacy": "Privacy Policy",
+      "cookieSettings": "Cookie settings"
+    },
+
+    "cookiesMapOverlay": {
+      "title": "Map blocked",
+      "description": "To display Google Maps, you need to accept marketing cookies. This will only enable Google Maps, not other services.",
+      "buttonAccept": "Accept and show map"
+    },
+
+    "cookieBanner": {
+      "description": "We use cookies to improve the website. You can choose which categories you want to accept.",
+      "customize": "Customize settings",
+      "manageConsent": "Manage cookies",
+      "acceptAll": "Accept all",
+      "declineAll": "Only necessary",
+      "back": "Back",
+      "savePreferences": "Save settings",
+      "alwaysActive": "Always active",
+
+      "customizeTitle": "Customize cookies",
+      "customizeDescription": "Choose which types of cookies you want to accept. You can change this anytime.",
+
+      "essential": {
+        "title": "Essential cookies",
+        "description": "These are necessary for the website to function, including the booking engine."
+      },
+
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "Helps us understand how visitors use the website via Mews analytics. Data is retained for 13 months."
+      },
+
+      "marketing": {
+        "title": "Marketing cookies",
+        "description": "Used to display Google Maps. Google (third-party) collects and processes: IP address, location data, browser/device information. See Google's Privacy Policy for data retention details."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Cookie settings",
+      "description": "Manage your cookie preferences. You can change or withdraw consent anytime.",
+      "saved": "Your settings have been saved!",
+      "saveButton": "Save settings",
+      "resetButton": "Reset all",
+      "resetConfirmTitle": "Reset cookie settings?",
+      "resetConfirm": "Are you sure you want to reset all cookie settings? The cookie banner will appear again.",
+      "resetCancel": "Cancel",
+      "resetConfirmButton": "Yes, reset",
+      "consentInfo": "Your current consent was recorded on: ",
+
+      "essential": {
+        "details": "Includes: Session cookies, security cookies, and basic booking functionality. Essential cookies are always active and do not require consent."
+      },
+
+      "analytics": {
+        "details": "We use Mews Systems (third-party processor) to collect anonymized user statistics to improve the booking experience. Data retention: 13 months. No data is shared for marketing purposes."
+      },
+
+      "marketing": {
+        "details": "Google Maps (third-party processor) collects and processes: IP address, browser/device information, and location data when the map is loaded. Google retains this data according to its own retention policy (see Google Privacy Policy). Data is used for service analytics, improvement, and potentially personalized content. Visit Google's Privacy Policy and Cookie Policy for detailed information on data processing and retention."
+      }
+    }
+  },
+
+  "welcome": {
+    "title": "Welcome to Hov Hyttegrend",
+    "description": "A true nature experience in the heart of Norway"
+  },
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend - a small piece of authentic Norway",
+      "text": "Welcome to a place where nature feels closer, the silence is deeper, and everyday life is farther away than ever.\nAt Hov Hyttegrend, you stay in the heart of a peaceful and beautiful natural landscape, surrounded by forests, mountains, rivers, and lakes.\nHere you can experience the very best of Norwegian nature and outdoor life – perfect for adventure seekers, families, couples, and groups of friends looking for a genuine and tranquil getaway."
+    },
+
+    "section_2": {
+      "title": "About Us",
+      "text": "Hov Hyttegrend is a small and peaceful cabin community in the heart of beautiful Fjord Norway — surrounded by mountains, waterfalls, fjords, and glaciers.\nHere you have the perfect starting point to experience some of the finest nature Vestland has to offer.\nWe are located right next to the protected Gaular Watercourse, renowned for its many waterfalls, rapids, and tranquil mountain lakes. The river winds its way through the landscape, offering both breathtaking nature experiences and excellent fishing opportunities."
+    },
+
+    "section_3": {
+      "title": "Active Outdoor Life",
+      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors.",
+      "tempMessage": "More information coming soon."
+    },
+
+    "section_4": {
+      "title": "Sightseeing – Food – Shopping",
+      "text": "Experience and shopping in the local area",
+      "tempMessage": "More information coming soon."
+    },
+
+    "section_5": {
+      "title": "Why Choose Us?",
+      "text": "Short local walks and grand natural scenery in one single stay.\nA family-friendly and welcoming atmosphere.\nPerfect for couples, families, and nature lovers.\nPeace, tranquility, and authentic West Coast nature without the crowds."
+    },
+
+    "section_6": {
+      "title": "Accommodation in a Natural Idyll",
+      "text": "At Hov Hyttegrend we offer simple yet comfortable accommodation in cabins, as well as pitches for motorhomes and caravans. Here, you stay close to nature, with birdsong and the gentle sound of the river as your background music.",
+      "listItem1": "Parking spaces for 15–20 motorhomes/caravans",
+      "listItem2": "Beautiful surroundings and generous space between units",
+      "listItem3": "Walking distance to hiking trails and fishing lakes",
+      "listItem4": "Family-friendly and peaceful atmosphere"
+    }
+  },
+
+  "termsPage": {
+    "title": "Terms and Conditions – Cabin Rental and Campsite",
+    "description": "Applies to all bookings with HOV-HYTTEGREND AS – org. no. 935 623 642 VAT",
+    "adress": "Address: Gaularfjellsvegen 2203, 6978 VIKSDALEN, Norway",
+    "part_1": {
+      "title": "1. Booking and Confirmation",
+      "text": "Bookings can be made via our website, by phone, or by email. A booking is binding once you have received a written confirmation from us. The customer is responsible for ensuring that the provided contact details are correct."
+    },
+    "part_2": {
+      "title": "2. Payment",
+      "listItem1": "An invoice is issued after booking or upon arrival, depending on agreement.",
+      "listItem2": "Payment due date: 14 days from the invoice date, or prior to arrival if the stay is imminent.",
+      "listItem3": "Late payment will incur interest on overdue amounts and reminder fees."
+    },
+    "part_3": {
+      "title": "3. Prices",
+      "text": "All prices are stated in Norwegian kroner (NOK) and include value added tax (VAT). Prices include electricity and normal firewood consumption unless otherwise agreed."
+    },
+    "part_4": {
+      "title": "4. Cancellation – Different Price Categories",
+      "listItem1": "More than 1 day before arrival: Fully Flexible",
+      "listItem2": "Less than 30 days before arrival: Non-refundable",
+      "text": "In cases of illness or force majeure, exceptions may be made subject to documentation and individual assessment."
+    },
+    "part_5": {
+      "title": "5. Check-in and Check-out",
+      "listItem1": "Check-in: from 3:00 PM",
+      "listItem2": "Check-out: no later than 11:00 AM on the day of departure",
+      "text": "Late check-out must be agreed in advance and may incur an additional fee."
+    },
+    "part_6": {
+      "title": "6. Cleaning and Order",
+      "text1": "The cabin must be left in a tidy condition. Final cleaning is not included unless agreed and paid for in advance. If the cabin is not satisfactorily cleaned upon check-out, an additional cleaning fee will be charged.",
+      "text2": "Alternative: We offer final cleaning for an additional fee."
+    },
+    "part_7": {
+      "title": "7. Keys and Access",
+      "text": "Keys are provided at check-in and must be returned at check-out. Loss of keys will incur a fee of NOK 500 for replacement of locks or keys."
+    },
+    "part_8": {
+      "title": "8. Damage and Liability",
+      "text": "The customer is financially responsible for any damage to furniture, property, or buildings caused by negligence or violation of the rules. Any damage must be reported immediately. Smoking is not permitted indoors. Pets are allowed in selected cabins for an additional fee."
+    },
+    "part_9": {
+      "title": "9. Force Majeure",
+      "text": "We are not responsible for circumstances beyond our control, such as extreme weather, power outages, road closures, or similar events that make it impossible to carry out the stay as planned."
+    },
+    "part_10": {
+      "title": "10. Complaints and Disputes",
+      "text": "Complaints must be submitted in writing as soon as possible and no later than 7 days after departure. In the event of a dispute, we aim to reach an amicable solution. Disputes that cannot be resolved through dialogue shall be handled by Sunnfjord District Court as the legal venue."
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Norway",
+      "email": "Email: post@hovhyttegrend.no",
+      "phone": "Phone: +47 400 67 568",
+      "website": "Website: www.hovhyttegrend.no"
+    }
+  },
+
+  "privacyPage": {
+    "title": "Privacy Policy and Cookies",
+    "updated": "Last updated: 04.11.25",
+    "intro": "At Hov Hyttegrend, we take your privacy seriously. Below is a brief explanation of how we handle personal data and use cookies on our website.",
+    "part_1": {
+      "title": "Personal Data",
+      "text": "When you contact us, send an enquiry, or book a stay, we store information such as your name, email address, phone number, and booking details.\nWe use this information only to:",
+      "listItem1": "Manage bookings and provide you with the best possible service",
+      "listItem2": "Send necessary information about your stay",
+      "listItem3": "Comply with legal requirements (for example, accounting obligations)"
+    },
+    "part_2": {
+      "title": "Sharing of Personal Data",
+      "text": "We do not share personal data with third parties except where necessary to deliver our services, such as payment providers, accountants, or technical service partners. All our partners comply with GDPR and process data in a secure manner."
+    },
+    "part_3": {
+      "title": "Storage and Deletion",
+      "text": "Personal data is stored only for as long as necessary for its purpose or as required by law. You may request access to, correction of, or deletion of your personal data at any time by contacting us at post@hovhyttegrend.no"
+    },
+    "part_4": {
+      "title": "Cookies",
+      "text": "We use cookies to provide a better experience on our website. Cookies help us to:",
+      "listItem1": "Remember settings and preferences",
+      "listItem2": "Understand how the website is used (for statistics and improvement purposes)",
+      "text2": "You can disable or limit the use of cookies in your browser settings. Please note that some website features may then function less optimally."
+    },
+    "contactInfo": {
+      "title": "Contact Us",
+      "intro": "Do you have questions about privacy or cookies? Please feel free to contact us:",
+      "name": "Hov Hyttegrend",
+      "email": "Email: post@hovhyttegrend.no",
+      "phone": "Phone: +47 400 67 568",
+      "address": "Address: Gaularfjellsvegen 2203, 6978 Viksdalen"
+    }
+  }
+}
