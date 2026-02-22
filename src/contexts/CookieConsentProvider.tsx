@@ -5,15 +5,15 @@ import { initializeMews, setMewsTracking } from '../utils/initializeMews';
 interface CookieConsentContextType {
   analyticsAccepted: boolean;
   marketingAccepted: boolean;
-
   hasAcceptedAnyCookies: boolean;
+  mewsError: boolean;
+  mewsLoading: boolean;
 
   acceptAll: () => void;
   declineAll: () => void;
   setAnalytics: (accepted: boolean) => void;
   setMarketing: (accepted: boolean) => void;
   savePreferences: (analytics: boolean, marketing: boolean) => void;
-
   resetConsent: () => void;
 }
 
@@ -44,52 +44,58 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
   });
 
   const [mewsInitialized, setMewsInitialized] = useState(false);
-  const initializationAttempted = useRef(false);
+  const [mewsError, setMewsError] = useState(false);
+  const [mewsLoading, setMewsLoading] = useState(true);
+  const initializationRef = useRef<{ completed: boolean }>({ completed: false });
   const lastTrackingState = useRef<boolean | null>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-  // Initialize Mews ONCE (essential functionality - no consent needed)
-  // We use a ref to ensure this runs only once, ignoring dependency warnings
   useEffect(() => {
-    if (initializationAttempted.current) return;
-    initializationAttempted.current = true;
+    // Only initialize once successfully
+    if (initializationRef.current.completed) return;
 
     const initializeMewsEngine = () => {
       if ((window as { mewsApi?: unknown }).mewsApi || mewsInitialized) return;
 
       initializeMews(MEWS_CONFIG_ID)
         .then(() => {
+          initializationRef.current.completed = true;
           setMewsInitialized(true);
-
+          setMewsLoading(false);
           lastTrackingState.current = preferences.analytics;
           setMewsTracking(preferences.analytics);
         })
-        .catch((err) => {
-          console.error('❌ Failed to initialize Mews:', err);
+        .catch(() => {
+          setMewsLoading(false);
+          setMewsError(true);
         });
     };
 
     if ((window as { Mews?: unknown }).Mews) {
       initializeMewsEngine();
     } else {
-      const checkInterval = setInterval(() => {
+      intervalRef.current = setInterval(() => {
         if ((window as { Mews?: unknown }).Mews) {
-          clearInterval(checkInterval);
+          if (intervalRef.current) clearInterval(intervalRef.current);
+          if (timeoutRef.current) clearTimeout(timeoutRef.current);
           initializeMewsEngine();
         }
       }, 100);
 
-      const timeout = setTimeout(() => {
-        clearInterval(checkInterval);
+      timeoutRef.current = setTimeout(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
         if (!(window as { Mews?: unknown }).Mews) {
-          console.error('❌ Mews script failed to load');
+          setMewsLoading(false);
+          setMewsError(true);
         }
       }, 10000);
-
-      return () => {
-        clearInterval(checkInterval);
-        clearTimeout(timeout);
-      };
     }
+
+    return () => {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -150,6 +156,8 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
     analyticsAccepted: preferences.analytics,
     marketingAccepted: preferences.marketing,
     hasAcceptedAnyCookies: preferences.analytics || preferences.marketing,
+    mewsError,
+    mewsLoading,
     acceptAll,
     declineAll,
     setAnalytics,
