@@ -31,6 +31,14 @@ export default function Footer() {
                     {t('common.links.privacy')}
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    to="/cookie_settings"
+                    className="footer-list hover:underline cursor-pointer"
+                  >
+                    {t('common.links.cookieSettings')}
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -50,7 +58,7 @@ export default function Footer() {
                 <li className="footer-list">+47 400 67 568</li>
                 <li className="footer-list flex flex-col">
                   {t('common.contact.openingHoursTitle')}
-                  <span className="text-xs">09:00 - 11:00 | 18:30 - 20:00</span>
+                  <span className="text-xs">{t('common.contact.openingHoursDescription')}</span>
                 </li>
               </ul>
             </div>
@@ -58,16 +66,45 @@ export default function Footer() {
             <div className="footer-ul">
               <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.followUs.title')}</h3>
               <ul>
-                <li className="footer-list hover:underline cursor-pointer">Instagram</li>
-                <li className="footer-list hover:underline cursor-pointer">Facebook</li>
+                <li className="footer-list hover:underline cursor-pointer">
+                  <a
+                    href="https://www.instagram.com/hovhyttegrend/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li className="footer-list hover:underline cursor-pointer">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61577866881745"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
 
-        <p className="w-full md:text-center text-xs text-gray-300 mt-10">
-          &copy; {new Date().getFullYear()} Hov Hyttegrend. All rights reserved.
-        </p>
+        <div className="flex flex-col">
+          <small className="w-full md:text-center text-xs text-gray-300 mt-10">
+            &copy; {new Date().getFullYear()} Hov Hyttegrend. All rights reserved.
+          </small>
+          <small className="w-full md:text-center text-xs text-gray-300 mt-2">
+            Developed by{' '}
+            <a
+              href="https://haugedev.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:underline"
+            >
+              HaugeDevelopment
+            </a>
+          </small>
+        </div>
       </div>
     </footer>
   );

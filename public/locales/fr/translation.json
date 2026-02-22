@@ -1,7 +1,18 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Un moment",
+      "bookingLoadingDescription": "Le système de réservation se charge toujours, veuillez réessayer dans un instant.",
+      "bookingUnavailableTitle": "Réservation indisponible",
+      "bookingUnavailableDescription": "Notre système de réservation est temporairement indisponible. Veuillez réessayer plus tard ou nous contacter directement."
+    },
     "bookingButton": "Réservez votre voyage",
-    "cookies": "Ce site utilise des cookies pour la fonction de réservation et les cartes. En poursuivant, vous acceptez notre utilisation des cookies.",
+
+    "header": {
+      "about": "À propos de nous",
+      "contact": "Contact",
+      "booking": "Réservation"
+    },
 
     "contact": {
       "title": "Contactez-nous",
@@ -9,7 +20,9 @@
       "phoneTitle": "Téléphone",
       "emailTitle": "E-mail",
       "informationTitle": "Informations",
-      "openingHoursTitle": "Heures d'ouverture maintenant",
+      "openingHoursTitle": "Heures d'ouverture maintenant:",
+      "openingHoursDescription": "À la demande",
+
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Téléphone: +47 400 67 568",
       "email": "E-mail: post@hovhyttegrend.no"
@@ -34,19 +47,68 @@
     "links": {
       "title": "Liens",
       "terms": "Conditions générales",
-      "privacy": "Politique de confidentialité"
-    },
-
-    "cookieConcent": {
-      "description": "Ce site web utilise des cookies pour les réservations et les cartes. En poursuivant votre navigation, vous acceptez l'utilisation de cookies.",
-      "buttonAccept": "Accepter",
-      "buttonDecline": "Refuser"
+      "privacy": "Politique de confidentialité",
+      "cookieSettings": "Paramètres des cookies"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie requis",
-      "description": "Pour utiliser la carte, vous devez accepter les cookies.",
-      "buttonAccept": "Accepter cookies"
+      "title": "Carte bloquée",
+      "description": "Pour afficher Google Maps, vous devez accepter les cookies marketing. Cela activera uniquement Google Maps, pas les autres services.",
+      "buttonAccept": "Accepter et afficher la carte"
+    },
+
+    "cookieBanner": {
+      "description": "Nous utilisons des cookies pour améliorer le site web. Vous pouvez choisir les catégories que vous souhaitez accepter.",
+      "customize": "Personnaliser les paramètres",
+      "manageConsent": "Gérer les cookies",
+      "acceptAll": "Tout accepter",
+      "declineAll": "Uniquement nécessaires",
+      "back": "Retour",
+      "savePreferences": "Enregistrer les paramètres",
+      "alwaysActive": "Toujours actif",
+
+      "customizeTitle": "Personnaliser les cookies",
+      "customizeDescription": "Choisissez les types de cookies que vous souhaitez accepter. Vous pouvez modifier ce choix à tout moment.",
+
+      "essential": {
+        "title": "Cookies essentiels",
+        "description": "Ils sont nécessaires au bon fonctionnement du site web, y compris le moteur de réservation."
+      },
+
+      "analytics": {
+        "title": "Cookies d’analyse",
+        "description": "Nous aident à comprendre comment les visiteurs utilisent le site web via Mews Analytics. Conservation des données : 13 mois."
+      },
+
+      "marketing": {
+        "title": "Cookies marketing",
+        "description": "Utilisés pour afficher Google Maps. Google (tiers) collecte et traite : adresse IP, données de localisation, informations sur le navigateur/appareil. Consultez la Politique de confidentialité de Google pour les détails sur la conservation des données."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Paramètres des cookies",
+      "description": "Gérez vos préférences en matière de cookies. Vous pouvez modifier ou retirer votre consentement à tout moment.",
+      "saved": "Vos paramètres ont été enregistrés !",
+      "saveButton": "Enregistrer les paramètres",
+      "resetButton": "Tout réinitialiser",
+      "resetConfirmTitle": "Réinitialiser les paramètres des cookies ?",
+      "resetConfirm": "Êtes-vous sûr de vouloir réinitialiser tous les paramètres des cookies ? La bannière de cookies réapparaîtra.",
+      "resetCancel": "Annuler",
+      "resetConfirmButton": "Oui, réinitialiser",
+      "consentInfo": "Votre consentement actuel a été enregistré le : ",
+
+      "essential": {
+        "details": "Comprend : cookies de session, cookies de sécurité et fonctionnalités de réservation de base. Les cookies essentiels sont toujours actifs et ne nécessitent pas de consentement."
+      },
+
+      "analytics": {
+        "details": "Nous utilisons Mews Systems (tiers responsable du traitement) pour collecter des statistiques d'utilisation anonymisées afin d'améliorer l'expérience de réservation. Conservation des données : 13 mois. Les données ne sont pas partagées à des fins marketing."
+      },
+
+      "marketing": {
+        "details": "Google Maps (tiers responsable du traitement) collecte et traite : adresse IP, informations sur le navigateur/appareil et données de localisation lors du chargement de la carte. Google conserve ces données conformément à sa propre politique de conservation (voir la Politique de confidentialité de Google). Les données sont utilisées pour l'amélioration des services, l'analyse et potentiellement le contenu personnalisé. Consultez la Politique de confidentialité et la Politique relative aux cookies de Google pour des informations détaillées sur le traitement et la conservation des données."
+      }
     }
   },
   "welcome": {
@@ -67,12 +129,14 @@
 
     "section_3": {
       "title": "Vie active en plein air",
-      "text": "La région autour des chalets est idéale pour ceux qui souhaitent rester actifs et profiter de la nature."
+      "text": "La région autour des chalets est idéale pour ceux qui souhaitent rester actifs et profiter de la nature.",
+      "tempMessage": "Plus d'informations à venir."
     },
 
     "section_4": {
       "title": "Visites – Gastronomie – Shopping",
-      "text": "Découvrez et profitez des activités et des boutiques de la région."
+      "text": "Découvrez et profitez des activités et des boutiques de la région.",
+      "tempMessage": "Plus d'informations à venir."
     },
 
     "section_5": {

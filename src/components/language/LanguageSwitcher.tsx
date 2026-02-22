@@ -1,16 +1,18 @@
 import { useTranslation } from 'react-i18next';
 import { useEffect, useRef, useState } from 'react';
 
-import NO_flag from '../../assets/svg/Flagg-Norsk.svg';
-import EN_flag from '../../assets/svg/Flagg-Engelsk.svg';
-import DE_flag from '../../assets/svg/Flagg-Tysk.svg';
-import FR_flag from '../../assets/svg/Flagg-Fransk.svg';
+import NO_flag from '../../assets/svg/Flag-NO.svg';
+import EN_flag from '../../assets/svg/Flag-EN.svg';
+import DE_flag from '../../assets/svg/Flag-DE.svg';
+import FR_flag from '../../assets/svg/Flag-FR.svg';
+import NL_flag from '../../assets/svg/Flag-NL.svg';
 
 const languages = [
-  { code: 'en', flag: EN_flag, alt: 'English flag' },
   { code: 'no', flag: NO_flag, alt: 'Norwegian flag' },
+  { code: 'en', flag: EN_flag, alt: 'English flag' },
   { code: 'de', flag: DE_flag, alt: 'German flag' },
   { code: 'fr', flag: FR_flag, alt: 'French flag' },
+  { code: 'nl', flag: NL_flag, alt: 'Dutch flag' },
 ];
 
 export default function LanguageSwitcher() {
@@ -53,7 +55,11 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative" ref={menuRef}>
       <button onClick={() => setMenuOpen(!isMenuOpen)} className="flex items-center justify-center">
-        <img src={currentLanguage.flag} alt={currentLanguage.alt} className="rounded" />
+        <img
+          src={currentLanguage.flag}
+          alt={currentLanguage.alt}
+          className="rounded cursor-pointer"
+        />
       </button>
 
       {isMenuOpen && (

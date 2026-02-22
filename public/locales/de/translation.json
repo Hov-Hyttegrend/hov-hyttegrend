@@ -1,7 +1,18 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Einen Moment",
+      "bookingLoadingDescription": "Das Buchungssystem wird noch geladen, bitte versuchen Sie es in einem Moment erneut.",
+      "bookingUnavailableTitle": "Buchung nicht verfügbar",
+      "bookingUnavailableDescription": "Unser Buchungssystem ist vorübergehend nicht verfügbar. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt."
+    },
     "bookingButton": "Buchen Sie Ihre Reise",
-    "cookies": "Diese Website verwendet Cookies für Buchungsfunktionen und Karten. Wenn Sie fortfahren, müssen Sie der Verwendung von Cookies zustimmen.",
+
+    "header": {
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "booking": "Buchung"
+    },
 
     "contact": {
       "title": "Kontaktieren Sie uns",
@@ -9,7 +20,9 @@
       "phoneTitle": "Telefon",
       "emailTitle": "E-mail",
       "informationTitle": "Information",
-      "openingHoursTitle": "Öffnungszeiten jetzt",
+      "openingHoursTitle": "Öffnungszeiten jetzt:",
+      "openingHoursDescription": "Auf Anfrage",
+
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Telefon: +47 400 67 568",
       "email": "E-mail: post@hovhyttegrend.no"
@@ -34,21 +47,71 @@
     "links": {
       "title": "Links",
       "terms": "Allgemeine Geschäftsbedingungen",
-      "privacy": "Datenschutz"
-    },
-
-    "cookieConcent": {
-      "description": "Diese Website verwendet Cookies für Buchungsfunktionen und Karten. Durch die weitere Nutzung stimmen Sie der Verwendung von Cookies zu.",
-      "buttonAccept": "Akzeptieren",
-      "buttonDecline": "Ablehnen"
+      "privacy": "Datenschutz",
+      "cookieSettings": "Cookie Einstellungen"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie erforderlich",
-      "description": "Um die Karte nutzen zu können, müssen Sie Cookies akzeptieren.",
-      "buttonAccept": "Cookies akzeptieren"
+      "title": "Karte blockiert",
+      "description": "Um Google Maps anzuzeigen, müssen Sie Marketing-Cookies akzeptieren. Dies aktiviert nur Google Maps, nicht andere Dienste.",
+      "buttonAccept": "Akzeptieren und Karte anzeigen"
+    },
+
+    "cookieBanner": {
+      "description": "Wir verwenden Cookies, um die Website zu verbessern. Sie können auswählen, welche Kategorien Sie akzeptieren möchten.",
+      "customize": "Einstellungen anpassen",
+      "manageConsent": "Cookies verwalten",
+      "acceptAll": "Alle akzeptieren",
+      "declineAll": "Nur notwendige",
+      "back": "Zurück",
+      "savePreferences": "Einstellungen speichern",
+      "alwaysActive": "Immer aktiv",
+
+      "customizeTitle": "Cookies anpassen",
+      "customizeDescription": "Wählen Sie aus, welche Arten von Cookies Sie akzeptieren möchten. Sie können dies jederzeit ändern.",
+
+      "essential": {
+        "title": "Notwendige Cookies",
+        "description": "Diese sind erforderlich, damit die Website funktioniert, einschließlich der Buchungsfunktion."
+      },
+
+      "analytics": {
+        "title": "Analyse-Cookies",
+        "description": "Helfen uns zu verstehen, wie Besucher die Website mithilfe von Mews Analytics nutzen. Datenspeicherung: 13 Monate."
+      },
+
+      "marketing": {
+        "title": "Marketing-Cookies",
+        "description": "Werden verwendet, um Google Maps anzuzeigen. Google (Drittanbieter) erfasst und verarbeitet: IP-Adresse, Standortdaten, Browser-/Geräteinformationen. Weitere Informationen zur Datenspeicherung finden Sie in Googles Datenschutzrichtlinie."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Cookie-Einstellungen",
+      "description": "Verwalten Sie Ihre Cookie-Einstellungen. Sie können Ihre Einwilligung jederzeit ändern oder widerrufen.",
+      "saved": "Ihre Einstellungen wurden gespeichert!",
+      "saveButton": "Einstellungen speichern",
+      "resetButton": "Alle zurücksetzen",
+      "resetConfirmTitle": "Cookie-Einstellungen zurücksetzen?",
+      "resetConfirm": "Möchten Sie wirklich alle Cookie-Einstellungen zurücksetzen? Das Cookie-Banner wird erneut angezeigt.",
+      "resetCancel": "Abbrechen",
+      "resetConfirmButton": "Ja, zurücksetzen",
+      "consentInfo": "Ihre aktuelle Zustimmung wurde aufgezeichnet am: ",
+
+      "essential": {
+        "details": "Beinhaltet: Session-Cookies, Sicherheits-Cookies und grundlegende Buchungsfunktionen. Notwendige Cookies sind immer aktiv und erfordern keine Zustimmung."
+      },
+
+      "analytics": {
+        "details": "Wir verwenden Mews Systems (Drittanbieter-Datenverarbeiter), um anonymisierte Nutzungsstatistiken zu sammeln und das Buchungserlebnis zu verbessern. Datenspeicherung: 13 Monate. Daten werden nicht für Marketingzwecke weitergegeben."
+      },
+
+      "marketing": {
+        "details": "Google Maps (Drittanbieter-Datenverarbeiter) erfasst und verarbeitet: IP-Adresse, Browser-/Geräteinformationen und Standortdaten beim Laden der Karte. Google speichert diese Daten gemäß seiner eigenen Datenspeicherungsrichtlinie (siehe Googles Datenschutzrichtlinie). Die Daten werden für Serviceverbesserung, Analytik und möglicherweise personalisierte Inhalte verwendet. Besuchen Sie Googles Datenschutzrichtlinie und Cookie-Richtlinie für detaillierte Informationen zur Datenverarbeitung und -speicherung."
+      }
     }
   },
+
   "welcome": {
     "title": "Willkommen bei Hov Hyttegrend",
     "description": "Ein echter Naturerlebnis im Herzen Norwegen"
@@ -67,12 +130,14 @@
 
     "section_3": {
       "title": "Aktiver Outdoor-Spaß",
-      "text": "Die Umgebung der Hütten ist ideal für alle, die gerne aktiv draußen in der Natur sein möchten."
+      "text": "Die Umgebung der Hütten ist ideal für alle, die gerne aktiv draußen in der Natur sein möchten.",
+      "tempMessage": "Weitere Informationen folgen in Kürze."
     },
 
     "section_4": {
       "title": "Sightseeing – Essen – Shopping",
-      "text": "Erlebnisse und Einkaufsmöglichkeiten in der Umgebung."
+      "text": "Erlebnisse und Einkaufsmöglichkeiten in der Umgebung.",
+      "tempMessage": "Weitere Informationen folgen in Kürze."
     },
 
     "section_5": {

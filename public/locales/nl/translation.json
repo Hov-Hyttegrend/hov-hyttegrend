@@ -1,0 +1,255 @@
+{
+  "common": {
+    "errors": {
+      "bookingLoadingTitle": "Een moment",
+      "bookingLoadingDescription": "Het boekingssysteem wordt nog geladen, probeer het over een moment opnieuw.",
+      "bookingUnavailableTitle": "Boeking niet beschikbaar",
+      "bookingUnavailableDescription": "Ons boekingssysteem is momenteel niet beschikbaar. Probeer het later opnieuw of neem rechtstreeks contact met ons op."
+    },
+    "bookingButton": "Boek uw reis",
+
+    "header": {
+      "about": "Over ons",
+      "contact": "Contact",
+      "booking": "Boeking"
+    },
+
+    "contact": {
+      "title": "Neem contact op",
+      "addressTitle": "Adres",
+      "phoneTitle": "Telefoon",
+      "emailTitle": "E-mail",
+      "informationTitle": "Informatie",
+      "openingHoursTitle": "Openingstijden nu:",
+      "openingHoursDescription": "Op verzoek",
+
+      "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
+      "phone": "Telefoon: +47 400 67 568",
+      "email": "E-mail: post@hovhyttegrend.no"
+    },
+
+    "address": {
+      "title": "Adres",
+      "line1": "Hov Hyttegrend",
+      "line2": "Gaularfjellsvegen 2203",
+      "line3": "6978 Viksdalen",
+      "line4": "Noorwegen"
+    },
+
+    "followUs": {
+      "title": "Volg ons"
+    },
+
+    "findUs": {
+      "title": "Vind ons"
+    },
+
+    "links": {
+      "title": "Links",
+      "terms": "Algemene voorwaarden",
+      "privacy": "Privacybeleid",
+      "cookieSettings": "Cookie-instellingen"
+    },
+
+    "cookiesMapOverlay": {
+      "title": "Kaart geblokkeerd",
+      "description": "Om Google Maps weer te geven, moet u marketingcookies accepteren. Dit zal alleen Google Maps inschakelen, niet andere services.",
+      "buttonAccept": "Accepteren en kaart weergeven"
+    },
+
+    "cookieBanner": {
+      "description": "We gebruiken cookies om de website te verbeteren. U kunt kiezen welke categorieën u wilt accepteren.",
+      "customize": "Instellingen aanpassen",
+      "manageConsent": "Cookies beheren",
+      "acceptAll": "Alles accepteren",
+      "declineAll": "Alleen noodzakelijk",
+      "back": "Terug",
+      "savePreferences": "Instellingen opslaan",
+      "alwaysActive": "Altijd actief",
+
+      "customizeTitle": "Cookies aanpassen",
+      "customizeDescription": "Kies welke soorten cookies u wilt accepteren. U kunt dit op elk moment wijzigen.",
+
+      "essential": {
+        "title": "Essentiële cookies",
+        "description": "Deze zijn nodig voor het functioneren van de website, inclusief de boekingsengine."
+      },
+
+      "analytics": {
+        "title": "Analytische cookies",
+        "description": "Helpt ons te begrijpen hoe bezoekers de website gebruiken via Mews Analytics. Gegevens worden 13 maanden bewaard."
+      },
+
+      "marketing": {
+        "title": "Marketingcookies",
+        "description": "Wordt gebruikt om Google Maps weer te geven. Google (derde partij) verzamelt en verwerkt: IP-adres, locatiegegevens, browser-/apparaatinformatie. Raadpleeg het Privacybeleid van Google voor details over gegevensretentie."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Cookie-instellingen",
+      "description": "Beheer uw cookie-voorkeuren. U kunt uw toestemming op elk moment wijzigen of intrekken.",
+      "saved": "Uw instellingen zijn opgeslagen!",
+      "saveButton": "Instellingen opslaan",
+      "resetButton": "Alles opnieuw instellen",
+      "resetConfirmTitle": "Cookie-instellingen terugzetten?",
+      "resetConfirm": "Weet u zeker dat u alle cookie-instellingen opnieuw wilt instellen? De cookie-banner verschijnt opnieuw.",
+      "resetCancel": "Annuleren",
+      "resetConfirmButton": "Ja, terugzetten",
+      "consentInfo": "Uw huidige toestemming werd geregistreerd op: ",
+
+      "essential": {
+        "details": "Inclusief: Sessiecookies, beveiligingscookies en basale boekingsfunctionaliteit. Essentiële cookies zijn altijd actief en vereisen geen toestemming."
+      },
+
+      "analytics": {
+        "details": "We gebruiken Mews Systems (derde partij) om geanonimiseerde gebruikersstatistieken te verzamelen om de boekingservaring te verbeteren. Gegevensretentie: 13 maanden. Geen gegevens worden gedeeld voor marketingdoeleinden."
+      },
+
+      "marketing": {
+        "details": "Google Maps (derde partij) verzamelt en verwerkt: IP-adres, browser-/apparaatinformatie en locatiegegevens wanneer de kaart wordt geladen. Google bewaart deze gegevens volgens het eigen retentiebeleid (zie Privacybeleid van Google). Gegevens worden gebruikt voor serviceanalytics, verbetering en mogelijk gepersonaliseerde inhoud. Bezoek het Privacybeleid en Cookie-beleid van Google voor gedetailleerde informatie over gegevensverwerking en retentie."
+      }
+    }
+  },
+
+  "welcome": {
+    "title": "Welkom bij Hov Hyttegrend",
+    "description": "Een echt natuurbeleving in het hart van Noorwegen"
+  },
+
+  "homePage": {
+    "section_1": {
+      "title": "Hov Hyttegrend - een klein stukje authentiek Noorwegen",
+      "text": "Welkom op een plek waar de natuur voelt dichterbij, de stilte dieper, en het dagelijks leven verder weg is dan ooit.\nBij Hov Hyttegrend verblijft u in het hart van een rustig en prachtig natuurlandschap, omgeven door bossen, bergen, rivieren en meren.\nHier kunt u het allerbeste van de Noorse natuur en buitenleven ervaren – perfect voor avontuurzoekers, gezinnen, stellen en vriendengroepen die op zoek zijn naar een authentieke en tranquille ervaring."
+    },
+
+    "section_2": {
+      "title": "Over ons",
+      "text": "Hov Hyttegrend is een kleine en vredige huttes-gemeenschap in het hart van prachtig Fjord-Noorwegen — omgeven door bergen, watervallen, fjorden en gletsjers.\nHier hebt u het perfecte uitgangspunt om enkele van de mooiste natuurplekken van Vestland te ontdekken.\nWe liggen direct naast het beschermde Gaular-watergebied, beroemd om zijn vele watervallen, stroomversnellingen en rustige bergmeren. De rivier bochelt zich door het landschap en biedt zowel adembenemende natuurervaringen als uitstekende vismogelijkheden."
+    },
+
+    "section_3": {
+      "title": "Actief buitenleven",
+      "text": "De omgeving rond de huttes is ideaal voor degenen die actief willen zijn en buiten willen genieten.",
+      "tempMessage": "Meer informatie volgt binnenkort."
+    },
+
+    "section_4": {
+      "title": "Toerisme – Eten – Winkelen",
+      "text": "Ervaringen en winkelen in de buurt",
+      "tempMessage": "Meer informatie volgt binnenkort."
+    },
+
+    "section_5": {
+      "title": "Waarom ons kiezen?",
+      "text": "Korte lokale wandelingen en groot natuurlandschap in één verblijf.\nEen gezinsvriendelijke en gastvrije atmosfeer.\nPerfect voor stellen, gezinnen en natuurliefhebbers.\nRust, stilte en authentieke westkustnnatuur zonder drukte."
+    },
+
+    "section_6": {
+      "title": "Verblijf in natuurlijke idylle",
+      "text": "Bij Hov Hyttegrend bieden we eenvoudige maar comfortabele accommodatie in huttes, evenals parkeerplaatsen voor campers en caravans. Hier verblijft u dicht bij de natuur, met vogelgezang en het zachte geluid van de rivier als achtergrondmuziek.",
+      "listItem1": "Parkeerplaatsen voor 15–20 campers/caravans",
+      "listItem2": "Prachtige omgeving met veel ruimte tussen de units",
+      "listItem3": "Loopafstand naar wandelpaden en vismeren",
+      "listItem4": "Gezinsvriendelijke en rustige atmosfeer"
+    }
+  },
+
+  "termsPage": {
+    "title": "Algemene voorwaarden – Hutteverhuur en Campingplaats",
+    "description": "Van toepassing op alle boekingen bij HOV-HYTTEGREND AS – org.nr. 935 623 642 BTW",
+    "adress": "Adres: Gaularfjellsvegen 2203, 6978 Viksdalen, Noorwegen",
+    "part_1": {
+      "title": "1. Boeking en bevestiging",
+      "text": "Boekingen kunnen via onze website, per telefoon of per e-mail worden gedaan. Een boeking is bindend zodra u een schriftelijke bevestiging van ons hebt ontvangen. De klant is verantwoordelijk voor het waarborgen dat de verstrekte contactgegevens correct zijn."
+    },
+    "part_2": {
+      "title": "2. Betaling",
+      "listItem1": "Een factuur wordt na boeking of bij aankomst verzonden, afhankelijk van afspraak.",
+      "listItem2": "Betalingstermijn: 14 dagen vanaf factuurdatum, of voor aankomst als het verblijf aanstaande is.",
+      "listItem3": "Late betaling leidt tot rente op achterstallige bedragen en aanmaningskosten."
+    },
+    "part_3": {
+      "title": "3. Prijzen",
+      "text": "Alle prijzen zijn in Noorse kronen (NOK) en inclusief btw. Prijzen inclusief elektriciteit en normaal houtverbruik, tenzij anders afgesproken."
+    },
+    "part_4": {
+      "title": "4. Annulering – Verschillende prijscategorieën",
+      "listItem1": "Meer dan 1 dag voor aankomst: Volledig flexibel",
+      "listItem2": "Minder dan 30 dagen voor aankomst: Niet-terugbetaalbaar",
+      "text": "In geval van ziekte of overmacht kunnen uitzonderingen worden gegeven na documentatie en beoordeling."
+    },
+    "part_5": {
+      "title": "5. Inchecken en uitchecken",
+      "listItem1": "Inchecken: vanaf 15:00 uur",
+      "listItem2": "Uitchecken: uiterlijk 11:00 uur op vertrekdag",
+      "text": "Laat uitchecken moet van tevoren worden afgesproken en kan extra kosten met zich meebrengen."
+    },
+    "part_6": {
+      "title": "6. Schoonmaak en orde",
+      "text1": "De hutte moet in nette toestand worden achtergelaten. Eindschoonmaak is niet inbegrepen tenzij van tevoren afgesproken en betaald. Indien de hutte niet naar behoren is schoongemaakt bij uitchecken, worden extra schoonmaakkosten in rekening gebracht.",
+      "text2": "Alternatief: We bieden eindschoonmaak voor een extra vergoeding."
+    },
+    "part_7": {
+      "title": "7. Sleutels en toegang",
+      "text": "Sleutels worden bij inchecken verstrekt en moeten bij uitchecken worden ingeleverd. Verlies van sleutels kost NOK 500 voor vervanging van slot of sleutel."
+    },
+    "part_8": {
+      "title": "8. Schade en aansprakelijkheid",
+      "text": "De klant is financieel verantwoordelijk voor schade aan inventaris, eigendom of gebouwen veroorzaakt door nalatigheid of regelovertreding. Schade moet onmiddellijk worden gemeld. Roken is niet toegestaan binnenshuis. Huisdieren zijn toegestaan in geselecteerde huttes tegen een extra vergoeding."
+    },
+    "part_9": {
+      "title": "9. Overmacht",
+      "text": "We zijn niet aansprakelijk voor omstandigheden buiten onze controle, zoals extreem weer, stroomuitval, gesloten wegen of soortgelijke situaties die het onmogelijk maken om het verblijf uit te voeren zoals gepland."
+    },
+    "part_10": {
+      "title": "10. Klachten en geschillen",
+      "text": "Klachten moeten zo snel mogelijk en uiterlijk 7 dagen na vertrek schriftelijk worden ingediend. Bij geschillen streven we naar een minnelijke oplossing. Geschillen die niet door dialoog kunnen worden opgelost worden behandeld door de rechtbank Sunnfjord als bevoegde instantie."
+    },
+    "contactInfo": {
+      "title": "Contactgegevens",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Noorwegen",
+      "email": "E-mail: post@hovhyttegrend.no",
+      "phone": "Telefoon: +47 400 67 568",
+      "website": "Website: www.hovhyttegrend.no"
+    }
+  },
+
+  "privacyPage": {
+    "title": "Privacybeleid en cookies",
+    "updated": "Laatst bijgewerkt: 04.11.25",
+    "intro": "Bij Hov Hyttegrend nemen we uw privacy serieus. Hieronder vindt u een korte uitleg over hoe we persoonlijke gegevens verwerken en cookies op onze website gebruiken.",
+    "part_1": {
+      "title": "Persoonlijke gegevens",
+      "text": "Wanneer u contact met ons opneemt, een verzoek indient of een verblijf boekt, slaan we informatie op zoals uw naam, e-mailadres, telefoonnummer en boeking details.\nWe gebruiken deze informatie alleen om:",
+      "listItem1": "Boekingen te beheren en u de best mogelijke service te bieden",
+      "listItem2": "Noodzakelijke informatie over uw verblijf te sturen",
+      "listItem3": "Aan wettelijke verplichtingen te voldoen (bijvoorbeeld boekhoudverplichting)"
+    },
+    "part_2": {
+      "title": "Delen van persoonlijke gegevens",
+      "text": "We delen persoonlijke gegevens niet met derden, behalve waar nodig om onze services te leveren, zoals betalingsleveranciers, accountants of technische dienstpartners. Al onze partners voldoen aan de AVG en verwerken gegevens veilig."
+    },
+    "part_3": {
+      "title": "Opslag en verwijdering",
+      "text": "Persoonlijke gegevens worden alleen opgeslagen zolang nodig voor het doel of zoals wettelijk vereist. U kunt op elk moment inzage, correctie of verwijdering van uw persoonlijke gegevens aanvragen door ons te contacteren op post@hovhyttegrend.no"
+    },
+    "part_4": {
+      "title": "Cookies",
+      "text": "We gebruiken cookies om een beter ervaring op onze website te bieden. Cookies helpen ons:",
+      "listItem1": "Instellingen en voorkeuren te onthouden",
+      "listItem2": "Te begrijpen hoe de website wordt gebruikt (voor statistieken en verbeteradoeleinden)",
+      "text2": "U kunt het gebruik van cookies in uw browserinstellingen uitschakelen of beperken. Houd er rekening mee dat sommige websitefeatures dan minder optimaal kunnen functioneren."
+    },
+    "contactInfo": {
+      "title": "Contacteer ons",
+      "intro": "Heeft u vragen over privacy of cookies? Neem dan gerust contact met ons op:",
+      "name": "Hov Hyttegrend",
+      "email": "E-mail: post@hovhyttegrend.no",
+      "phone": "Telefoon: +47 400 67 568",
+      "address": "Adres: Gaularfjellsvegen 2203, 6978 Viksdalen"
+    }
+  }
+}

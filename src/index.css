@@ -42,7 +42,7 @@ html {
 }
 
 .icon-button {
-  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center cursor-pointer hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
+  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
 }
 
 .icon-button svg {
@@ -101,5 +101,17 @@ html {
   .animate-slide-bounce-out {
     animation: slide-bounce-out-right 0.4s ease-in forwards;
     transform-origin: top right;
+  }
+}
+
+@layer utilities {
+  @keyframes spin-slow {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 2s linear infinite;
   }
 }

@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 import { useEffect, useRef, useState } from 'react';
 import HovLogo from '../assets/svg/Hov-logo.svg?react';
 
@@ -9,6 +11,8 @@ import LanguageSwitcher from './language/LanguageSwitcher';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [animateOut, setAnimateOut] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -54,16 +58,18 @@ export default function Header() {
   return (
     <header className=" text-white z-50 fixed w-full">
       <nav className="bg-secondary flex items-center justify-between relative px-6 md:px-8 z-20 h-14 lg:h-18 2xl:h-24">
-        <Link to="/">
+        <Link to="/" aria-label="Home page">
           <HovLogo className="h-9 lg:h-12 2xl:h-16" />
         </Link>
 
         <ul className="gap-10 text-lg 2xl:text-xl hidden lg:flex">
-          <li>Om oss</li>
-          <li>Kontakt</li>
-          <li>Booking</li>
-          <li>Info</li>
-          <li>Aktiviteter</li>
+          <li>
+            <Link to="/#about">{t('common.header.about')}</Link>
+          </li>
+          <li>
+            <Link to="/#contact">{t('common.header.contact')}</Link>
+          </li>
+          <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
           <li>
             <LanguageSwitcher />
           </li>
@@ -85,11 +91,13 @@ export default function Header() {
           >
             <div className="flex-1 ">
               <ul className="flex flex-col items-end gap-6 px-8 py-8 text-white">
-                <li>Om oss</li>
-                <li>Kontakt</li>
-                <li>Booking</li>
-                <li>Info</li>
-                <li>Aktiviteter</li>
+                <li>
+                  <Link to="/#about">{t('common.header.about')}</Link>
+                </li>
+                <li>
+                  <Link to="/#contact">{t('common.header.contact')}</Link>
+                </li>
+                <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
                 <li>
                   <LanguageSwitcher />
                 </li>

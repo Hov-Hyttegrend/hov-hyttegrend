@@ -1,7 +1,18 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Eit øyeblikk",
+      "bookingLoadingDescription": "Bookinsmotoren laster enno, vær snill og prøv igjen om litt.",
+      "bookingUnavailableTitle": "Booking utilgjengelig",
+      "bookingUnavailableDescription": "Bookinsmotoren vår er midlertidig utilgjengelig. Prøv igjen seinare eller kontakt oss direkte."
+    },
     "bookingButton": "Book reisen din",
-    "cookies": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
+
+    "header": {
+      "about": "Om oss",
+      "contact": "Kontakt",
+      "booking": "Booking"
+    },
 
     "contact": {
       "title": "Kontakt oss",
@@ -9,7 +20,8 @@
       "phoneTitle": "Telefon",
       "emailTitle": "E-post",
       "informationTitle": "Informasjon",
-      "openingHoursTitle": "Åpningstider nå",
+      "openingHoursTitle": "Åpningstider nå:",
+      "openingHoursDescription": "Ved forespørsel",
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Telefon: +47 400 67 568",
       "email": "E-post: post@hovhyttegrend.no"
@@ -34,19 +46,68 @@
     "links": {
       "title": "Lenker",
       "terms": "Vilkår og betingelser",
-      "privacy": "Personvern"
-    },
-
-    "cookieConcent": {
-      "description": "Dette nettstedet bruker informasjonskapsler for bookingfunksjonalitet og kart. Ved å fortsette må du godta vår bruk av informasjonskapsler.",
-      "buttonAccept": "Aksepter",
-      "buttonDecline": "Avslå"
+      "privacy": "Personvern",
+      "cookieSettings": "Cookie innstillinger"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie kreves",
-      "description": "For å bruke kartet må du akseptere cookies",
-      "buttonAccept": "Aksepter cookies"
+      "title": "Kart er blokkert",
+      "description": "For å vise Google Maps må du godta markedsføringsinformasjonskapsler. Dette vil kun aktivere Google Maps, ikke andre tjenester.",
+      "buttonAccept": "Godta og vis kart"
+    },
+
+    "cookieBanner": {
+      "description": "Vi bruker informasjonskapsler for å forbedre nettstedet. Du kan velge hvilke kategorier du vil godta.",
+      "customize": "Tilpass innstillinger",
+      "manageConsent": "Administrer informasjonskapsler",
+      "acceptAll": "Godta alle",
+      "declineAll": "Bare nødvendige",
+      "back": "Tilbake",
+      "savePreferences": "Lagre innstillinger",
+      "alwaysActive": "Alltid aktiv",
+
+      "customizeTitle": "Tilpass informasjonskapsler",
+      "customizeDescription": "Velg hvilke typer informasjonskapsler du vil godta. Du kan endre dette når som helst.",
+
+      "essential": {
+        "title": "Nødvendige informasjonskapsler",
+        "description": "Disse er nødvendige for at nettstedet skal fungere, inkludert bookingmotoren."
+      },
+
+      "analytics": {
+        "title": "Analyse-informasjonskapsler",
+        "description": "Hjelper oss å forstå hvordan besøkende bruker nettstedet via Mews-analyse. Data oppbevares i 13 måneder."
+      },
+
+      "marketing": {
+        "title": "Markedsførings-informasjonskapsler",
+        "description": "Brukes til å vise Google Maps. Google (tredjepart) samler inn og behandler: IP-adresse, plasseringsdata, nettleser-/enhetsinformasjon. Se Googles personvernpolicy for detaljer om dataoppbevaring."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Innstillinger for informasjonskapsler",
+      "description": "Administrer dine preferanser for informasjonskapsler. Du kan endre eller trekke tilbake samtykket når som helst.",
+      "saved": "Innstillingene dine er lagret!",
+      "saveButton": "Lagre innstillinger",
+      "resetButton": "Tilbakestill alt",
+      "resetConfirmTitle": "Tilbakestille cookie innstillinger?",
+      "resetConfirm": "Er du sikker på at du vil tilbakestille alle informasjonskapselinnstillinger? Informasjonskapselbanderen vil vises igjen.",
+      "resetCancel": "Avbryt",
+      "resetConfirmButton": "Ja, tilbakestill",
+      "consentInfo": "Ditt gjeldende samtykke ble registrert den: ",
+
+      "essential": {
+        "details": "Inkluderer: Øktinformasjonskapsler, sikkerhetsinformasjonskapsler, og grunnleggende bookingfunksjonalitet. Nødvendige informasjonskapsler er alltid aktive og krever ikke samtykke."
+      },
+
+      "analytics": {
+        "details": "Vi bruker Mews Systems (tredjeparts databehandler) for å samle inn anonymisert brukerstatistikk for å forbedre bookingopplevelsen. Dataoppbevaring: 13 måneder. Data deles ikke for markedsføringsformål."
+      },
+
+      "marketing": {
+        "details": "Google Maps (tredjeparts databehandler) samler inn og behandler: IP-adresse, nettleser-/enhetsinformasjon og plasseringsdata når kartet lastes. Google oppbevarer disse dataene i samsvar med sin egen oppbevaringspolicy (se Googles personvernpolicy). Data brukes til tjenestestabilisering, forbedring og muligens personalisert innhold. Besøk Googles personvernpolicy og informasjonskapselspolicy for detaljert informasjon om databehandling og oppbevaring."
+      }
     }
   },
 
@@ -68,12 +129,14 @@
 
     "section_3": {
       "title": "Aktivt friluftsliv",
-      "text": "Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen."
+      "text": "Området rundt hyttene er ideelt for deg som ønskjer å vere aktiv ute i naturen.",
+      "tempMessage": "Meir informasjon kjem etter kvart."
     },
 
     "section_4": {
       "title": "Sigthseeing - Mat – Shopping",
-      "text": "Opplevelser og shopping nærområdet"
+      "text": "Opplevelser og shopping nærområdet",
+      "tempMessage": "Meir informasjon kjem etter kvart."
     },
 
     "section_5": {

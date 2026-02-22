@@ -1,7 +1,19 @@
 {
   "common": {
+    "errors": {
+      "bookingLoadingTitle": "Just a moment",
+      "bookingLoadingDescription": "The booking system is still loading, please try again in a moment.",
+      "bookingUnavailableTitle": "Booking unavailable",
+      "bookingUnavailableDescription": "Our booking system is temporarily unavailable. Please try again later or contact us directly."
+    },
+
     "bookingButton": "Book your trip",
-    "cookies": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
+
+    "header": {
+      "about": "About us",
+      "contact": "Contact",
+      "booking": "Booking"
+    },
 
     "contact": {
       "title": "Contact us",
@@ -9,7 +21,9 @@
       "phoneTitle": "Phone",
       "emailTitle": "Email",
       "informationTitle": "Information",
-      "openingHoursTitle": "Opening hours now",
+      "openingHoursTitle": "Opening hours now:",
+      "openingHoursDescription": "Upon request",
+
       "address": "Hov Hyttegrend, Gaularfjellsvegen 2203",
       "phone": "Phone: +47 400 67 568",
       "email": "Email: post@hovhyttegrend.no"
@@ -34,19 +48,68 @@
     "links": {
       "title": "Links",
       "terms": "Terms and conditions",
-      "privacy": "Privacy Policy"
-    },
-
-    "cookieConcent": {
-      "description": "This website uses cookies for booking functionality and maps. By continuing, you need to accept our use of cookies.",
-      "buttonAccept": "Accept",
-      "buttonDecline": "Decline"
+      "privacy": "Privacy Policy",
+      "cookieSettings": "Cookie settings"
     },
 
     "cookiesMapOverlay": {
-      "title": "Cookie required",
-      "description": "To use the map, you must accept cookies",
-      "buttonAccept": "Accept cookies"
+      "title": "Map blocked",
+      "description": "To display Google Maps, you need to accept marketing cookies. This will only enable Google Maps, not other services.",
+      "buttonAccept": "Accept and show map"
+    },
+
+    "cookieBanner": {
+      "description": "We use cookies to improve the website. You can choose which categories you want to accept.",
+      "customize": "Customize settings",
+      "manageConsent": "Manage cookies",
+      "acceptAll": "Accept all",
+      "declineAll": "Only necessary",
+      "back": "Back",
+      "savePreferences": "Save settings",
+      "alwaysActive": "Always active",
+
+      "customizeTitle": "Customize cookies",
+      "customizeDescription": "Choose which types of cookies you want to accept. You can change this anytime.",
+
+      "essential": {
+        "title": "Essential cookies",
+        "description": "These are necessary for the website to function, including the booking engine."
+      },
+
+      "analytics": {
+        "title": "Analytics cookies",
+        "description": "Helps us understand how visitors use the website via Mews analytics. Data is retained for 13 months."
+      },
+
+      "marketing": {
+        "title": "Marketing cookies",
+        "description": "Used to display Google Maps. Google (third-party) collects and processes: IP address, location data, browser/device information. See Google's Privacy Policy for data retention details."
+      }
+    },
+
+    "cookieSettings": {
+      "title": "Cookie settings",
+      "description": "Manage your cookie preferences. You can change or withdraw consent anytime.",
+      "saved": "Your settings have been saved!",
+      "saveButton": "Save settings",
+      "resetButton": "Reset all",
+      "resetConfirmTitle": "Reset cookie settings?",
+      "resetConfirm": "Are you sure you want to reset all cookie settings? The cookie banner will appear again.",
+      "resetCancel": "Cancel",
+      "resetConfirmButton": "Yes, reset",
+      "consentInfo": "Your current consent was recorded on: ",
+
+      "essential": {
+        "details": "Includes: Session cookies, security cookies, and basic booking functionality. Essential cookies are always active and do not require consent."
+      },
+
+      "analytics": {
+        "details": "We use Mews Systems (third-party processor) to collect anonymized user statistics to improve the booking experience. Data retention: 13 months. No data is shared for marketing purposes."
+      },
+
+      "marketing": {
+        "details": "Google Maps (third-party processor) collects and processes: IP address, browser/device information, and location data when the map is loaded. Google retains this data according to its own retention policy (see Google Privacy Policy). Data is used for service analytics, improvement, and potentially personalized content. Visit Google's Privacy Policy and Cookie Policy for detailed information on data processing and retention."
+      }
     }
   },
 
@@ -68,12 +131,14 @@
 
     "section_3": {
       "title": "Active Outdoor Life",
-      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors."
+      "text": "The area surrounding the cabins is ideal for those who want to stay active and enjoy the outdoors.",
+      "tempMessage": "More information coming soon."
     },
 
     "section_4": {
       "title": "Sightseeing – Food – Shopping",
-      "text": "Experience and shopping in the local area"
+      "text": "Experience and shopping in the local area",
+      "tempMessage": "More information coming soon."
     },
 
     "section_5": {

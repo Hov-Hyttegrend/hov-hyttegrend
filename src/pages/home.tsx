@@ -1,13 +1,13 @@
 import { useTranslation } from 'react-i18next';
-import { useCookieConsent } from '../contexts/useCookieConsent';
 import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
-import GoogleMaps from '../components/GoogleMaps';
+import GoogleMaps from '../components/map/GoogleMaps';
 import ImageTextSection from '../components/ImageTextSection';
 
 import HOV_1 from '../assets/images/hov1.webp';
 import HOV_2 from '../assets/images/hov2.jpg';
 import HOV_5 from '../assets/images/hov5.jpg';
 import HOV_6 from '../assets/images/hov6.jpg';
+import HOV_7 from '../assets/images/hov7.webp';
 
 import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
@@ -23,13 +23,17 @@ import SwimmingIcon from '../assets/svg/swimming.svg?react';
 import FoodIcon from '../assets/svg/food.svg?react';
 import ShopIcon from '../assets/svg/shop.svg?react';
 import BinocularsIcon from '../assets/svg/binoculars.svg?react';
+import Background from '../components/Background';
 
 export default function Home() {
   const { t } = useTranslation();
-  const { cookiesAccepted } = useCookieConsent();
 
   return (
     <>
+      <Background
+        imageUrl={HOV_7}
+        imageAlt="Waterfall down to a lake surrounded by mountain and trees"
+      />
       {/* Header */}
       <header className="flex h-screen w-full">
         <div className="relative w-full h-full">
@@ -49,17 +53,7 @@ export default function Home() {
                 {t('welcome.description')}
               </p>
             </div>
-            <button
-              className="button-yellow distributor"
-              onClick={(e) => {
-                if (!cookiesAccepted) {
-                  e.preventDefault();
-                  window.dispatchEvent(new Event('showCookieBanner'));
-                }
-              }}
-            >
-              {t('common.bookingButton')}
-            </button>
+            <button className="button-yellow distributor">{t('common.bookingButton')}</button>
           </div>
           <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
             <img
@@ -90,22 +84,16 @@ export default function Home() {
         </div>
 
         {/* Section 2 */}
-        <div className="section-container bg-light-green">
+        <div className="section-container bg-light-green" id="about">
           <ImageTextSection
             imageSrc={HOV_2}
-            imageAlt="Top"
+            imageAlt="Mann og hund går langs en elv i mellom skog og fjell"
             title={t('homePage.section_2.title')}
             titleClassName="h2"
             text={t('homePage.section_2.text')}
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             buttonText={t('common.bookingButton')}
-            onClickButton={(e) => {
-              if (!cookiesAccepted) {
-                e.preventDefault();
-                window.dispatchEvent(new Event('showCookieBanner'));
-              }
-            }}
             buttonClassName="distributor"
             className="my-10"
           />
@@ -116,6 +104,9 @@ export default function Home() {
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('homePage.section_3.text')}</p>
+            <span className="text-sm lg:text-lg mb-10 text-gray-700">
+              {t('homePage.section_3.tempMessage')}
+            </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
               <div className="icon-button icon-button-top">
                 <MountainHikeIcon className="text-primary" />
@@ -155,6 +146,9 @@ export default function Home() {
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('homePage.section_4.text')}</p>
+            <span className="text-sm lg:text-lg mb-10 text-gray-700">
+              {t('homePage.section_4.tempMessage')}
+            </span>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
               <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
                 <BinocularsIcon className="text-primary" />
@@ -191,7 +185,7 @@ export default function Home() {
         <div className="section-container  bg-primary">
           <ImageTextSection
             imageSrc={HOV_5}
-            imageAlt="Top"
+            imageAlt="Likholefossen med strømmende vann som renner over steiner og ned i en elv, omgitt av skog og blå himmel"
             title={t('homePage.section_5.title')}
             titleClassName="h2"
             text={t('homePage.section_5.text')}
@@ -204,7 +198,7 @@ export default function Home() {
         <div className="section-container bg-light-green">
           <ImageTextSection
             imageSrc={HOV_6}
-            imageAlt="Top"
+            imageAlt="Litlevatnet omgitt av skog og fjell, med stille vann som speiler blå himmel og skyer"
             title={t('homePage.section_6.title')}
             titleClassName="h2"
             text={t('homePage.section_6.text')}
@@ -220,8 +214,11 @@ export default function Home() {
           />
         </div>
 
-        {/* Section 9 */}
-        <div className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary">
+        {/* Section 9 - Map */}
+        <div
+          className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary"
+          id="contact"
+        >
           <GoogleMaps />
         </div>
       </div>
