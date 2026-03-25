@@ -69,7 +69,8 @@ export default function Header() {
           <li>
             <Link to="/#contact">{t('common.header.contact')}</Link>
           </li>
-          <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
+          {/* BOOKING BUTTON DISABLED */}
+          {/* <li className="distributor cursor-pointer">{t('common.header.booking')}</li> */}
           <li>
             <LanguageSwitcher />
           </li>
@@ -97,7 +98,8 @@ export default function Header() {
                 <li>
                   <Link to="/#contact">{t('common.header.contact')}</Link>
                 </li>
-                <li className="distributor cursor-pointer">{t('common.header.booking')}</li>
+                {/* BOOKING BUTTON DISABLED */}
+                {/* <li className="distributor cursor-pointer">{t('common.header.booking')}</li> */}
                 <li>
                   <LanguageSwitcher />
                 </li>

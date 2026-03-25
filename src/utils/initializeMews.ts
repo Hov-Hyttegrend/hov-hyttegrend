@@ -1,3 +1,6 @@
+// MEWS BOOKING ENGINE DISABLED - To be replaced with alternative booking engine
+
+/* COMMENTED OUT MEWS CODE
 interface MewsWindow extends Window {
   Mews?: {
     Distributor: (
@@ -65,3 +68,4 @@ export const setMewsTracking = (enabled: boolean): void => {
 };
 
 export const getMewsApi = (): MewsAPI | null => mewsApiInstance;
+*/

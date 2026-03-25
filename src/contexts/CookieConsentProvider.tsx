@@ -1,13 +1,15 @@
-import { createContext, useState, useEffect, useRef } from 'react';
+import { createContext, useState } from 'react';
 import type { ReactNode } from 'react';
-import { initializeMews, setMewsTracking } from '../utils/initializeMews';
+// MEWS BOOKING ENGINE DISABLED - To be replaced with alternative booking engine
+// import { initializeMews, setMewsTracking } from '../utils/initializeMews';
 
 interface CookieConsentContextType {
   analyticsAccepted: boolean;
   marketingAccepted: boolean;
   hasAcceptedAnyCookies: boolean;
-  mewsError: boolean;
-  mewsLoading: boolean;
+  // MEWS BOOKING ENGINE DISABLED
+  // mewsError: boolean;
+  // mewsLoading: boolean;
 
   acceptAll: () => void;
   declineAll: () => void;
@@ -21,7 +23,8 @@ const CookieConsentContext = createContext<CookieConsentContextType | undefined>
 
 export { CookieConsentContext };
 
-const MEWS_CONFIG_ID = '708640f3-a347-4f8f-8852-b32800e0651d';
+// MEWS BOOKING ENGINE DISABLED - To be replaced with alternative booking engine
+// const MEWS_CONFIG_ID = '708640f3-a347-4f8f-8852-b32800e0651d';
 
 interface CookiePreferences {
   analytics: boolean;
@@ -43,14 +46,16 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
     return { analytics: false, marketing: false };
   });
 
-  const [mewsInitialized, setMewsInitialized] = useState(false);
-  const [mewsError, setMewsError] = useState(false);
-  const [mewsLoading, setMewsLoading] = useState(true);
-  const initializationRef = useRef<{ completed: boolean }>({ completed: false });
-  const lastTrackingState = useRef<boolean | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  // MEWS BOOKING ENGINE DISABLED
+  // const [mewsInitialized, setMewsInitialized] = useState(false);
+  // const [mewsError, setMewsError] = useState(false);
+  // const [mewsLoading, setMewsLoading] = useState(true);
+  // const initializationRef = useRef<{ completed: boolean }>({ completed: false });
+  // const lastTrackingState = useRef<boolean | null>(null);
+  // const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  // const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  /* MEWS BOOKING ENGINE DISABLED
   useEffect(() => {
     // Only initialize once successfully
     if (initializationRef.current.completed) return;
@@ -98,7 +103,9 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  */
 
+  /* MEWS BOOKING ENGINE DISABLED
   // Update Mews tracking when analytics preference changes
   useEffect(() => {
     if (!mewsInitialized) return;
@@ -108,6 +115,7 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
       setMewsTracking(preferences.analytics);
     }
   }, [preferences.analytics, mewsInitialized]);
+  */
 
   // Save preferences to localStorage whenever they change
   const saveToStorage = (prefs: CookiePreferences) => {
@@ -156,8 +164,9 @@ export function CookieConsentProvider({ children }: { children: ReactNode }) {
     analyticsAccepted: preferences.analytics,
     marketingAccepted: preferences.marketing,
     hasAcceptedAnyCookies: preferences.analytics || preferences.marketing,
-    mewsError,
-    mewsLoading,
+    // MEWS BOOKING ENGINE DISABLED
+    // mewsError,
+    // mewsLoading,
     acceptAll,
     declineAll,
     setAnalytics,
