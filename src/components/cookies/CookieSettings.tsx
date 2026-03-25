@@ -4,11 +4,12 @@ import { getConsentTimestamp } from '../../utils/cookieTimestamp';
 import { useState, useMemo } from 'react';
 
 export default function CookieSettings() {
-  const { analyticsAccepted, marketingAccepted, savePreferences, resetConsent } =
-    useCookieConsent();
+  const { marketingAccepted, savePreferences, resetConsent } = useCookieConsent();
   const { t, i18n } = useTranslation();
 
-  const [analytics, setAnalytics] = useState(analyticsAccepted);
+  // ANALYTICS COOKIES DISABLED
+  // const [analytics, setAnalytics] = useState(analyticsAccepted);
+  // const analytics = false;
   const [marketing, setMarketing] = useState(marketingAccepted);
   const [saved, setSaved] = useState(false);
   const [showResetModal, setShowResetModal] = useState(false);
@@ -33,7 +34,8 @@ export default function CookieSettings() {
   }, [i18n.language]);
 
   const handleSave = () => {
-    savePreferences(analytics, marketing);
+    // ANALYTICS COOKIES DISABLED - Always pass false for analytics
+    savePreferences(false, marketing);
     setSaved(true);
     setTimeout(() => setSaved(false), 4000);
   };
@@ -82,7 +84,7 @@ export default function CookieSettings() {
           <p className="text-sm text-gray-500">{t('common.cookieSettings.essential.details')}</p>
         </div>
 
-        {/* Analytics Cookies */}
+        {/* ANALYTICS COOKIES DISABLED
         <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
           <div className="flex items-center justify-between mb-3">
             <h2 className="text-base lg:text-lg xl:text-xl font-semibold">
@@ -103,6 +105,7 @@ export default function CookieSettings() {
           <p className="text-gray-600 mb-2">{t('common.cookieBanner.analytics.description')}</p>
           <p className="text-sm text-gray-500">{t('common.cookieSettings.analytics.details')}</p>
         </div>
+        */}
 
         {/* Marketing Cookies */}
         <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">

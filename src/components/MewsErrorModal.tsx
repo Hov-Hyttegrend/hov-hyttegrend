@@ -1,3 +1,6 @@
+// MEWS BOOKING ENGINE DISABLED - To be replaced with alternative booking engine
+
+/* COMMENTED OUT MEWS ERROR MODAL
 import { useCookieConsent } from '../contexts/useCookieConsent';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
@@ -69,3 +72,4 @@ export default function MewsErrorModal() {
     </div>
   );
 }
+*/

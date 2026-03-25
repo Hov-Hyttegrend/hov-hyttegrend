@@ -13,7 +13,8 @@ export default function CookieBanner() {
   });
 
   const [showCustomize, setShowCustomize] = useState(false);
-  const [analytics, setAnalytics] = useState(false);
+  // ANALYTICS COOKIES DISABLED
+  // const [analytics, setAnalytics] = useState(false);
   const [marketing, setMarketing] = useState(false);
 
   const consent = localStorage.getItem('cookieConsent');
@@ -32,7 +33,8 @@ export default function CookieBanner() {
   };
 
   const handleSaveCustom = () => {
-    savePreferences(analytics, marketing);
+    // ANALYTICS COOKIES DISABLED - Always pass false for analytics
+    savePreferences(false, marketing);
     setShowBanner(false);
   };
 
@@ -59,7 +61,7 @@ export default function CookieBanner() {
             </p>
           </div>
 
-          {/* Analytics Cookies */}
+          {/* ANALYTICS COOKIES DISABLED
           <div className="mb-4 p-4 bg-gray-800 rounded-lg">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold">{t('common.cookieBanner.analytics.title')}</h3>
@@ -82,6 +84,7 @@ export default function CookieBanner() {
               {t('common.cookieBanner.analytics.description')}
             </p>
           </div>
+          */}
 
           {/* Marketing Cookies */}
           <div className="mb-6 p-4 bg-gray-800 rounded-lg">
