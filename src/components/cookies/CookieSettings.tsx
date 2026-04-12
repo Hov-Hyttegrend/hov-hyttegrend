@@ -7,9 +7,6 @@ export default function CookieSettings() {
   const { marketingAccepted, savePreferences, resetConsent } = useCookieConsent();
   const { t, i18n } = useTranslation();
 
-  // ANALYTICS COOKIES DISABLED
-  // const [analytics, setAnalytics] = useState(analyticsAccepted);
-  // const analytics = false;
   const [marketing, setMarketing] = useState(marketingAccepted);
   const [saved, setSaved] = useState(false);
   const [showResetModal, setShowResetModal] = useState(false);
@@ -34,7 +31,6 @@ export default function CookieSettings() {
   }, [i18n.language]);
 
   const handleSave = () => {
-    // ANALYTICS COOKIES DISABLED - Always pass false for analytics
     savePreferences(false, marketing);
     setSaved(true);
     setTimeout(() => setSaved(false), 4000);
@@ -83,29 +79,6 @@ export default function CookieSettings() {
           <p className="text-gray-600 mb-2">{t('common.cookieBanner.essential.description')}</p>
           <p className="text-sm text-gray-500">{t('common.cookieSettings.essential.details')}</p>
         </div>
-
-        {/* ANALYTICS COOKIES DISABLED
-        <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">
-          <div className="flex items-center justify-between mb-3">
-            <h2 className="text-base lg:text-lg xl:text-xl font-semibold">
-              {t('common.cookieBanner.analytics.title')}
-            </h2>
-            <label htmlFor="analytics" className="relative inline-flex items-center cursor-pointer">
-              <input
-                type="checkbox"
-                id="analytics"
-                name="analytics"
-                checked={analytics}
-                onChange={(e) => setAnalytics(e.target.checked)}
-                className="sr-only peer"
-              />
-              <div className="w-14 h-7 bg-gray-300 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-yellow-500"></div>
-            </label>
-          </div>
-          <p className="text-gray-600 mb-2">{t('common.cookieBanner.analytics.description')}</p>
-          <p className="text-sm text-gray-500">{t('common.cookieSettings.analytics.details')}</p>
-        </div>
-        */}
 
         {/* Marketing Cookies */}
         <div className="mb-6 p-6 bg-gray-50 rounded-lg border border-gray-200">

@@ -13,8 +13,6 @@ export default function CookieBanner() {
   });
 
   const [showCustomize, setShowCustomize] = useState(false);
-  // ANALYTICS COOKIES DISABLED
-  // const [analytics, setAnalytics] = useState(false);
   const [marketing, setMarketing] = useState(false);
 
   const consent = localStorage.getItem('cookieConsent');
@@ -33,7 +31,6 @@ export default function CookieBanner() {
   };
 
   const handleSaveCustom = () => {
-    // ANALYTICS COOKIES DISABLED - Always pass false for analytics
     savePreferences(false, marketing);
     setShowBanner(false);
   };
@@ -60,31 +57,6 @@ export default function CookieBanner() {
               {t('common.cookieBanner.essential.description')}
             </p>
           </div>
-
-          {/* ANALYTICS COOKIES DISABLED
-          <div className="mb-4 p-4 bg-gray-800 rounded-lg">
-            <div className="flex items-center justify-between mb-2">
-              <h3 className="font-semibold">{t('common.cookieBanner.analytics.title')}</h3>
-              <label
-                htmlFor="analytics"
-                className="relative inline-flex items-center cursor-pointer"
-              >
-                <input
-                  type="checkbox"
-                  id="analytics"
-                  name="analytics"
-                  checked={analytics}
-                  onChange={(e) => setAnalytics(e.target.checked)}
-                  className="sr-only peer"
-                />
-                <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
-              </label>
-            </div>
-            <p className="text-sm text-gray-400">
-              {t('common.cookieBanner.analytics.description')}
-            </p>
-          </div>
-          */}
 
           {/* Marketing Cookies */}
           <div className="mb-6 p-4 bg-gray-800 rounded-lg">
