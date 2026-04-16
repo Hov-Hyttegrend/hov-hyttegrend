@@ -1,4 +1,5 @@
 import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
+import BookingButton from './BookingButton';
 
 interface ImageTextSectionProps {
   imageSrc: string;
@@ -8,8 +9,6 @@ interface ImageTextSectionProps {
   text: string;
   textClassName?: string;
   textBoxClassName?: string;
-  buttonText?: string;
-  onClickButton?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   buttonClassName?: string;
   className?: string;
   listItems?: string[];
@@ -23,8 +22,6 @@ export default function ImageTextSection({
   text,
   textClassName,
   textBoxClassName,
-  buttonText,
-  onClickButton,
   buttonClassName,
   className,
   listItems,
@@ -60,13 +57,7 @@ export default function ImageTextSection({
           </ul>
         )}
 
-        {buttonText && (
-          <div>
-            <button onClick={onClickButton} className={`button-green ${buttonClassName}`}>
-              {buttonText}
-            </button>
-          </div>
-        )}
+        {buttonClassName !== undefined && <BookingButton className={buttonClassName} />}
       </div>
     </div>
   );
