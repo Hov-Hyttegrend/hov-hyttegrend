@@ -24,6 +24,7 @@ import FoodIcon from '../assets/svg/food.svg?react';
 import ShopIcon from '../assets/svg/shop.svg?react';
 import BinocularsIcon from '../assets/svg/binoculars.svg?react';
 import Background from '../components/Background';
+import BookingButton from '../components/BookingButton';
 
 export default function Home() {
   const { t } = useTranslation();
@@ -53,6 +54,7 @@ export default function Home() {
                 {t('welcome.description')}
               </p>
             </div>
+            <BookingButton className="button-yellow" />
           </div>
           <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
             <img
@@ -92,6 +94,7 @@ export default function Home() {
             text={t('homePage.section_2.text')}
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
+            buttonClassName="button-green"
             className="my-10"
           />
         </div>
