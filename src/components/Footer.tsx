@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import HovLogo from '../assets/svg/Hov-logo.svg?react';
 import GroupTrees3 from '../assets/svg/GroupTrees3.svg?react';
 import GroupTrees4 from '../assets/svg/GroupTrees4.svg?react';
+import ltgBadge from '../assets/images/ltg-badge.png';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -16,7 +17,7 @@ export default function Footer() {
 
       <div className="flex flex-col justify-center items-start md:items-center w-full bg-secondary pt-20 pb-10 px-7">
         <HovLogo className="h-16 md:h-24 mb-5" />
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-10 w-full">
           <div className="flex flex-wrap justify-start gap-8 lg:gap-16">
             <div className="footer-ul">
               <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.links.title')}</h3>
@@ -85,6 +86,30 @@ export default function Footer() {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="footer-ul ">
+              <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.awards.title')}</h3>
+              <div className="flex gap-4">
+                <a
+                  href="https://www.kayak.com/Holsen-Hotels-Hov-Hyttegrend.516438.ksp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-12 w-12 md:h-16 md:w-16 shrink-0 overflow-hidden"
+                >
+                  <img
+                    className="h-full w-full object-cover"
+                    src="https://content.r9cdn.net/seo-res/badges/v5/WHITE_MEDIUM_TRAVEL_AWARDS.png"
+                    alt="Kayak travel award badge"
+                  />
+                </a>
+                <div className="h-12 w-12 md:h-16 md:w-16 shrink-0 overflow-hidden">
+                  <img
+                    className="h-full w-full object-cover"
+                    src={ltgBadge}
+                    alt="LTG quality badge"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

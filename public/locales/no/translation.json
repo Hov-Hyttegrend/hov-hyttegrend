@@ -50,6 +50,10 @@
       "cookieSettings": "Cookie innstillinger"
     },
 
+    "awards": {
+      "title": "Utmerkelser"
+    },
+
     "cookiesMapOverlay": {
       "title": "Kart er blokkert",
       "description": "For å vise Google Maps må du godta markedsføringsinformasjonskapsler. Dette vil kun aktivere Google Maps, ikke andre tjenester.",
