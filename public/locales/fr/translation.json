@@ -57,42 +57,37 @@
 
     "cookiesMapOverlay": {
       "title": "Carte bloquée",
-      "description": "Pour afficher Google Maps, vous devez accepter les cookies marketing. Cela activera uniquement Google Maps, pas les autres services.",
+      "description": "Pour afficher Google Maps, vous devez accepter les cookies Google Maps. Cela activera uniquement Google Maps, pas les autres services.",
       "buttonAccept": "Accepter et afficher la carte"
     },
 
     "cookieBanner": {
-      "description": "Nous utilisons des cookies pour améliorer le site web. Vous pouvez choisir les catégories que vous souhaitez accepter.",
+      "description": "Nous utilisons un cookie de consentement nécessaire pour mémoriser votre choix. Les cookies Google Maps sont optionnels et ne sont chargés que si vous les autorisez.",
       "customize": "Personnaliser les paramètres",
       "manageConsent": "Gérer les cookies",
-      "acceptAll": "Tout accepter",
-      "declineAll": "Uniquement nécessaires",
+      "acceptAll": "Autoriser Google Maps",
+      "declineAll": "Continuer sans Google Maps",
       "back": "Retour",
       "savePreferences": "Enregistrer les paramètres",
       "alwaysActive": "Toujours actif",
 
       "customizeTitle": "Personnaliser les cookies",
-      "customizeDescription": "Choisissez les types de cookies que vous souhaitez accepter. Vous pouvez modifier ce choix à tout moment.",
+      "customizeDescription": "Le cookie de consentement est requis pour mémoriser votre choix. Google Maps reste optionnel et peut être modifié à tout moment.",
 
       "essential": {
-        "title": "Cookies essentiels",
-        "description": "Ils sont nécessaires au bon fonctionnement du site web, y compris le moteur de réservation."
-      },
-
-      "analytics": {
-        "title": "Cookies d’analyse",
-        "description": "Nous aident à comprendre comment les visiteurs utilisent le site web via Mews Analytics. Conservation des données : 13 mois."
+        "title": "Cookie de consentement",
+        "description": "Mémorise votre choix de cookies sur ce site. Aucun cookie Google Maps n'est chargé sans votre autorisation."
       },
 
       "marketing": {
-        "title": "Cookies marketing",
-        "description": "Utilisés pour afficher Google Maps. Google (tiers) collecte et traite : adresse IP, données de localisation, informations sur le navigateur/appareil. Consultez la Politique de confidentialité de Google pour les détails sur la conservation des données."
+        "title": "Google Maps",
+        "description": "Utilisés pour afficher Google Maps. Lorsqu'ils sont activés, Google (tiers) peut traiter l'adresse IP, des données de localisation et des informations sur le navigateur/appareil."
       }
     },
 
     "cookieSettings": {
       "title": "Paramètres des cookies",
-      "description": "Gérez vos préférences en matière de cookies. Vous pouvez modifier ou retirer votre consentement à tout moment.",
+      "description": "Gérez vos préférences de cookies pour Google Maps. Vous pouvez modifier ou retirer votre consentement à tout moment.",
       "saved": "Vos paramètres ont été enregistrés !",
       "saveButton": "Enregistrer les paramètres",
       "resetButton": "Tout réinitialiser",
@@ -103,15 +98,11 @@
       "consentInfo": "Votre consentement actuel a été enregistré le : ",
 
       "essential": {
-        "details": "Comprend : cookies de session, cookies de sécurité et fonctionnalités de réservation de base. Les cookies essentiels sont toujours actifs et ne nécessitent pas de consentement."
-      },
-
-      "analytics": {
-        "details": "Nous utilisons Mews Systems (tiers responsable du traitement) pour collecter des statistiques d'utilisation anonymisées afin d'améliorer l'expérience de réservation. Conservation des données : 13 mois. Les données ne sont pas partagées à des fins marketing."
+        "details": "Inclut un cookie de consentement first-party et des fonctionnalités de sécurité du navigateur. Ce cookie est toujours actif car il est nécessaire pour mémoriser votre choix de confidentialité."
       },
 
       "marketing": {
-        "details": "Google Maps (tiers responsable du traitement) collecte et traite : adresse IP, informations sur le navigateur/appareil et données de localisation lors du chargement de la carte. Google conserve ces données conformément à sa propre politique de conservation (voir la Politique de confidentialité de Google). Les données sont utilisées pour l'amélioration des services, l'analyse et potentiellement le contenu personnalisé. Consultez la Politique de confidentialité et la Politique relative aux cookies de Google pour des informations détaillées sur le traitement et la conservation des données."
+        "details": "Google Maps (tiers responsable du traitement) collecte et traite l'adresse IP, les informations sur le navigateur/appareil et des données liées à la localisation lors du chargement de la carte. Google conserve ces données selon ses propres politiques. Consultez la Politique de confidentialité et la Politique relative aux cookies de Google pour plus de détails."
       }
     }
   },

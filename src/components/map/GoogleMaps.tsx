@@ -3,18 +3,18 @@ import { useCookieConsent } from '../../contexts/useCookieConsent';
 import MAP_PLACEHOLDER from '../../assets/images/map-placeholder.png';
 
 export default function GoogleMaps() {
-  const { marketingAccepted, setMarketing } = useCookieConsent();
+  const { googleMapsAccepted, setGoogleMaps } = useCookieConsent();
   const { t } = useTranslation();
 
-  const handleAcceptMarketing = () => {
-    setMarketing(true);
+  const handleAcceptGoogleMaps = () => {
+    setGoogleMaps(true);
   };
 
   return (
     <div className="max-w-7xl w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-6">
       <div className="w-full lg:w-2/4 flex justify-center relative">
         <div className="p-1 rounded-xl w-full bg-secondary shadow-lg">
-          {marketingAccepted ? (
+          {googleMapsAccepted ? (
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7657.604776950507!2d6.258996427059175!3d61.326245908670614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616236a68752b3b%3A0xb9b7b8246bb0e7a3!2sHOV%20HYTTEGREND!5e0!3m2!1sno!2sno!4v1757068137715!5m2!1sno!2sno"
               title="Google Maps"
@@ -57,7 +57,7 @@ export default function GoogleMaps() {
                 </p>
 
                 <button
-                  onClick={handleAcceptMarketing}
+                  onClick={handleAcceptGoogleMaps}
                   className="w-full px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black rounded-full font-semibold transition hover:cursor-pointer"
                 >
                   {t('common.cookiesMapOverlay.buttonAccept')}

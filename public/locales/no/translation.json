@@ -56,42 +56,37 @@
 
     "cookiesMapOverlay": {
       "title": "Kart er blokkert",
-      "description": "For å vise Google Maps må du godta markedsføringsinformasjonskapsler. Dette vil kun aktivere Google Maps, ikke andre tjenester.",
+      "description": "For å vise Google Maps må du godta Google Maps-informasjonskapsler. Dette vil kun aktivere Google Maps, ikke andre tjenester.",
       "buttonAccept": "Godta og vis kart"
     },
 
     "cookieBanner": {
-      "description": "Vi bruker informasjonskapsler for å forbedre nettstedet. Du kan velge hvilke kategorier du vil godta.",
+      "description": "Vi bruker en nødvendig samtykke-informasjonskapsel for å huske valget ditt. Google Maps-informasjonskapsler er valgfrie og lastes kun hvis du tillater dem.",
       "customize": "Tilpass innstillinger",
       "manageConsent": "Administrer informasjonskapsler",
-      "acceptAll": "Godta alle",
-      "declineAll": "Bare nødvendige",
+      "acceptAll": "Tillat Google Maps",
+      "declineAll": "Fortsett uten Google Maps",
       "back": "Tilbake",
       "savePreferences": "Lagre innstillinger",
       "alwaysActive": "Alltid aktiv",
 
       "customizeTitle": "Tilpass informasjonskapsler",
-      "customizeDescription": "Velg hvilke typer informasjonskapsler du vil godta. Du kan endre dette når som helst.",
+      "customizeDescription": "Samtykke-informasjonskapselen er nødvendig for å huske valget ditt. Google Maps er valgfritt og kan endres når som helst.",
 
       "essential": {
-        "title": "Nødvendige informasjonskapsler",
-        "description": "Disse er nødvendige for at nettstedet skal fungere, inkludert bookingmotoren."
-      },
-
-      "analytics": {
-        "title": "Analyse-informasjonskapsler",
-        "description": "Hjelper oss å forstå hvordan besøkende bruker nettstedet via Mews-analyse. Data oppbevares i 13 måneder."
+        "title": "Samtykke-informasjonskapsel",
+        "description": "Lagrer valget ditt på dette nettstedet. Ingen Google Maps-informasjonskapsler lastes før du tillater dem."
       },
 
       "marketing": {
-        "title": "Markedsførings-informasjonskapsler",
-        "description": "Brukes til å vise Google Maps. Google (tredjepart) samler inn og behandler: IP-adresse, plasseringsdata, nettleser-/enhetsinformasjon. Se Googles personvernpolicy for detaljer om dataoppbevaring."
+        "title": "Google Maps",
+        "description": "Brukes til å vise Google Maps. Når aktivert kan Google (tredjepart) behandle IP-adresse, plasseringsdata og nettleser-/enhetsinformasjon."
       }
     },
 
     "cookieSettings": {
       "title": "Innstillinger for informasjonskapsler",
-      "description": "Administrer dine preferanser for informasjonskapsler. Du kan endre eller trekke tilbake samtykket når som helst.",
+      "description": "Administrer dine preferanser for Google Maps-informasjonskapsler. Du kan endre eller trekke tilbake samtykket når som helst.",
       "saved": "Innstillingene dine er lagret!",
       "saveButton": "Lagre innstillinger",
       "resetButton": "Tilbakestill alt",
@@ -102,15 +97,11 @@
       "consentInfo": "Ditt gjeldende samtykke ble registrert den: ",
 
       "essential": {
-        "details": "Inkluderer: Øktinformasjonskapsler, sikkerhetsinformasjonskapsler, og grunnleggende bookingfunksjonalitet. Nødvendige informasjonskapsler er alltid aktive og krever ikke samtykke."
-      },
-
-      "analytics": {
-        "details": "Vi bruker Mews Systems (tredjeparts databehandler) for å samle inn anonymisert brukerstatistikk for å forbedre bookingopplevelsen. Dataoppbevaring: 13 måneder. Data deles ikke for markedsføringsformål."
+        "details": "Inkluderer en førsteparts samtykke-informasjonskapsel og sikkerhetsrelatert nettleserfunksjonalitet. Denne informasjonskapselen er alltid aktiv fordi den er nødvendig for å huske personvernvalget ditt."
       },
 
       "marketing": {
-        "details": "Google Maps (tredjeparts databehandler) samler inn og behandler: IP-adresse, nettleser-/enhetsinformasjon og plasseringsdata når kartet lastes. Google oppbevarer disse dataene i samsvar med sin egen oppbevaringspolicy (se Googles personvernpolicy). Data brukes til tjenestestabilisering, forbedring og muligens personalisert innhold. Besøk Googles personvernpolicy og informasjonskapselspolicy for detaljert informasjon om databehandling og oppbevaring."
+        "details": "Google Maps (tredjeparts databehandler) samler inn og behandler IP-adresse, nettleser-/enhetsinformasjon og plasseringsrelaterte data når kartet lastes. Google lagrer disse dataene i henhold til egne retningslinjer. Se Googles personvernpolicy og informasjonskapselpolicy for detaljer."
       }
     }
   },

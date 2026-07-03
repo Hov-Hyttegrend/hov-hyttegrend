@@ -57,42 +57,37 @@
 
     "cookiesMapOverlay": {
       "title": "Karte blockiert",
-      "description": "Um Google Maps anzuzeigen, müssen Sie Marketing-Cookies akzeptieren. Dies aktiviert nur Google Maps, nicht andere Dienste.",
+      "description": "Um Google Maps anzuzeigen, müssen Sie Google-Maps-Cookies akzeptieren. Dies aktiviert nur Google Maps, nicht andere Dienste.",
       "buttonAccept": "Akzeptieren und Karte anzeigen"
     },
 
     "cookieBanner": {
-      "description": "Wir verwenden Cookies, um die Website zu verbessern. Sie können auswählen, welche Kategorien Sie akzeptieren möchten.",
+      "description": "Wir verwenden ein notwendiges Einwilligungs-Cookie, um Ihre Auswahl zu speichern. Google-Maps-Cookies sind optional und werden nur geladen, wenn Sie sie erlauben.",
       "customize": "Einstellungen anpassen",
       "manageConsent": "Cookies verwalten",
-      "acceptAll": "Alle akzeptieren",
-      "declineAll": "Nur notwendige",
+      "acceptAll": "Google Maps erlauben",
+      "declineAll": "Ohne Google Maps fortfahren",
       "back": "Zurück",
       "savePreferences": "Einstellungen speichern",
       "alwaysActive": "Immer aktiv",
 
       "customizeTitle": "Cookies anpassen",
-      "customizeDescription": "Wählen Sie aus, welche Arten von Cookies Sie akzeptieren möchten. Sie können dies jederzeit ändern.",
+      "customizeDescription": "Das Einwilligungs-Cookie ist erforderlich, um Ihre Auswahl zu speichern. Google Maps bleibt optional und kann jederzeit geändert werden.",
 
       "essential": {
-        "title": "Notwendige Cookies",
-        "description": "Diese sind erforderlich, damit die Website funktioniert, einschließlich der Buchungsfunktion."
-      },
-
-      "analytics": {
-        "title": "Analyse-Cookies",
-        "description": "Helfen uns zu verstehen, wie Besucher die Website mithilfe von Mews Analytics nutzen. Datenspeicherung: 13 Monate."
+        "title": "Einwilligungs-Cookie",
+        "description": "Speichert Ihre Cookie-Auswahl auf dieser Website. Google-Maps-Cookies werden erst geladen, wenn Sie zustimmen."
       },
 
       "marketing": {
-        "title": "Marketing-Cookies",
-        "description": "Werden verwendet, um Google Maps anzuzeigen. Google (Drittanbieter) erfasst und verarbeitet: IP-Adresse, Standortdaten, Browser-/Geräteinformationen. Weitere Informationen zur Datenspeicherung finden Sie in Googles Datenschutzrichtlinie."
+        "title": "Google Maps",
+        "description": "Wird verwendet, um Google Maps anzuzeigen. Bei Aktivierung kann Google (Drittanbieter) IP-Adresse, Standortdaten sowie Browser-/Geräteinformationen verarbeiten."
       }
     },
 
     "cookieSettings": {
       "title": "Cookie-Einstellungen",
-      "description": "Verwalten Sie Ihre Cookie-Einstellungen. Sie können Ihre Einwilligung jederzeit ändern oder widerrufen.",
+      "description": "Verwalten Sie Ihre Einstellungen für Google-Maps-Cookies. Sie können Ihre Einwilligung jederzeit ändern oder widerrufen.",
       "saved": "Ihre Einstellungen wurden gespeichert!",
       "saveButton": "Einstellungen speichern",
       "resetButton": "Alle zurücksetzen",
@@ -103,15 +98,11 @@
       "consentInfo": "Ihre aktuelle Zustimmung wurde aufgezeichnet am: ",
 
       "essential": {
-        "details": "Beinhaltet: Session-Cookies, Sicherheits-Cookies und grundlegende Buchungsfunktionen. Notwendige Cookies sind immer aktiv und erfordern keine Zustimmung."
-      },
-
-      "analytics": {
-        "details": "Wir verwenden Mews Systems (Drittanbieter-Datenverarbeiter), um anonymisierte Nutzungsstatistiken zu sammeln und das Buchungserlebnis zu verbessern. Datenspeicherung: 13 Monate. Daten werden nicht für Marketingzwecke weitergegeben."
+        "details": "Enthält ein First-Party-Einwilligungs-Cookie und sicherheitsrelevante Browser-Funktionen. Dieses Cookie ist immer aktiv, da es erforderlich ist, um Ihre Datenschutzauswahl zu speichern."
       },
 
       "marketing": {
-        "details": "Google Maps (Drittanbieter-Datenverarbeiter) erfasst und verarbeitet: IP-Adresse, Browser-/Geräteinformationen und Standortdaten beim Laden der Karte. Google speichert diese Daten gemäß seiner eigenen Datenspeicherungsrichtlinie (siehe Googles Datenschutzrichtlinie). Die Daten werden für Serviceverbesserung, Analytik und möglicherweise personalisierte Inhalte verwendet. Besuchen Sie Googles Datenschutzrichtlinie und Cookie-Richtlinie für detaillierte Informationen zur Datenverarbeitung und -speicherung."
+        "details": "Google Maps (Drittanbieter-Datenverarbeiter) erfasst und verarbeitet IP-Adresse, Browser-/Geräteinformationen und standortbezogene Daten beim Laden der Karte. Google speichert diese Daten gemäß eigenen Richtlinien. Details finden Sie in Googles Datenschutz- und Cookie-Richtlinie."
       }
     }
   },

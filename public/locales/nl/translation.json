@@ -57,42 +57,37 @@
 
     "cookiesMapOverlay": {
       "title": "Kaart geblokkeerd",
-      "description": "Om Google Maps weer te geven, moet u marketingcookies accepteren. Dit zal alleen Google Maps inschakelen, niet andere services.",
+      "description": "Om Google Maps weer te geven, moet u Google Maps-cookies accepteren. Dit schakelt alleen Google Maps in, niet andere diensten.",
       "buttonAccept": "Accepteren en kaart weergeven"
     },
 
     "cookieBanner": {
-      "description": "We gebruiken cookies om de website te verbeteren. U kunt kiezen welke categorieën u wilt accepteren.",
+      "description": "We gebruiken één noodzakelijke toestemmingscookie om uw keuze te onthouden. Google Maps-cookies zijn optioneel en worden alleen geladen als u ze toestaat.",
       "customize": "Instellingen aanpassen",
       "manageConsent": "Cookies beheren",
-      "acceptAll": "Alles accepteren",
-      "declineAll": "Alleen noodzakelijk",
+      "acceptAll": "Google Maps toestaan",
+      "declineAll": "Doorgaan zonder Google Maps",
       "back": "Terug",
       "savePreferences": "Instellingen opslaan",
       "alwaysActive": "Altijd actief",
 
       "customizeTitle": "Cookies aanpassen",
-      "customizeDescription": "Kies welke soorten cookies u wilt accepteren. U kunt dit op elk moment wijzigen.",
+      "customizeDescription": "De toestemmingscookie is nodig om uw keuze te onthouden. Google Maps blijft optioneel en kan op elk moment worden gewijzigd.",
 
       "essential": {
-        "title": "Essentiële cookies",
-        "description": "Deze zijn nodig voor het functioneren van de website, inclusief de boekingsengine."
-      },
-
-      "analytics": {
-        "title": "Analytische cookies",
-        "description": "Helpt ons te begrijpen hoe bezoekers de website gebruiken via Mews Analytics. Gegevens worden 13 maanden bewaard."
+        "title": "Toestemmingscookie",
+        "description": "Onthoudt uw cookiekeuze op deze website. Er worden geen Google Maps-cookies geladen zonder uw toestemming."
       },
 
       "marketing": {
-        "title": "Marketingcookies",
-        "description": "Wordt gebruikt om Google Maps weer te geven. Google (derde partij) verzamelt en verwerkt: IP-adres, locatiegegevens, browser-/apparaatinformatie. Raadpleeg het Privacybeleid van Google voor details over gegevensretentie."
+        "title": "Google Maps",
+        "description": "Wordt gebruikt om Google Maps weer te geven. Wanneer ingeschakeld kan Google (derde partij) IP-adres, locatiegegevens en browser-/apparaatinformatie verwerken."
       }
     },
 
     "cookieSettings": {
       "title": "Cookie-instellingen",
-      "description": "Beheer uw cookie-voorkeuren. U kunt uw toestemming op elk moment wijzigen of intrekken.",
+      "description": "Beheer uw cookievoorkeuren voor Google Maps. U kunt uw toestemming op elk moment wijzigen of intrekken.",
       "saved": "Uw instellingen zijn opgeslagen!",
       "saveButton": "Instellingen opslaan",
       "resetButton": "Alles opnieuw instellen",
@@ -103,15 +98,11 @@
       "consentInfo": "Uw huidige toestemming werd geregistreerd op: ",
 
       "essential": {
-        "details": "Inclusief: Sessiecookies, beveiligingscookies en basale boekingsfunctionaliteit. Essentiële cookies zijn altijd actief en vereisen geen toestemming."
-      },
-
-      "analytics": {
-        "details": "We gebruiken Mews Systems (derde partij) om geanonimiseerde gebruikersstatistieken te verzamelen om de boekingservaring te verbeteren. Gegevensretentie: 13 maanden. Geen gegevens worden gedeeld voor marketingdoeleinden."
+        "details": "Bevat een first-party toestemmingscookie en beveiligingsgerelateerde browserfunctionaliteit. Deze cookie is altijd actief omdat die nodig is om uw privacykeuze te onthouden."
       },
 
       "marketing": {
-        "details": "Google Maps (derde partij) verzamelt en verwerkt: IP-adres, browser-/apparaatinformatie en locatiegegevens wanneer de kaart wordt geladen. Google bewaart deze gegevens volgens het eigen retentiebeleid (zie Privacybeleid van Google). Gegevens worden gebruikt voor serviceanalytics, verbetering en mogelijk gepersonaliseerde inhoud. Bezoek het Privacybeleid en Cookie-beleid van Google voor gedetailleerde informatie over gegevensverwerking en retentie."
+        "details": "Google Maps (derde partij) verzamelt en verwerkt IP-adres, browser-/apparaatinformatie en locatiegerelateerde gegevens wanneer de kaart wordt geladen. Google bewaart deze gegevens volgens het eigen beleid. Bekijk het Privacybeleid en Cookiebeleid van Google voor meer details."
       }
     }
   },
