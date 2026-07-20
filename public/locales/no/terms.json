@@ -1,0 +1,63 @@
+{
+  "termsPage": {
+    "title": "Vilkår og betingelser – Hytteutleie og Campingplass.",
+    "description": "Gjelder for alle bestillinger hos HOV-HYTTEGREND AS – org.nr. 935 623 642 MVA",
+    "adress": "Adresse: Gaularfjellsvegen 2203, 6978 Viksdalen, Noreg",
+    "part_1": {
+      "title": "1. Bestilling og bekreftelse",
+      "text": "Bestilling gjøres via vår nettside, telefon eller e-post. En bestilling er bindende når du har mottatt en skriftlig bekreftelse fra oss. Kunden er selv ansvarlig for at oppgitte kontaktopplysninger er riktige."
+    },
+    "part_2": {
+      "title": "2. Betaling",
+      "listItem1": "Faktura sendes etter bestilling eller ved ankomst, avhengig av avtale.",
+      "listItem2": "Full betaling må være mottatt før eller ved ankomst, med mindre annet er avtalt.",
+      "listItem3": "Vi aksepterer betaling med kort, Vipps eller kontant."
+    },
+    "part_3": {
+      "title": "3. Priser",
+      "text": "Alle priser er i norske kroner (NOK) og inkluderer merverdiavgift (MVA). Prisene inkluderer strøm og normalt forbruk av ved, med mindre annet er avtalt."
+    },
+    "part_4": {
+      "title": "4. Avbestilling på forskjellige priskategorier",
+      "listItem1": "Mer enn 1 dager før ankomst: Fully Flexible",
+      "listItem2": "Mindre enn 30 dager før ankomst: Non-refundable",
+      "text": "Ved sykdom eller force majeure kan det gis unntak etter dokumentasjon og vurdering."
+    },
+    "part_5": {
+      "title": "5. Innsjekk og utsjekk",
+      "listItem1": "Innsjekk: fra kl. 15:00",
+      "listItem2": "Utsjekk: senest kl. 11:00 på avreisedagen. Sen utsjekk må avtales på forhånd og kan medføre ekstra kostnad.",
+      "text": ""
+    },
+    "part_6": {
+      "title": "6. Rengjøring og orden",
+      "text1": "Hytta skal etterlates i ryddig stand. Sluttrengjøring er ikke inkludert med mindre det er avtalt og betalt for på forhånd. Hvis hytta ikke er tilfredsstillende rengjort ved utsjekk, faktureres det for ekstra renhold.",
+      "text2": "Alternativ: Vi tilbyr sluttrengjøring mot et tillegg i prisen."
+    },
+    "part_7": {
+      "title": "7. Nøkler og adgang",
+      "text": "Nøkler leveres ut ved innsjekk og leveres tilbake ved utsjekk. Tap av nøkkel medfører gebyr på kr 500,- for bytte av lås eller nøkkel."
+    },
+    "part_8": {
+      "title": "8. Skader og ansvar",
+      "text": "Kunden er økonomisk ansvarlig for skade på inventar, eiendom eller bygninger som følge av uaktsomhet eller regelbrudd. Eventuelle skader må meldes umiddelbart. Røyking er ikke tillatt innendørs. Dyr er tillatt i utvalgte hytter mot eit gebyr."
+    },
+    "part_9": {
+      "title": "9. Force majeure",
+      "text": "Vi er ikke ansvarlige for forhold utenfor vår kontroll, som ekstremvær, strømbrudd, stengte veier eller lignende som gjør det umulig å gjennomføre oppholdet som planlagt."
+    },
+    "part_10": {
+      "title": "10. Klager og tvister",
+      "text": "Klager må fremmes skriftlig så snart som mulig, og senest 7 dager etter avreise. Ved uenighet forsøker vi å finne en minnelig løsning. Tvister som ikke kan løses i dialog behandles av Sunnfjord tingrett som verneting."
+    },
+    "contactInfo": {
+      "title": "Kontaktinformasjon",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Noreg",
+      "email": "E-post: post@hovhyttegrend.no",
+      "phone": "Telefon: +47 400 67 568",
+      "website": "Nettside: www.hovhyttegrend.no"
+    }
+  }
+}

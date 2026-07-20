@@ -1,0 +1,63 @@
+{
+  "termsPage": {
+    "title": "Conditions générales – Location de chalets et camping",
+    "description": "Valables pour toutes les réservations auprès de HOV-HYTTEGREND AS – n° d’organisation 935 623 642 TVA",
+    "adress": "Adresse: Gaularfjellsvegen 2203, 6978 Viksdalen, Norvège",
+    "part_1": {
+      "title": "1. Réservation et confirmation",
+      "text": "Les réservations peuvent être effectuées via notre site internet, par téléphone ou par e-mail. Une réservation est considérée comme ferme et définitive dès réception d’une confirmation écrite de notre part. Le client est responsable de l’exactitude des coordonnées fournies."
+    },
+    "part_2": {
+      "title": "2. Paiement",
+      "listItem1": "Une facture est envoyée après la réservation ou à l’arrivée, selon accord.",
+      "listItem2": "Délai de paiement : 14 jours à compter de la date de facturation, ou avant l’arrivée si le séjour est imminent.",
+      "listItem3": "En cas de retard de paiement, des intérêts de retard et des frais de rappel seront appliqués."
+    },
+    "part_3": {
+      "title": "3. Prix",
+      "text": "Tous les prix sont indiqués en couronnes norvégiennes (NOK) et incluent la taxe sur la valeur ajoutée (TVA). Les prix comprennent l’électricité et une consommation normale de bois de chauffage, sauf accord contraire."
+    },
+    "part_4": {
+      "title": "4. Annulation – différentes catégories tarifaires",
+      "listItem1": "Plus d’1 jour avant l’arrivée : Entièrement flexible",
+      "listItem2": "Moins de 30 jours avant l’arrivée : Non remboursable",
+      "text": "En cas de maladie ou de force majeure, des exceptions peuvent être accordées sur présentation de justificatifs et après évaluation."
+    },
+    "part_5": {
+      "title": "5. Arrivée et départ",
+      "listItem1": "Arrivée : à partir de 15h00",
+      "listItem2": "Départ : au plus tard à 11h00 le jour du départ",
+      "text": "Un départ tardif doit être convenu à l’avance et peut entraîner des frais supplémentaires."
+    },
+    "part_6": {
+      "title": "6. Propreté et ordre",
+      "text1": "Le chalet doit être laissé dans un état propre et ordonné. Le ménage de fin de séjour n’est pas inclus, sauf s’il a été convenu et payé à l’avance. Si le chalet n’est pas nettoyé de manière satisfaisante lors du départ, des frais de nettoyage supplémentaires seront facturés.",
+      "text2": "Alternative : Nous proposons un ménage de fin de séjour moyennant un supplément."
+    },
+    "part_7": {
+      "title": "7. Clés et accès",
+      "text": "Les clés sont remises lors de l’arrivée et doivent être restituées lors du départ. La perte d’une clé entraînera des frais de 500 NOK pour le remplacement de la clé ou de la serrure."
+    },
+    "part_8": {
+      "title": "8. Dommages et responsabilité",
+      "text": "Le client est financièrement responsable de tout dommage causé au mobilier, à la propriété ou aux bâtiments résultant d’une négligence ou du non-respect du règlement. Tout dommage doit être signalé immédiatement. Il est interdit de fumer à l’intérieur. Les animaux sont autorisés dans certains chalets moyennant un supplément."
+    },
+    "part_9": {
+      "title": "9. Force majeure",
+      "text": "Nous ne saurions être tenus responsables des événements indépendants de notre volonté, tels que des conditions météorologiques extrêmes, des coupures de courant, des routes fermées ou tout autre événement rendant impossible le déroulement du séjour tel que prévu."
+    },
+    "part_10": {
+      "title": "10. Réclamations et litiges",
+      "text": "Toute réclamation doit être formulée par écrit dès que possible et au plus tard dans les 7 jours suivant le départ. En cas de désaccord, nous chercherons une solution amiable. Les litiges qui ne peuvent être résolus à l’amiable seront portés devant le tribunal de district de Sunnfjord, compétent en la matière."
+    },
+    "contactInfo": {
+      "title": "Coordonnées",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Norvège",
+      "email": "E-mail: post@hovhyttegrend.no",
+      "phone": "Téléphone: +47 400 67 568",
+      "website": "Site internet: www.hovhyttegrend.no"
+    }
+  }
+}
