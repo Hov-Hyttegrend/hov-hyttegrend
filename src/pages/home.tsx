@@ -27,7 +27,7 @@ import Background from '../components/Background';
 import BookingButton from '../components/BookingButton';
 
 export default function Home() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(['translation', 'home']);
 
   return (
     <>
@@ -72,10 +72,10 @@ export default function Home() {
         <div className="section-container bg-primary">
           <section className="flex flex-col max-w-200 2xl:max-w-250 lg:p-10 gap-7 lg:gap-12">
             <h2 className="font-secondary text-xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold uppercase text-secondary">
-              {t('homePage.section_1.title')}
+              {t('home:homePage.section_1.title')}
             </h2>
             <div className="text flex flex-col gap-5 lg:gap-10">
-              {renderTextWithParagraphs(t('homePage.section_1.text'))}
+              {renderTextWithParagraphs(t('home:homePage.section_1.text'))}
             </div>
 
             <div className="w-full flex justify-center">
@@ -89,9 +89,9 @@ export default function Home() {
           <ImageTextSection
             imageSrc={HOV_2}
             imageAlt="Mann og hund går langs en elv i mellom skog og fjell"
-            title={t('homePage.section_2.title')}
+            title={t('home:homePage.section_2.title')}
             titleClassName="h2"
-            text={t('homePage.section_2.text')}
+            text={t('home:homePage.section_2.text')}
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             buttonClassName="button-green"
@@ -102,10 +102,10 @@ export default function Home() {
         {/* section 3 and 4 */}
         <div className="bg-primary">
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
-            <h2 className="h2 pb-5">{t('homePage.section_3.title')}</h2>
-            <p className="text pb-8">{t('homePage.section_3.text')}</p>
+            <h2 className="h2 pb-5">{t('home:homePage.section_3.title')}</h2>
+            <p className="text pb-8">{t('home:homePage.section_3.text')}</p>
             <span className="text-sm lg:text-lg mb-10 text-gray-700">
-              {t('homePage.section_3.tempMessage')}
+              {t('home:homePage.section_3.tempMessage')}
             </span>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
               <div className="icon-button icon-button-top">
@@ -144,10 +144,10 @@ export default function Home() {
 
           {/* Section 4 */}
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
-            <h2 className="h2 pb-5">{t('homePage.section_4.title')}</h2>
-            <p className="text pb-8">{t('homePage.section_4.text')}</p>
+            <h2 className="h2 pb-5">{t('home:homePage.section_4.title')}</h2>
+            <p className="text pb-8">{t('home:homePage.section_4.text')}</p>
             <span className="text-sm lg:text-lg mb-10 text-gray-700">
-              {t('homePage.section_4.tempMessage')}
+              {t('home:homePage.section_4.tempMessage')}
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
               <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
@@ -186,9 +186,9 @@ export default function Home() {
           <ImageTextSection
             imageSrc={HOV_5}
             imageAlt="Likholefossen med strømmende vann som renner over steiner og ned i en elv, omgitt av skog og blå himmel"
-            title={t('homePage.section_5.title')}
+            title={t('home:homePage.section_5.title')}
             titleClassName="h2"
-            text={t('homePage.section_5.text')}
+            text={t('home:homePage.section_5.text')}
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 h-full"
           />
@@ -199,17 +199,17 @@ export default function Home() {
           <ImageTextSection
             imageSrc={HOV_6}
             imageAlt="Litlevatnet omgitt av skog og fjell, med stille vann som speiler blå himmel og skyer"
-            title={t('homePage.section_6.title')}
+            title={t('home:homePage.section_6.title')}
             titleClassName="h2"
-            text={t('homePage.section_6.text')}
+            text={t('home:homePage.section_6.text')}
             textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             className="lg:flex-row-reverse"
             listItems={[
-              t('homePage.section_6.listItem1'),
-              t('homePage.section_6.listItem2'),
-              t('homePage.section_6.listItem3'),
-              t('homePage.section_6.listItem4'),
+              t('home:homePage.section_6.listItem1'),
+              t('home:homePage.section_6.listItem2'),
+              t('home:homePage.section_6.listItem3'),
+              t('home:homePage.section_6.listItem4'),
             ]}
           />
         </div>
