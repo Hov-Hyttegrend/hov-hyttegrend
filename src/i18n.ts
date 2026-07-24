@@ -9,8 +9,9 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: 'no',
+    defaultNS: 'translation',
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json',
+      loadPath: '/locales/{{lng}}/{{ns}}.json',
     },
     interpolation: {
       escapeValue: false,
