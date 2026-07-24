@@ -1,0 +1,107 @@
+{
+  "explorePage": {
+    "title": "Opplevelser i nærområdet",
+
+    "sightseeing": {
+      "title": "Sightseeing og utsiktpunkt",
+      "1": {
+        "title": "Fossestien – 0 km",
+        "text": "Fossestien går rett ved Hov Hyttegrend og er ein av dei mest kjende turane i Sunnfjord. Den 21 kilometer lange stien følgjer det verna Gaularvassdraget med imponerande fossar, stryk og fjellvatn langs ruta. Dette er eit perfekt stopp for korte pausar, fotografering og naturopplevingar."
+      },
+      "2": {
+        "title": "Gaularfjellet og Utsikten – ca. 16 km",
+        "text": "Langs Nasjonal Turistveg Gaularfjellet finn du fleire spektakulære stoppestader. Utsiktspunktet “Utsikten” gir panoramautsikt over dalar, fjell og fossar, og er eit populært stopp for reisande gjennom området. Turistvegen er kjend for vakker vestlandsnatur og arkitektonisk flotte rasteplassar."
+      },
+      "3": {
+        "title": "Sognefjorden i Balestrand – ca. 55 km",
+        "text": "Balestrand er eit idyllisk stopp ved Sognefjorden med vakker utsikt mot fjord og fjell. Her kan du ta ein pause langs fjordpromenaden, besøkje lokale kafear eller nyte utsikta over ein av verdas lengste fjordar. Besøk Norsk Reiselivsmuseum i Balestrand. Norwegian Museum of Travel and Tourism"
+      },
+      "4": {
+        "title": "Fjærland og Norsk Bremuseum – ca. 100 km",
+        "text": "Fjærland ligg mellom Sognefjorden og Jostedalsbreen og er eit populært reisemål for både natur- og kulturinteresserte. Her finn du Norsk Bremuseum, bokbyen Fjærland og fleire flotte utsiktspunkt mot brearmane frå Jostedalsbreen. Norsk Bremuseum"
+      },
+      "5": {
+        "title": "Stegastein utsiktspunkt – ca. 155 km",
+        "text": "Stegastein i Aurland er eitt av dei mest fotograferte utsiktspunkta i Norge. Plattformen strekkjer seg ut over fjellsida og gir spektakulær utsikt over Aurlandsfjorden. Turen hit passar godt som dagstur frå Hov Hyttegrend."
+      },
+      "6": {
+        "title": "Jostedalsbreen og Briksdalen – ca. 155 km",
+        "text": "Briksdalsbreen er ein av dei mest besøkte brearmane i Norge og eit flott stopp for reisande som ønskjer å oppleve brelandskap på nært hald. Området byr på korte turar, utsiktspunkt og mektig natur."
+      },
+      "7": {
+        "title": "Sognefjellet – ca. 170 km",
+        "text": "Sognefjellet er den høgaste fjellovergangen i Nord-Europa og byr på spektakulære utsikter over brear, fjell og høgfjellslandskap. Langs ruta finn du fleire rasteplassar ogstoppestader som eignar seg perfekt for foto og korte pausar."
+      },
+      "8": {
+        "title": "Praktiske stopp undervegs",
+        "text": "Frå Hov Hyttegrend er det kort veg til både fjordopplevingar, breområde og nasjonale turistvegar. Mange stoppestader har parkering, informasjonstavler og rasteplassarsom gjer det enkelt å utforske området i eige tempo."
+      }
+    },
+
+    "shopping": {
+      "title": "Shopping og lokale butikkar nær Hov Hyttegrend",
+      "description": "Hov Hyttegrend i Viksdalen ligg sentralt til for deg som ønskjer å kombinere naturopplevingar med lokal shopping, små butikkar og handel i fjordbygdene rundt Sunnfjord og Sogn. Her finn du både daglegvarebutikkar, lokalmat, handverk og større handlesenter innan kort køyreavstand.",
+      "1": {
+        "title": "Joker Viksdalen – ca. 12 km",
+        "text": "Den næraste daglegvarebutikken til Hov Hyttegrend er Joker Viksdalen. Her finn du daglegvarer, ferskvarer og det viktigaste du treng under opphaldet. Butikken er eit naturleg stopp for både hyttegjester og reisande gjennom området."
+      },
+      "2": {
+        "title": "Sande sentrum – ca. 35 km",
+        "text": "I kommunesenteret Sande finn du fleire småbutikkar, kafear og servicetilbod. Her kan du handle lokale varer, besøkje bakeri eller ta ein pause på reisa gjennom Sunnfjord."
+      },
+      "3": {
+        "title": "Førde sentrum og Alti Førde – ca. 55 km",
+        "text": "Førde er den største handelsbyen i Sunnfjord og byr på eit breitt utval butikkar, restaurantar og kjøpesenter. På Alti Førde finn du klede, sport, interiør, elektronikk og lokale butikkar samla under eitt tak. Byen har også fleire kafear og nisjebutikkar i sentrum."
+      },
+      "4": {
+        "title": "Balestrand – lokalmat og handverk – ca. 55 km",
+        "text": "Balestrand er kjent for små butikkar med lokalprodusert mat, kunst og handverk. Her kan du kjøpe sider frå Sogn, lokal kunst, strikkeprodukt og suvenirar med inspirasjon frå fjordlandskapet."
+      },
+      "5": {
+        "title": "Fjærland Bokby – ca. 105 km",
+        "text": "Fjærland er kjend som Bokbyen ved fjorden og er eit unikt stopp for bokelskarar. Her finn du små bokbutikkar og brukthandel spreidd rundt i bygda, med alt frå norske klassikarar til internasjonal litteratur."
+      },
+      "6": {
+        "title": "Sogndal via Gaularfjellet– shopping ved Sognefjorden – ca. 90 km",
+        "text": "Sogndal er eit viktig handelsområde i Sogn med moderne butikkar, sportsbutikkar og kjøpesenter. Byen er spesielt populær for sport og friluftsutstyr, og har fleire butikkar retta mot aktive reisande og fjellturistar."
+      },
+      "7": {
+        "title": "Byrkjelo og lokalmat – ca. 95 km",
+        "text": "Byrkjelo er eit populært stopp langs E39 og byr på lokale matbutikkar, bakeri og utsal med vestlandsprodukt. Mange stoppar her for å kjøpe lokal ost, spekemat og bakst før vidare reise gjennom fjordane."
+      },
+      "8": {
+        "title": "Lokale opplevingar og gårdsutsal",
+        "text": "Rundt Sunnfjord og Sogn finn du fleire små gårdsbutikkar og utsal med lokalmat, honning, sider, ost og handverk. Mange av desse ligg langs turistvegane og gir deg moglegheit til å oppleve ekte vestlandsk matkultur undervegs."
+      },
+      "9": {
+        "title": "Praktisk informasjon",
+        "text": "Frå Hov Hyttegrend har du kort veg til både små bygdebutikkar og større handlesenter. Mange butikkar i regionen tilbyr lokale produkt og varer inspirerte av naturen i fjordlandskapet, noko som gjer shoppingturen til ei oppleving i seg sjøl"
+      }
+    },
+
+    "food": {
+      "title": "Mat og restaurant / Kafe",
+      "description": "Rundt Hov Hyttegrend finn du fleire hyggelege matstader med lokale råvarer og ekte vestlandsstemning. Her kan du nyte alt frå heimelaga tradisjonsmat til moderne restaurantar i Sunnfjord.",
+      "1": {
+        "title": "Eldalstunet – ca. 8 km",
+        "text": "Eldalstunet er ein lokal gardrestaurant i vakre omgjevnader langs Gaularfjellet. Her får du heimelaga mat, lokale spesialitetar og tradisjonell vestlandsk atmosfære. Restauranten er sesongopen og held vanlegvis ope på søndagar, noko som gjer det til eit perfekt stopp for søndagsmiddag eller kaffipause i fjellbygda."
+      },
+      "2": {
+        "title": "Elvesus – ca. 55 km",
+        "text": "Elvesus ligg sentralt i Førde med utsikt mot elva og eit moderne miljø for både lunsj og middag. Restauranten er kjend for gode råvarer, hyggeleg atmosfære og ein meny inspirert av både lokale og internasjonale smakar."
+      },
+      "3": {
+        "title": "Naustdal Dampbakeri Cafe – ca. 50 km",
+        "text": "Denne populære kaféen i Førde er kjent for fersk bakst, god kaffe og tradisjonelle bakevarer. Eit fint stopp for ein roleg kaffipause etter tur eller sightseeing."
+      },
+      "4": {
+        "title": "Peppes Pizza Førde – ca. 55 km",
+        "text": "For familiar og større grupper er Peppes Pizza eit populært alternativ i Førde sentrum. Her finn du pizza, smårettar og ein avslappa atmosfære etter ein dag med opplevingar i regionen."
+      },
+      "5": {
+        "title": "Lokale smakar frå Sunnfjord",
+        "text": "Området rundt Sunnfjord er kjent for lokalmat som spekemat, fisk, ost og heimelaga bakst. Langs fjordar og fjell finn du fleire små kaféar og restaurantar som gir deg smaken av ekte vestlandsk matkultur."
+      }
+    }
+  }
+}
