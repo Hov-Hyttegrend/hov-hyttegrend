@@ -11,7 +11,9 @@
     "header": {
       "about": "Over ons",
       "contact": "Contact",
-      "booking": "Boeking"
+      "booking": "Boeking",
+      "activities": "Activiteiten",
+      "explore": "Verkennen"
     },
 
     "contact": {

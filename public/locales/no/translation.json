@@ -11,7 +11,9 @@
     "header": {
       "about": "Om oss",
       "contact": "Kontakt",
-      "booking": "Booking"
+      "booking": "Booking",
+      "activities": "Aktivitetar",
+      "explore": "Utforsk"
     },
 
     "contact": {

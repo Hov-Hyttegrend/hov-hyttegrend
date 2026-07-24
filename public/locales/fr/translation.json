@@ -11,7 +11,9 @@
     "header": {
       "about": "À propos de nous",
       "contact": "Contact",
-      "booking": "Réservation"
+      "booking": "Réservation",
+      "activities": "Activités",
+      "explore": "Explorer"
     },
 
     "contact": {
