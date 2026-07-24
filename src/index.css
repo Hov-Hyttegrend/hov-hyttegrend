@@ -41,6 +41,10 @@ html {
   @apply text-base sm:text-lg md:text-lg xl:text-2xl;
 }
 
+.image-text-container {
+  @apply flex w-full flex-col items-center gap-10 lg:gap-52 lg:flex-row lg:px-10;
+}
+
 .icon-button {
   @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
 }
