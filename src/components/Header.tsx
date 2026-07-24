@@ -70,6 +70,12 @@ export default function Header() {
             <Link to="/#contact">{t('common.header.contact')}</Link>
           </li>
           <li>
+            <Link to="/activities">{t('common.header.activities')}</Link>
+          </li>
+          <li>
+            <Link to="/explore">{t('common.header.explore')}</Link>
+          </li>
+          <li>
             <a
               href="https://campio.no/nb/campsite/hov-hyttegrend?rid=60bfcc8567d01f20b7644593b9e5c8"
               target="_blank"
@@ -104,6 +110,12 @@ export default function Header() {
                 </li>
                 <li>
                   <Link to="/#contact">{t('common.header.contact')}</Link>
+                </li>
+                <li>
+                  <Link to="/activities">{t('common.header.activities')}</Link>
+                </li>
+                <li>
+                  <Link to="/explore">{t('common.header.explore')}</Link>
                 </li>
                 <li>
                   <a
