@@ -216,7 +216,7 @@ export default function Home() {
 
         {/* Section 9 - Map */}
         <div
-          className="flex flex-col justify-center items-center py-16 lg:pb-20 lg:pt-40 xl:pb-24 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary"
+          className="flex flex-col justify-center items-center py-16 md:py-30 lg:py-40 xl:pb-60 xl:pt-80 px-6 sm:px-10 md:px-20 lg:px-20 bg-primary"
           id="contact"
         >
           <GoogleMaps />
