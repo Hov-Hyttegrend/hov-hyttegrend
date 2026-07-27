@@ -9,11 +9,9 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="text-white w-full flex flex-col">
-      <div className="w-full bg-primary flex justify-between items-baseline max-h-">
-        <GroupTrees3 className="text-secondary max-h-14 md:max-h-28 xl:max-h-56" />
-        <GroupTrees4 className="text-secondary max-h-12 md:max-h-24 xl:max-h-48" />
-      </div>
+    <footer className="relative text-white w-full flex flex-col">
+      <GroupTrees3 className="text-secondary absolute left-0 -translate-y-full max-h-14 md:max-h-28 xl:max-h-56" />
+      <GroupTrees4 className="text-secondary absolute right-0 -translate-y-full max-h-12 md:max-h-24 xl:max-h-48" />
 
       <div className="flex flex-col justify-center items-start md:items-center w-full bg-secondary pt-20 pb-10 px-7">
         <HovLogo className="h-16 md:h-24 mb-5" />
