@@ -1,0 +1,104 @@
+{
+  "explorePage": {
+    "title": "Explorer les environs",
+    "sightseeing": {
+      "title": "Sites touristiques et points de vue",
+      "1": {
+        "title": "Fossestien – 0 km",
+        "text": "Le Fossestien passe juste à côté de Hov Hyttegrend et est l’un des sentiers de randonnée les plus connus de Sunnfjord. Le sentier de 21 kilomètres suit le Gaularvassdrag protégé, avec des cascades, des rapides et des lacs de montagne impressionnants tout au long du parcours. C’est un endroit idéal pour de courtes pauses, la photographie et les expériences de la nature."
+      },
+      "2": {
+        "title": "Gaularfjellet et Utsikten – env. 16 km",
+        "text": "Le long de la route touristique nationale Gaularfjellet, vous trouverez plusieurs arrêts spectaculaires. Le point de vue “Utsikten” offre une vue panoramique sur les vallées, montagnes et cascades et constitue un arrêt populaire pour les voyageurs traversant la région. La route est connue pour sa belle nature ouest-norvégienne et ses aires de repos d’un grand intérêt architectural."
+      },
+      "3": {
+        "title": "Sognefjorden à Balestrand – env. 55 km",
+        "text": "Balestrand est un arrêt idyllique au bord du Sognefjord, avec une belle vue sur le fjord et les montagnes. Ici, vous pouvez faire une pause le long de la promenade du fjord, visiter des cafés locaux ou profiter de la vue sur l’un des plus longs fjords du monde. Visitez le musée norvégien du tourisme."
+      },
+      "4": {
+        "title": "Fjærland et le Norsk Bremuseum – env. 100 km",
+        "text": "Fjærland se situe entre le Sognefjord et le Jostedalsbreen et est une destination prisée des amateurs de nature et de culture. Vous y trouverez le Norsk Bremuseum, la ville des livres de Fjærland et plusieurs beaux points de vue sur les bras du glacier du Jostedalsbreen."
+      },
+      "5": {
+        "title": "Point de vue Stegastein – env. 155 km",
+        "text": "Stegastein à Aurland est l’un des points de vue les plus photographiés de Norvège. La plateforme s’avance au-dessus de la montagne et offre une vue spectaculaire sur l’Aurlandsfjord. L’excursion est idéale pour une journée depuis Hov Hyttegrend."
+      },
+      "6": {
+        "title": "Jostedalsbreen et Briksdalen – env. 155 km",
+        "text": "Le Briksdalsbreen est l’un des bras de glacier les plus visités de Norvège et un excellent arrêt pour les voyageurs qui souhaitent découvrir le paysage glaciaire de près. La zone offre de courtes randonnées, des points de vue et une nature impressionnante."
+      },
+      "7": {
+        "title": "Sognefjellet – env. 170 km",
+        "text": "Le Sognefjellet est le plus haut col de montagne d’Europe du Nord et offre des vues spectaculaires sur les glaciers, les montagnes et les paysages d’altitude. Le long du parcours, vous trouverez plusieurs aires de repos et points de vue parfaits pour les photos et les courtes pauses."
+      },
+      "8": {
+        "title": "Arrêts pratiques en chemin",
+        "text": "Depuis Hov Hyttegrend, il n’y a que peu de distance jusqu’aux expériences de fjord, aux zones glaciaires et aux routes touristiques nationales. De nombreux points d’arrêt disposent de places de stationnement, de panneaux d’information et d’aires de repos, ce qui rend l’exploration de la région à votre propre rythme très simple."
+      }
+    },
+    "shopping": {
+      "title": "Shopping et boutiques locales près de Hov Hyttegrend",
+      "description": "Hov Hyttegrend à Viksdalen est idéalement situé si vous souhaitez combiner des expériences de la nature avec des achats locaux, petites boutiques et commerce dans les villages de fjord autour de Sunnfjord et Sogn. Vous y trouverez aussi bien des produits de première nécessité, de la nourriture locale et de l’artisanat que de grands centres commerciaux à courte distance en voiture.",
+      "1": {
+        "title": "Joker Viksdalen – env. 12 km",
+        "text": "Le supermarché le plus proche de Hov Hyttegrend est Joker Viksdalen. Vous y trouverez les produits de base, les produits frais et tout ce dont vous avez besoin pendant votre séjour. La boutique est un arrêt naturel aussi bien pour les vacanciers que pour les voyageurs de passage."
+      },
+      "2": {
+        "title": "Centre de Sande – env. 35 km",
+        "text": "Au centre municipal de Sande, vous trouverez plusieurs petites boutiques, cafés et services. Ici, vous pouvez acheter des produits locaux, visiter une boulangerie ou faire une pause pendant votre trajet à travers Sunnfjord."
+      },
+      "3": {
+        "title": "Centre de Førde et Alti Førde – env. 55 km",
+        "text": "Førde est la plus grande ville commerciale de Sunnfjord et propose un large choix de boutiques, restaurants et centres commerciaux. À Alti Førde, vous trouverez des vêtements, du matériel de sport, de la décoration, de l’électronique et des boutiques locales toutes réunies sous un même toit. La ville compte également plusieurs cafés et boutiques de niche en centre-ville."
+      },
+      "4": {
+        "title": "Balestrand – alimentation locale et artisanat – env. 55 km",
+        "text": "Balestrand est connu pour ses petites boutiques proposant des produits alimentaires locaux, des œuvres d’art et de l’artisanat. Ici, vous pouvez acheter des produits de Sogn, des œuvres d’art locales, des vêtements tricotés et des souvenirs inspirés du paysage du fjord."
+      },
+      "5": {
+        "title": "Fjærland, la ville des livres – env. 105 km",
+        "text": "Fjærland est connue comme la ville des livres au bord du fjord et constitue un arrêt unique pour les amateurs de livres. Vous y trouverez de petites librairies et des boutiques de seconde main réparties dans le village, allant des classiques norvégiens à la littérature internationale."
+      },
+      "6": {
+        "title": "Sogndal via Gaularfjellet – shopping au bord du Sognefjord – env. 90 km",
+        "text": "Sogndal est une zone commerciale importante de Sogn avec des magasins modernes, des boutiques de sport et des centres commerciaux. La ville est particulièrement appréciée pour l’équipement de sport et de plein air et compte plusieurs magasins destinés aux voyageurs actifs et aux randonneurs de montagne."
+      },
+      "7": {
+        "title": "Byrkjelo et alimentation locale – env. 95 km",
+        "text": "Byrkjelo est un arrêt populaire le long de l’E39 et propose des épiceries locales, des boulangeries et des points de vente de produits de l’ouest de la Norvège. Beaucoup s’y arrêtent pour acheter du fromage local, des spécialités et du pain avant de poursuivre leur voyage à travers les fjords."
+      },
+      "8": {
+        "title": "Expériences locales et points de vente de fermes",
+        "text": "Autour de Sunnfjord et Sogn, vous trouverez plusieurs petites boutiques de ferme et points de vente proposant de la nourriture locale, du miel, des produits fumés, du fromage et de l’artisanat. Beaucoup sont situés le long des routes touristiques et vous permettent de découvrir la vraie culture alimentaire de l’ouest de la Norvège en chemin."
+      },
+      "9": {
+        "title": "Informations pratiques",
+        "text": "Depuis Hov Hyttegrend, vous êtes à courte distance à la fois de petites boutiques de village et de grands centres commerciaux. Beaucoup de magasins de la région proposent des produits locaux et des articles inspirés par la nature du paysage de fjord, ce qui fait du shopping une expérience en soi."
+      }
+    },
+    "food": {
+      "title": "Restaurants / cafés",
+      "description": "Autour de Hov Hyttegrend, vous trouverez plusieurs lieux de restauration conviviaux avec des ingrédients locaux et une vraie atmosphère de l’ouest de la Norvège. Ici, vous pouvez déguster aussi bien des plats traditionnels faits maison que des restaurants modernes à Sunnfjord.",
+      "1": {
+        "title": "Eldalstunet – env. 8 km",
+        "text": "Eldalstunet est un restaurant de ferme local dans un cadre magnifique au bord du Gaularfjellet. Vous y dégusterez des plats faits maison, des spécialités locales et une atmosphère traditionnelle de l’ouest de la Norvège. Le restaurant est ouvert en saison et est généralement ouvert le dimanche, ce qui en fait un arrêt parfait pour un dîner du dimanche ou une pause café dans le village de montagne."
+      },
+      "2": {
+        "title": "Elvesus – env. 55 km",
+        "text": "Elvesus est situé au cœur de Førde, avec une vue sur la rivière et un cadre moderne pour le déjeuner comme pour le dîner. Le restaurant est connu pour ses ingrédients de qualité, une atmosphère cosy et une carte inspirée à la fois par les saveurs locales et internationales."
+      },
+      "3": {
+        "title": "Naustdal Dampbakeri Cafe – env. 50 km",
+        "text": "Ce café populaire de Førde est connu pour ses pâtisseries fraîches, son bon café et ses produits de boulangerie traditionnels. Un très bon arrêt pour une pause café tranquille après une randonnée ou une visite."
+      },
+      "4": {
+        "title": "Peppes Pizza Førde – env. 55 km",
+        "text": "Pour les familles et les grands groupes, Peppes Pizza est une option populaire au centre de Førde. Vous y trouverez des pizzas, des petites assiettes et une atmosphère détendue après une journée riche en expériences dans la région."
+      },
+      "5": {
+        "title": "Saveurs locales de Sunnfjord",
+        "text": "La région de Sunnfjord est connue pour ses spécialités locales comme les produits fumés, le poisson, le fromage et les pâtisseries maison. Le long des fjords et des montagnes, vous trouverez plusieurs petits cafés et restaurants qui vous font découvrir la vraie culture alimentaire de l’ouest de la Norvège."
+      }
+    }
+  }
+}
