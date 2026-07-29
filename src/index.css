@@ -119,3 +119,33 @@ html {
     animation: spin-slow 2s linear infinite;
   }
 }
+
+@layer utilities {
+  @keyframes decorative-tree-float {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(var(--tree-scale, 1));
+    }
+
+    50% {
+      transform: translate3d(var(--tree-float-dx, 14px), var(--tree-float-dy, -14px), 0)
+        rotate(var(--tree-float-rotate, 1deg)) scale(var(--tree-scale, 1));
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(var(--tree-scale, 1));
+    }
+  }
+
+  .decorative-float-tree {
+    animation: decorative-tree-float var(--tree-float-duration, 18s) ease-in-out
+      var(--tree-float-delay, 0s) infinite;
+    will-change: transform;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .decorative-float-tree {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+  }
+}
