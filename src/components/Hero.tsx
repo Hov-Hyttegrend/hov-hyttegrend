@@ -27,7 +27,7 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section
-      className={`hero-section relative overflow-hidden flex flex-col gap-16 items-center justify-center h-screen w-full ${sectionClassName ?? ''}`}
+      className={`hero-section relative overflow-hidden flex flex-col gap-16 items-center justify-center h-screen w-full md:px-8 pt-14 md:pt-32 lg:pt-34.5 2xl:pt-55 pb-16 ${sectionClassName ?? ''}`}
     >
       {backgroundDecoration}
       <div
@@ -36,7 +36,9 @@ export default function Hero({
         <img
           src={imageSrc}
           alt={imageAlt}
-          className={imageClassName ?? 'w-full h-full object-cover'}
+          className={
+            imageClassName ?? 'lg:animate-pan-vertical w-full h-full lg:h-[200%] object-cover'
+          }
         />
         <div
           className={`absolute z-10 top-1/2 left-1/2 w-full h-full text-center flex flex-col justify-center translate-x-[-50%] translate-y-[-50%] bg-black/30  ${overlayClassName ?? ''}`}
