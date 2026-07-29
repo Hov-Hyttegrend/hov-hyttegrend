@@ -4,6 +4,7 @@ import ExploreContentSection from '../components/ExploreContentSection';
 import IconButtonNavigation, {
   type IconButtonNavigationItem,
 } from '../components/IconButtonNavigation';
+import DecorativeFloatyTrees from '../components/DecorativeFloatyTrees';
 import HOV_1 from '../assets/images/hov-drone3.webp';
 
 import FoodIcon from '../assets/svg/food.svg?react';
@@ -70,11 +71,14 @@ export default function Explore() {
         imageSrc={HOV_1}
         imageAlt="Oversiktsbilde av dalføre med elv, fossefall og fjell i naturskjønne omgivelser."
         title={t('explore:explorePage.title')}
+        backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
         sectionClassName="bg-primary md:px-8 pt-14 md:pt-32 lg:pt-34.5 2xl:pt-55 pb-16 md:pb-20 lg:pb-30 2xl:pb-16"
         imageContainerClassName=""
         imageClassName="animate-pan-vertical h-[120%] lg:h-[250%]"
       >
-        <IconButtonNavigation items={createNavigationItems('all')} />
+        <div className="flex justify-center px-6 w-full">
+          <IconButtonNavigation items={createNavigationItems('all')} />
+        </div>
       </Hero>
 
       {/* Sightseeing */}
@@ -91,6 +95,7 @@ export default function Explore() {
       <ExploreContentSection
         sectionId="shopping"
         sectionClassName="bg-primary"
+        backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
         icon={ShopIcon}
         title={t('explore:explorePage.shopping.title')}
         description={t('explore:explorePage.shopping.description')}

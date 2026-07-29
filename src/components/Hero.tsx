@@ -5,6 +5,7 @@ interface HeroProps {
   imageAlt: string;
   title: string;
   children?: ReactNode;
+  backgroundDecoration?: ReactNode;
   sectionClassName?: string;
   imageContainerClassName?: string;
   imageClassName?: string;
@@ -17,6 +18,7 @@ export default function Hero({
   imageAlt,
   title,
   children,
+  backgroundDecoration,
   sectionClassName,
   imageContainerClassName,
   imageClassName,
@@ -25,10 +27,11 @@ export default function Hero({
 }: HeroProps) {
   return (
     <section
-      className={`hero-section flex flex-col items-center justify-center 2xl:h-screen w-full ${sectionClassName ?? ''}`}
+      className={`hero-section relative overflow-hidden flex flex-col gap-16 items-center justify-center h-screen w-full ${sectionClassName ?? ''}`}
     >
+      {backgroundDecoration}
       <div
-        className={`image-container max-w-430 h-120  w-full overflow-hidden relative ${imageContainerClassName ?? ''}`}
+        className={`image-container z-10 max-w-430 h-full lg:h-120 w-full overflow-hidden relative ${imageContainerClassName ?? ''}`}
       >
         <img
           src={imageSrc}
@@ -41,14 +44,14 @@ export default function Hero({
           <h1
             className={
               titleClassName ??
-              'text-white text-shadow-sm tracking-widest font-bold text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl'
+              'text-white text-shadow-sm tracking-widest font-bold text-2xl sm:text-4xl lg:text-5xl 2xl:text-6xl p-6'
             }
           >
             {title}
           </h1>
         </div>
       </div>
-      {children}
+      {children ? <div className="relative z-10 w-full">{children}</div> : null}
     </section>
   );
 }
