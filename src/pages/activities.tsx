@@ -97,6 +97,7 @@ export default function Activities() {
         imageAlt1="Hov 1"
         imageAlt2="Hov 1"
         icon={HikeIcon}
+        navigationItems={createNavigationItems('hiking')}
       />
 
       <ActivitiesContentSection
@@ -112,6 +113,7 @@ export default function Activities() {
         imageAlt1="Hov 1"
         imageAlt2="Hov 1"
         icon={FishingIcon}
+        navigationItems={createNavigationItems('fishing')}
       />
 
       <ActivitiesContentSection
@@ -125,11 +127,32 @@ export default function Activities() {
         textPart2={renderTextWithParagraphs(
           t('activities:activitiesPage.mountainHike.text_part_2'),
         )}
-        imageSrc1={HOV_4}
-        imageSrc2={HOV_3}
-        imageAlt1="Hov 1"
-        imageAlt2="Hov 1"
         icon={MountainHikeIcon}
+        navigationItems={createNavigationItems('mountain-hiking')}
+      />
+
+      <ActivitiesContentSection
+        id="swimming"
+        sectionClassName="bg-primary"
+        backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
+        title={t('activities:activitiesPage.swimming.title')}
+        miniTitle={t('activities:activitiesPage.swimming.miniTitle')}
+        textPart1={renderTextWithParagraphs(t('activities:activitiesPage.swimming.text_part_1'))}
+        imageSrc1={HOV_5}
+        imageAlt1="Hov 1"
+        icon={SwimmingIcon}
+        navigationItems={createNavigationItems('swimming')}
+      />
+
+      <ActivitiesContentSection
+        id="frisbee-golf"
+        sectionClassName="bg-light-green pb-300"
+        title={t('activities:activitiesPage.frisbeeGolf.title')}
+        miniTitle={t('activities:activitiesPage.frisbeeGolf.miniTitle')}
+        textPart1={renderTextWithParagraphs(t('activities:activitiesPage.frisbeeGolf.text_part_1'))}
+        icon={FrisbeeGolfIcon}
+        navigationItems={createNavigationItems('frisbee-golf')}
+        buttonContainerClass="mb-10 md:mb-20 lg:mb-30 xl:mb-40"
       />
     </div>
   );
