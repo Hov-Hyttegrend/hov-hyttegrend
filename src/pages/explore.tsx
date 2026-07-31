@@ -1,11 +1,13 @@
 import { useTranslation } from 'react-i18next';
 import Hero from '../components/Hero';
+
+import HOV_1 from '../assets/images/gaular-utsikten.webp';
+
 import ExploreContentSection from '../components/ExploreContentSection';
 import IconButtonNavigation, {
   type IconButtonNavigationItem,
 } from '../components/IconButtonNavigation';
 import DecorativeFloatyTrees from '../components/DecorativeFloatyTrees';
-import HOV_1 from '../assets/images/hov-drone3.webp';
 
 import FoodIcon from '../assets/svg/food.svg?react';
 import ShopIcon from '../assets/svg/shop.svg?react';
