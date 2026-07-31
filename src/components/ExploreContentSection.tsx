@@ -19,6 +19,7 @@ type ExploreContentSectionProps = {
   items: ExploreContentSectionItem[];
   navigationItems: IconButtonNavigationItem[];
   backgroundDecoration?: ReactNode;
+  buttonContainerClass?: string;
 };
 
 export default function ExploreContentSection({
@@ -32,6 +33,7 @@ export default function ExploreContentSection({
   items,
   navigationItems,
   backgroundDecoration,
+  buttonContainerClass,
 }: ExploreContentSectionProps) {
   return (
     <section
@@ -64,7 +66,7 @@ export default function ExploreContentSection({
 
         <IconButtonNavigation
           items={navigationItems}
-          buttonContainerClassName="grid-cols-3 max-w-165"
+          buttonContainerClassName={`grid-cols-3 max-w-165 z-10 ${buttonContainerClass}`}
         />
       </div>
     </section>

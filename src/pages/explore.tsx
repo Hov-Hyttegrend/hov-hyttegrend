@@ -115,6 +115,7 @@ export default function Explore() {
         description={t('explore:explorePage.food.description')}
         items={foodItems}
         navigationItems={createNavigationItems('food')}
+        buttonContainerClass="mb-10 md:mb-20 lg:mb-30 xl:mb-40"
       />
     </div>
   );
