@@ -84,7 +84,6 @@ export default function Explore() {
         </div>
       </Hero>
 
-      {/* Sightseeing */}
       <ExploreContentSection
         sectionId="sightseeing"
         sectionClassName="bg-light-green "
@@ -94,7 +93,6 @@ export default function Explore() {
         navigationItems={createNavigationItems('sightseeing')}
       />
 
-      {/* Shopping */}
       <ExploreContentSection
         sectionId="shopping"
         sectionClassName="bg-primary"
@@ -106,7 +104,6 @@ export default function Explore() {
         navigationItems={createNavigationItems('shopping')}
       />
 
-      {/* Food */}
       <ExploreContentSection
         sectionId="food"
         sectionClassName="bg-light-green"
