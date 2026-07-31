@@ -74,12 +74,13 @@ export default function Explore() {
         imageAlt="Oversiktsbilde av dalføre med elv, fossefall og fjell i naturskjønne omgivelser."
         title={t('explore:explorePage.title')}
         backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
-        sectionClassName="bg-primary md:px-8 pt-14 md:pt-32 lg:pt-34.5 2xl:pt-55 pb-16 md:pb-20 lg:pb-30 2xl:pb-16"
-        imageContainerClassName=""
-        imageClassName="animate-pan-vertical h-[120%] lg:h-[250%]"
+        sectionClassName="bg-primary"
       >
         <div className="flex justify-center px-6 w-full">
-          <IconButtonNavigation items={createNavigationItems('all')} />
+          <IconButtonNavigation
+            items={createNavigationItems('all')}
+            buttonContainerClassName="grid-cols-3 max-w-165"
+          />
         </div>
       </Hero>
 

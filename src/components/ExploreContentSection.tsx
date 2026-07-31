@@ -36,7 +36,7 @@ export default function ExploreContentSection({
   return (
     <section
       id={sectionId}
-      className={`relative overflow-hidden flex flex-col gap-15 lg:gap-30 items-center justify-center min-h-screen w-full py-16 md:py-20 lg:py-30 xl:py-40 px-6 sm:px-14 md:px-28 xl:px-30 ${sectionClassName}`}
+      className={`relative overflow-hidden activities-explore-sections ${sectionClassName}`}
     >
       {backgroundDecoration}
       <div className="relative z-10 flex flex-col gap-15 lg:gap-30 items-center w-full">
@@ -62,7 +62,10 @@ export default function ExploreContentSection({
           paragraphClassName="md:text-lg xl:text-xl"
         />
 
-        <IconButtonNavigation items={navigationItems} />
+        <IconButtonNavigation
+          items={navigationItems}
+          buttonContainerClassName="grid-cols-3 max-w-165"
+        />
       </div>
     </section>
   );

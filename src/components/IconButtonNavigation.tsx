@@ -10,11 +10,15 @@ export type IconButtonNavigationItem = {
 
 type IconButtonNavigationProps = {
   items: IconButtonNavigationItem[];
+  buttonContainerClassName?: string;
 };
 
-export default function IconButtonNavigation({ items }: IconButtonNavigationProps) {
+export default function IconButtonNavigation({
+  items,
+  buttonContainerClassName,
+}: IconButtonNavigationProps) {
   return (
-    <div className="buttons-container grid grid-cols-3 gap-5 max-w-165 w-full">
+    <div className={`buttons-container grid gap-5 w-full ${buttonContainerClassName}`}>
       {items.map(({ id, icon: Icon, isActive, ariaLabel, onClick }) => (
         <button
           key={id}
