@@ -65,6 +65,10 @@ html {
   @apply aspect-square md:aspect-video;
 }
 
+.activities-explore-sections {
+  @apply flex flex-col gap-15 lg:gap-30 items-center justify-center min-h-screen w-full py-16 md:py-20 lg:py-30 xl:py-40 px-6 sm:px-14 md:px-28 xl:px-30;
+}
+
 .footer-ul {
   @apply min-w-40 md:min-w-0;
 }
@@ -153,16 +157,6 @@ html {
       transform: translate3d(0, -50%, 0);
     }
   }
-
-  /* .animate-pan-vertical {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    animation: pan-vertical 22s linear infinite alternate;
-    will-change: transform;
-    backface-visibility: hidden;
-  } */
 
   @media (min-width: 1024px) {
     .lg\:animate-pan-vertical {
