@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from 'react';
 
-import TreeIcon from '../assets/svg/Tree.svg?react';
+import TreeIcon from '../assets/svg/tree.svg?react';
 
 type TreeItem = {
   top?: string;
