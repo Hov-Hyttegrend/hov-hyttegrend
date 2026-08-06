@@ -114,8 +114,16 @@ export default function TermsAndConditions() {
             <p className="font-semibold">{t('terms:termsPage.contactInfo.name')}</p>
             <p>{t('terms:termsPage.contactInfo.street')}</p>
             <p>{t('terms:termsPage.contactInfo.postal')}</p>
-            <p>{t('terms:termsPage.contactInfo.email')}</p>
-            <p>{t('terms:termsPage.contactInfo.phone')}</p>
+            <p>
+              <a href="mailto:post@hovhyttegrend.no" className="hover:underline">
+                {t('terms:termsPage.contactInfo.email')}
+              </a>
+            </p>
+            <p>
+              <a href="tel:+4740067568" className="hover:underline">
+                {t('terms:termsPage.contactInfo.phone')}
+              </a>
+            </p>
             <p>{t('terms:termsPage.contactInfo.website')}</p>
           </section>
         </div>

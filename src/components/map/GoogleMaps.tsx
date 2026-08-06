@@ -102,7 +102,12 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.phoneTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">+47 400 67 568</p>
+                <a
+                  href="tel:+4740067568"
+                  className="text-sm md:text-base xl:text-lg hover:underline"
+                >
+                  +47 400 67 568
+                </a>
               </div>
             </li>
             <li className="flex gap-3">
@@ -116,7 +121,12 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.emailTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">post@hovhyttegrend.no</p>
+                <a
+                  href="mailto:post@hovhyttegrend.no"
+                  className="text-sm md:text-base xl:text-lg hover:underline"
+                >
+                  post@hovhyttegrend.no
+                </a>
               </div>
             </li>
             <li className="flex gap-3">

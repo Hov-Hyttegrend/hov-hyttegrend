@@ -53,8 +53,16 @@ export default function Footer() {
             <div className="footer-ul">
               <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.contact.title')}</h3>
               <ul>
-                <li className="footer-list">post@hovhyttegrend.no</li>
-                <li className="footer-list">+47 400 67 568</li>
+                <li className="footer-list">
+                  <a href="mailto:post@hovhyttegrend.no" className="hover:underline">
+                    post@hovhyttegrend.no
+                  </a>
+                </li>
+                <li className="footer-list">
+                  <a href="tel:+4740067568" className="hover:underline">
+                    +47 400 67 568
+                  </a>
+                </li>
                 <li className="footer-list flex flex-col">
                   {t('common.contact.openingHoursTitle')}
                   <span className="text-xs">{t('common.contact.openingHoursDescription')}</span>

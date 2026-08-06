@@ -69,8 +69,16 @@ export default function PrivacyPolicy() {
             </h2>
             <p className="mb-2">{t('privacy:privacyPage.contactInfo.intro')}</p>
             <p className="font-semibold">{t('privacy:privacyPage.contactInfo.name')}</p>
-            <p>{t('privacy:privacyPage.contactInfo.email')}</p>
-            <p>{t('privacy:privacyPage.contactInfo.phone')}</p>
+            <p>
+              <a href="mailto:post@hovhyttegrend.no" className="hover:underline">
+                {t('privacy:privacyPage.contactInfo.email')}
+              </a>
+            </p>
+            <p>
+              <a href="tel:+4740067568" className="hover:underline">
+                {t('privacy:privacyPage.contactInfo.phone')}
+              </a>
+            </p>
             <p>{t('privacy:privacyPage.contactInfo.address')}</p>
           </section>
         </div>
