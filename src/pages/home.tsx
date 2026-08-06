@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
 import GoogleMaps from '../components/map/GoogleMaps';
 import ImageTextSection from '../components/ImageTextSection';
@@ -18,7 +19,6 @@ import FishingIcon from '../assets/svg/fishing.svg?react';
 import HikeIcon from '../assets/svg/hike.svg?react';
 import MountainHikeIcon from '../assets/svg/mountain-hike.svg?react';
 import FrisbeeGolfIcon from '../assets/svg/frisbeegolf.svg?react';
-import PaddleIcon from '../assets/svg/paddle.svg?react';
 import SwimmingIcon from '../assets/svg/swimming.svg?react';
 import FoodIcon from '../assets/svg/food.svg?react';
 import ShopIcon from '../assets/svg/shop.svg?react';
@@ -104,28 +104,53 @@ export default function Home() {
           <section className="w-full flex flex-col justify-center items-center pt-20 lg:pt-40 px-6 sm:px-10 md:px-20 lg:px-20">
             <h2 className="h2 pb-5">{t('home:homePage.section_3.title')}</h2>
             <p className="text pb-8">{t('home:homePage.section_3.text')}</p>
-            <span className="text-sm lg:text-lg mb-10 text-gray-700">
-              {t('home:homePage.section_3.tempMessage')}
-            </span>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
-              <div className="icon-button icon-button-top">
-                <MountainHikeIcon className="text-primary" />
-              </div>
-              <div className="icon-button icon-button-top">
-                <PaddleIcon className="text-primary" />
-              </div>
-              <div className="icon-button icon-button-top">
-                <SwimmingIcon className="text-primary" />
-              </div>
-              <div className="icon-button icon-button-top">
-                <FrisbeeGolfIcon className="text-primary" />
-              </div>
-              <div className="icon-button icon-button-bottom md:col-span-2">
-                <FishingIcon className="text-primary" />
-              </div>
-              <div className="icon-button icon-button-bottom md:col-span-2">
-                <HikeIcon className="text-primary" />
-              </div>
+            <Link
+              to="/activities"
+              className="text-sm lg:text-lg mb-10 text-black hover:font-bold hover:text-secondary"
+            >
+              {t('home:homePage.section_3.message')}
+            </Link>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 gap-5 w-full xl:max-w-4xl ">
+              <Link
+                to="/activities#hiking"
+                className="icon-button sm:col-span-2"
+                aria-label="Hiking activities"
+              >
+                <HikeIcon className="text-primary icon-home" />
+              </Link>
+
+              <Link
+                to="/activities#fishing"
+                className="icon-button sm:col-span-2"
+                aria-label="Fishing activities"
+              >
+                <FishingIcon className="text-primary icon-home" />
+              </Link>
+
+              <Link
+                to="/activities#mountain-hiking"
+                className="icon-button sm:col-span-2 col-span-2"
+                aria-label="Mountain hiking activities"
+              >
+                <MountainHikeIcon className="text-primary icon-home" />
+              </Link>
+
+              <Link
+                to="/activities#swimming"
+                className="icon-button"
+                aria-label="Swimming activities"
+              >
+                <SwimmingIcon className="text-primary icon-home" />
+              </Link>
+
+              <Link
+                to="/activities#frisbee-golf"
+                className="icon-button"
+                aria-label="Frisbee golf activities"
+              >
+                <FrisbeeGolfIcon className="text-primary icon-home" />
+              </Link>
             </div>
           </section>
 
@@ -146,19 +171,27 @@ export default function Home() {
           <section className="relative w-full flex flex-col justify-center items-center pb-30 lg:pb-60 xl:pb-80 px-6 sm:px-10 md:px-20 lg:px-20  ">
             <h2 className="h2 pb-5">{t('home:homePage.section_4.title')}</h2>
             <p className="text pb-8">{t('home:homePage.section_4.text')}</p>
-            <span className="text-sm lg:text-lg mb-10 text-gray-700">
-              {t('home:homePage.section_4.tempMessage')}
-            </span>
+            <Link
+              to="/explore"
+              className="text-sm lg:text-lg mb-10 text-black hover:font-bold hover:text-secondary"
+            >
+              {t('home:homePage.section_4.message')}
+            </Link>
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 w-full xl:max-w-4xl">
-              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
-                <BinocularsIcon className="text-primary" />
-              </div>
-              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
-                <FoodIcon className="text-primary" />
-              </div>
-              <div className="icon-button aspect-video sm:aspect-square lg:aspect-video">
-                <ShopIcon className="text-primary" />
-              </div>
+              <Link
+                to="/explore#sightseeing"
+                className="icon-button"
+                aria-label="Sightseeing activities"
+              >
+                <BinocularsIcon className="text-primary icon-home" />
+              </Link>
+              <Link to="/explore#food" className="icon-button" aria-label="Food activities">
+                <FoodIcon className="text-primary icon-home" />
+              </Link>
+              <Link to="/explore#shopping" className="icon-button" aria-label="Shopping activities">
+                <ShopIcon className="text-primary icon-home" />
+              </Link>
             </div>
             <div className="absolute inset-x-0 bottom-0 translate-y-[50%] flex justify-center overflow-x-hidden">
               <img

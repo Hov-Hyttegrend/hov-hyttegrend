@@ -45,24 +45,16 @@ html {
   @apply flex w-full flex-col items-center gap-10 lg:gap-52 lg:flex-row lg:px-10;
 }
 
-.icon-button {
-  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
-}
-
-.icon-button svg {
-  @apply flex items-center justify-center h-[40%];
-}
-
 .icon-button:hover svg {
   @apply text-white;
 }
 
-.icon-button-top {
-  @apply aspect-square;
+.icon-button {
+  @apply h-30 md:h-30 lg:h-40 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
 }
 
-.icon-button-bottom {
-  @apply aspect-square md:aspect-video;
+.icon-home {
+  @apply h-12 md:h-15 w-12 md:w-15 lg:h-20 lg:w-20;
 }
 
 .activities-explore-sections {
