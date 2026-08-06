@@ -243,6 +243,8 @@ export default function Home() {
               t('home:homePage.section_6.listItem2'),
               t('home:homePage.section_6.listItem3'),
               t('home:homePage.section_6.listItem4'),
+              t('home:homePage.section_6.listItem5'),
+              t('home:homePage.section_6.listItem6'),
             ]}
           />
         </div>
