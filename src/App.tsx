@@ -9,6 +9,7 @@ import ScrollToTop from './utils/ScrollToTop';
 import CookieSettings from './components/cookies/CookieSettings';
 import Activities from './pages/activities';
 import Explore from './pages/explore';
+import About from './pages/about';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/cookie_settings" element={<CookieSettings />} />
             <Route path="/activities" element={<Activities />} />
             <Route path="/explore" element={<Explore />} />
+            <Route path="/about" element={<About />} />
           </Route>
         </Routes>
         <CookieBanner />
