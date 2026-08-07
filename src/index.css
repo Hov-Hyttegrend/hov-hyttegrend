@@ -41,6 +41,10 @@ html {
   @apply text-base sm:text-lg md:text-lg xl:text-2xl;
 }
 
+.text-2 {
+  @apply text-base md:text-lg xl:text-xl;
+}
+
 .image-text-container {
   @apply flex w-full flex-col items-center gap-10 lg:gap-52 lg:flex-row lg:px-10;
 }

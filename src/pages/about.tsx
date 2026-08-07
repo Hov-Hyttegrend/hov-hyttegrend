@@ -42,13 +42,13 @@ export default function About() {
 
       <section className="section-container bg-light-green">
         <div className="max-w-6xl">
-          <h1 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl font-bold uppercase text-secondary pb-5 lg:pb-10 ">
+          <h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-bold uppercase text-secondary pb-5 lg:pb-10 ">
             {t('about:aboutPage.title')}
-          </h1>
+          </h2>
 
           <div className="flex flex-col gap-10">
-            <p className="text">{t('about:aboutPage.text_part_1')}</p>
-            <p className="text">{t('about:aboutPage.text_part_2')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_1')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_2')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden">
               <div className="flex flex-col justify-center items-center max-h-100 ">
                 <img
@@ -66,8 +66,8 @@ export default function About() {
               </div>
             </div>
 
-            <p className="text">{t('about:aboutPage.text_part_3')}</p>
-            <p className="text">{t('about:aboutPage.text_part_4')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_3')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_4')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden">
               <div className="flex flex-col justify-center items-center max-h-100 overflow-hidden">
                 <img
@@ -85,8 +85,8 @@ export default function About() {
               </div>
             </div>
 
-            <p className="text">{t('about:aboutPage.text_part_5')}</p>
-            <p className="text">{t('about:aboutPage.text_part_6')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_5')}</p>
+            <p className="text-2">{t('about:aboutPage.text_part_6')}</p>
           </div>
         </div>
       </section>
