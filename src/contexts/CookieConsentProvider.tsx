@@ -1,16 +1,22 @@
 import { createContext, useState } from 'react';
 import type { ReactNode } from 'react';
+import {
+  clearConsentCookie,
+  clearPreferencesCookie,
+  getConsentCookie,
+  getPreferencesCookie,
+  setConsentCookie,
+  setPreferencesCookie,
+} from '../utils/consentCookies';
 
 interface CookieConsentContextType {
-  analyticsAccepted: boolean;
-  marketingAccepted: boolean;
+  googleMapsAccepted: boolean;
   hasAcceptedAnyCookies: boolean;
 
   acceptAll: () => void;
   declineAll: () => void;
-  setAnalytics: (accepted: boolean) => void;
-  setMarketing: (accepted: boolean) => void;
-  savePreferences: (analytics: boolean, marketing: boolean) => void;
+  setGoogleMaps: (accepted: boolean) => void;
+  savePreferences: (googleMaps: boolean) => void;
   resetConsent: () => void;
 }
 
@@ -19,77 +25,105 @@ const CookieConsentContext = createContext<CookieConsentContextType | undefined>
 export { CookieConsentContext };
 
 interface CookiePreferences {
-  analytics: boolean;
-  marketing: boolean;
+  googleMaps: boolean;
   consentTimestamp?: string;
 }
 
+const parsePreferences = (raw: string | null): CookiePreferences | null => {
+  if (!raw) {
+    return null;
+  }
+
+  try {
+    const parsed = JSON.parse(raw) as {
+      googleMaps?: boolean;
+      marketing?: boolean;
+      consentTimestamp?: string;
+    };
+
+    return {
+      googleMaps: parsed.googleMaps ?? parsed.marketing ?? false,
+      consentTimestamp: parsed.consentTimestamp,
+    };
+  } catch {
+    return null;
+  }
+};
+
+const getStoredPreferences = (): CookiePreferences => {
+  const cookiePreferences = parsePreferences(getPreferencesCookie());
+  if (cookiePreferences) {
+    return cookiePreferences;
+  }
+
+  const localStoragePreferences = parsePreferences(localStorage.getItem('cookiePreferences'));
+  if (localStoragePreferences) {
+    return localStoragePreferences;
+  }
+
+  return { googleMaps: false };
+};
+
 export function CookieConsentProvider({ children }: { children: ReactNode }) {
-  // Load saved preferences
-  const [preferences, setPreferences] = useState<CookiePreferences>(() => {
-    const stored = localStorage.getItem('cookiePreferences');
-    if (stored) {
-      try {
-        return JSON.parse(stored);
-      } catch {
-        return { analytics: false, marketing: false };
-      }
-    }
-    return { analytics: false, marketing: false };
+  const [preferences, setPreferences] = useState<CookiePreferences>(() => getStoredPreferences());
+  const [hasConsented, setHasConsented] = useState<boolean>(() => {
+    return getConsentCookie() !== null || localStorage.getItem('cookieConsent') !== null;
   });
 
-  // Save preferences to localStorage whenever they change
+  // Persist consent in first-party cookies and clean up legacy localStorage keys.
   const saveToStorage = (prefs: CookiePreferences) => {
     const prefsWithTimestamp = {
       ...prefs,
       consentTimestamp: prefs.consentTimestamp || new Date().toISOString(),
     };
-    setPreferences(prefs);
-    localStorage.setItem('cookiePreferences', JSON.stringify(prefsWithTimestamp));
-    localStorage.setItem('cookieConsent', 'true');
+
+    setPreferences(prefsWithTimestamp);
+    setPreferencesCookie(JSON.stringify(prefsWithTimestamp));
+    setConsentCookie();
+    setHasConsented(true);
+
+    localStorage.removeItem('cookiePreferences');
+    localStorage.removeItem('cookieConsent');
   };
 
   // Accept all cookies
   const acceptAll = () => {
-    saveToStorage({ analytics: true, marketing: true });
+    saveToStorage({ googleMaps: true });
   };
 
   // Decline all non-essential cookies
   const declineAll = () => {
-    saveToStorage({ analytics: false, marketing: false });
+    saveToStorage({ googleMaps: false });
   };
 
-  // Set analytics only
-  const setAnalytics = (accepted: boolean) => {
-    saveToStorage({ ...preferences, analytics: accepted });
-  };
-
-  // Set marketing only
-  const setMarketing = (accepted: boolean) => {
-    saveToStorage({ ...preferences, marketing: accepted });
+  // Set Google Maps consent only
+  const setGoogleMaps = (accepted: boolean) => {
+    saveToStorage({ ...preferences, googleMaps: accepted });
   };
 
   // Save custom preferences
-  const savePreferences = (analytics: boolean, marketing: boolean) => {
-    saveToStorage({ analytics, marketing });
+  const savePreferences = (googleMaps: boolean) => {
+    saveToStorage({ googleMaps });
   };
 
   // Reset consent (show banner again)
   const resetConsent = () => {
+    clearConsentCookie();
+    clearPreferencesCookie();
     localStorage.removeItem('cookieConsent');
     localStorage.removeItem('cookiePreferences');
-    setPreferences({ analytics: false, marketing: false });
+
+    setPreferences({ googleMaps: false });
+    setHasConsented(false);
   };
 
   const contextValue: CookieConsentContextType = {
-    analyticsAccepted: preferences.analytics,
-    marketingAccepted: preferences.marketing,
-    hasAcceptedAnyCookies: preferences.analytics || preferences.marketing,
+    googleMapsAccepted: preferences.googleMaps,
+    hasAcceptedAnyCookies: hasConsented,
 
     acceptAll,
     declineAll,
-    setAnalytics,
-    setMarketing,
+    setGoogleMaps,
     savePreferences,
     resetConsent,
   };

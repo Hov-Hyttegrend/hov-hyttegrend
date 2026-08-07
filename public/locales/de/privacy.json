@@ -1,0 +1,37 @@
+{
+  "privacyPage": {
+    "title": "Datenschutz und Cookies",
+    "updated": "Zuletzt aktualisiert: 04.11.25",
+    "intro": "Bei Hov Hyttegrend nehmen wir den Schutz Ihrer personenbezogenen Daten sehr ernst. Nachfolgend finden Sie eine kurze Erklärung, wie wir personenbezogene Daten verarbeiten und Cookies auf unserer Website verwenden.",
+    "part_1": {
+      "title": "Personenbezogene Daten",
+      "text": "Wenn Sie mit uns Kontakt aufnehmen, eine Anfrage senden oder einen Aufenthalt buchen, speichern wir Informationen wie Name, E-Mail-Adresse, Telefonnummer und Buchungsdetails.\nDiese Daten verwenden wir ausschließlich, um:",
+      "listItem1": "Buchungen zu verwalten und Ihnen den bestmöglichen Service zu bieten",
+      "listItem2": "Notwendige Informationen zu Ihrem Aufenthalt bereitzustellen",
+      "listItem3": "Gesetzlichen Verpflichtungen nachzukommen (z. B. Buchhaltung)"
+    },
+    "part_2": {
+      "title": "Weitergabe von personenbezogenen Daten",
+      "text": "Wir geben personenbezogene Daten nicht an Dritte weiter, außer wenn dies zur Erbringung unserer Dienstleistungen erforderlich ist, etwa an Zahlungsanbieter, Buchhalter oder technische Dienstleistungspartner. Alle unsere Partner halten sich an die DSGVO und verarbeiten Daten auf sichere Weise."
+    },
+    "part_3": {
+      "title": "Speicherung und Löschung",
+      "text": "Personenbezogene Daten werden nur so lange gespeichert, wie es für den jeweiligen Zweck erforderlich ist oder gesetzlich vorgeschrieben wird. Sie können jederzeit Auskunft über Ihre Daten verlangen sowie deren Berichtigung oder Löschung beantragen, indem Sie uns unter post@hovhyttegrend.no kontaktieren."
+    },
+    "part_4": {
+      "title": "Cookies",
+      "text": "Wir verwenden Cookies, um Ihnen ein besseres Nutzererlebnis auf unserer Website zu bieten. Cookies helfen uns dabei:",
+      "listItem1": "Einstellungen und Präferenzen zu speichern",
+      "listItem2": "Zu verstehen, wie die Website genutzt wird (zu Statistik- und Verbesserungszwecken)",
+      "text2": "Sie können die Verwendung von Cookies in den Einstellungen Ihres Browsers deaktivieren oder einschränken. In diesem Fall können einige Funktionen der Website möglicherweise eingeschränkt sein."
+    },
+    "contactInfo": {
+      "title": "Kontakt",
+      "intro": "Haben Sie Fragen zum Datenschutz oder zu Cookies? Kontaktieren Sie uns gerne:",
+      "name": "Hov Hyttegrend",
+      "email": "E-Mail: post@hovhyttegrend.no",
+      "phone": "Telefon: +47 400 67 568",
+      "address": "Adresse: Gaularfjellsvegen 2203, 6978 Viksdalen"
+    }
+  }
+}

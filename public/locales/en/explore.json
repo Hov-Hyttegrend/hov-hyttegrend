@@ -1,0 +1,100 @@
+{
+  "explorePage": {
+    "title": "Explore the surrounding area",
+    "sightseeing": {
+      "title": "Sightseeing and viewpoints",
+      "1": {
+        "title": "Fossestien – 0 km",
+        "text": "Fossestien runs right next to Hov Hyttegrend and is one of the best-known hiking trails in Sunnfjord. The 21-kilometre trail follows the protected Gaular River with impressive waterfalls, rapids and mountain lakes along the route. It is a perfect place for short breaks, photography and nature experiences."
+      },
+      "2": {
+        "title": "Gaularfjellet and Utsikten – approx. 16 km",
+        "text": "Along the National Tourist Route Gaularfjellet you will find several spectacular stops. The viewpoint “Utsikten” offers panoramic views over valleys, mountains and waterfalls and is a popular stop for travellers passing through the area. The road is known for beautiful western Norwegian nature and architecturally striking rest areas."
+      },
+      "3": {
+        "title": "Sognefjorden in Balestrand – approx. 55 km",
+        "text": "Balestrand is an idyllic stop by the Sognefjord with beautiful views towards the fjord and mountains. Here you can take a break along the fjord promenade, visit local cafés or enjoy the view of one of the longest fjords in the world. Visit the Norwegian Museum of Travel and Tourism."
+      },
+      "4": {
+        "title": "Fjærland and the Norsk Bremuseum – approx. 100 km",
+        "text": "Fjærland lies between the Sognefjord and Jostedalsbreen and is a popular destination for both nature and culture lovers. Here you will find the Norsk Bremuseum, the book town of Fjærland and several beautiful viewpoints towards the glacier arms of Jostedalsbreen."
+      },
+      "5": {
+        "title": "Stegastein viewpoint – approx. 155 km",
+        "text": "Stegastein in Aurland is one of the most photographed viewpoints in Norway. The platform stretches out over the mountainside and offers spectacular views over the Aurlandsfjord. The trip here is a great day trip from Hov Hyttegrend."
+      },
+      "6": {
+        "title": "Jostedalsbreen and Briksdalen – approx. 155 km",
+        "text": "Briksdalsbreen is one of the most visited glacier arms in Norway and a great stop for travellers who want to experience glacier landscapes up close. The area offers short hikes, viewpoints and impressive nature."
+      },
+      "7": {
+        "title": "Sognefjellet – approx. 170 km",
+        "text": "Sognefjellet is the highest mountain pass in northern Europe and offers spectacular views over glaciers, mountains and highland landscapes. Along the route you will find several rest stops and viewpoints that are perfect for photos and short breaks."
+      },
+      "8": {
+        "title": "Practical stops along the way",
+        "text": "From Hov Hyttegrend, the distance to fjord experiences, glacier areas and national tourist routes is short. Many stopping points have parking, information boards and rest areas that make it easy to explore the region at your own pace."
+      }
+    },
+    "shopping": {
+      "title": "Shopping and local shops near Hov Hyttegrend",
+      "description": "Hov Hyttegrend in Viksdalen is centrally located if you want to combine nature experiences with local shopping, small shops and trade in the fjord villages around Sunnfjord and Sogn. Here you can find everything from daily groceries and local food to crafts and larger shopping centres within a short drive.",
+      "1": {
+        "title": "Joker Viksdalen – approx. 12 km",
+        "text": "The nearest grocery store to Hov Hyttegrend is Joker Viksdalen. Here you will find everyday essentials, fresh produce and everything you need during your stay. The store is a natural stop for both holiday guests and travellers passing through the area."
+      },
+      "2": {
+        "title": "Førde centre and Alti Førde – approx. 55 km",
+        "text": "Førde is the largest shopping town in Sunnfjord and offers a wide range of shops, restaurants and shopping centres. At Alti Førde you will find clothes, sports gear, interior design, electronics and local shops all under one roof. The town also has several cafés and niche shops in the centre."
+      },
+      "3": {
+        "title": "Balestrand – local food and crafts – approx. 55 km",
+        "text": "Balestrand is known for small shops with locally produced food, art and crafts. Here you can buy products from Sogn, local art, knitwear and souvenirs inspired by the fjord landscape."
+      },
+      "4": {
+        "title": "Fjærland Book Town – approx. 105 km",
+        "text": "Fjærland is known as the book town by the fjord and is a unique stop for book lovers. Here you will find small bookshops and second-hand shops spread around the village, ranging from Norwegian classics to international literature."
+      },
+      "5": {
+        "title": "Sogndal via Gaularfjellet – shopping by the Sognefjord – approx. 90 km",
+        "text": "Sogndal is an important trading area in Sogn with modern shops, sporting goods stores and shopping centres. The town is especially popular for sports and outdoor gear and has several shops aimed at active travellers and mountain hikers."
+      },
+      "6": {
+        "title": "Byrkjelo and local food – approx. 95 km",
+        "text": "Byrkjelo is a popular stop along the E39 and offers local food shops, bakeries and outlets with western Norwegian products. Many stop here to buy local cheese, delicacies and baked goods before continuing their journey through the fjords."
+      },
+      "7": {
+        "title": "Local experiences and farm outlets",
+        "text": "Around Sunnfjord and Sogn you will find several small farm shops and outlets with local food, honey, cured meats, cheese and crafts. Many of these lie along the tourist routes and give you the chance to experience authentic western Norwegian food culture along the way."
+      },
+      "8": {
+        "title": "Practical information",
+        "text": "From Hov Hyttegrend you have short distances to both small village shops and larger shopping centres. Many shops in the region offer local produce and goods inspired by the nature of the fjord landscape, which makes shopping itself an experience."
+      }
+    },
+    "food": {
+      "title": "Food and restaurants / cafés",
+      "description": "Around Hov Hyttegrend you will find several cosy dining places with local ingredients and a true western Norwegian atmosphere. Here you can enjoy everything from homemade traditional food to modern restaurants in Sunnfjord.",
+      "1": {
+        "title": "Eldalstunet – approx. 8 km",
+        "text": "Eldalstunet is a local farm restaurant in beautiful surroundings along Gaularfjellet. Here you get homemade food, local specialities and traditional western Norwegian atmosphere. The restaurant is seasonal and is usually open on Sundays, which makes it a perfect stop for a Sunday dinner or coffee break in the mountain village."
+      },
+      "2": {
+        "title": "Elvesus – approx. 55 km",
+        "text": "Elvesus is centrally located in Førde with views over the river and a modern setting for both lunch and dinner. The restaurant is known for quality ingredients, a cosy atmosphere and a menu inspired by both local and international flavours."
+      },
+      "3": {
+        "title": "Naustdal Dampbakeri Cafe – approx. 50 km",
+        "text": "This popular café in Førde is known for fresh pastries, good coffee and traditional baked goods. A lovely stop for a calm coffee break after hiking or sightseeing."
+      },
+      "4": {
+        "title": "Peppes Pizza Førde – approx. 55 km",
+        "text": "For families and larger groups, Peppes Pizza is a popular option in central Førde. Here you will find pizza, small plates and a relaxed atmosphere after a day of experiences in the region."
+      },
+      "5": {
+        "title": "Local flavours of Sunnfjord",
+        "text": "The area around Sunnfjord is known for local specialties such as cured meats, fish, cheese and homemade baked goods. Along the fjords and mountains you will find several small cafés and restaurants that give you a taste of authentic western Norwegian food culture."
+      }
+    }
+  }
+}

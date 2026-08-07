@@ -64,10 +64,16 @@ export default function Header() {
 
         <ul className="gap-10 text-lg 2xl:text-xl hidden lg:flex">
           <li>
-            <Link to="/#about">{t('common.header.about')}</Link>
+            <Link to="/about">{t('common.header.about')}</Link>
           </li>
           <li>
             <Link to="/#contact">{t('common.header.contact')}</Link>
+          </li>
+          <li>
+            <Link to="/activities">{t('common.header.activities')}</Link>
+          </li>
+          <li>
+            <Link to="/explore">{t('common.header.explore')}</Link>
           </li>
           <li>
             <a
@@ -100,10 +106,16 @@ export default function Header() {
             <div className="flex-1 ">
               <ul className="flex flex-col items-end gap-6 px-8 py-8 text-white">
                 <li>
-                  <Link to="/#about">{t('common.header.about')}</Link>
+                  <Link to="/about">{t('common.header.about')}</Link>
                 </li>
                 <li>
                   <Link to="/#contact">{t('common.header.contact')}</Link>
+                </li>
+                <li>
+                  <Link to="/activities">{t('common.header.activities')}</Link>
+                </li>
+                <li>
+                  <Link to="/explore">{t('common.header.explore')}</Link>
                 </li>
                 <li>
                   <a

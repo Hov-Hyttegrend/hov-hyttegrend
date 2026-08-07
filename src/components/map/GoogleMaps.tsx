@@ -3,18 +3,18 @@ import { useCookieConsent } from '../../contexts/useCookieConsent';
 import MAP_PLACEHOLDER from '../../assets/images/map-placeholder.png';
 
 export default function GoogleMaps() {
-  const { marketingAccepted, setMarketing } = useCookieConsent();
+  const { googleMapsAccepted, setGoogleMaps } = useCookieConsent();
   const { t } = useTranslation();
 
-  const handleAcceptMarketing = () => {
-    setMarketing(true);
+  const handleAcceptGoogleMaps = () => {
+    setGoogleMaps(true);
   };
 
   return (
     <div className="max-w-7xl w-full flex flex-col lg:flex-row-reverse justify-center items-center gap-6">
       <div className="w-full lg:w-2/4 flex justify-center relative">
         <div className="p-1 rounded-xl w-full bg-secondary shadow-lg">
-          {marketingAccepted ? (
+          {googleMapsAccepted ? (
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7657.604776950507!2d6.258996427059175!3d61.326245908670614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4616236a68752b3b%3A0xb9b7b8246bb0e7a3!2sHOV%20HYTTEGREND!5e0!3m2!1sno!2sno!4v1757068137715!5m2!1sno!2sno"
               title="Google Maps"
@@ -29,7 +29,7 @@ export default function GoogleMaps() {
               <div className="absolute inset-0 bg-linear-to-br from-gray-300 to-gray-400 opacity-50">
                 <img
                   src={MAP_PLACEHOLDER}
-                  alt="Screenshot of google maps"
+                  alt="Kartutsnitt som viser Hov Hyttegrend"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -57,7 +57,7 @@ export default function GoogleMaps() {
                 </p>
 
                 <button
-                  onClick={handleAcceptMarketing}
+                  onClick={handleAcceptGoogleMaps}
                   className="w-full px-6 py-3 bg-yellow-500 hover:bg-yellow-600 text-black rounded-full font-semibold transition hover:cursor-pointer"
                 >
                   {t('common.cookiesMapOverlay.buttonAccept')}
@@ -71,12 +71,12 @@ export default function GoogleMaps() {
       {/* Contact Info */}
       <div className="w-full lg:w-1/3">
         <div className="py-6">
-          <h3 className="text-xl lg:text-3xl font-bold mb-6">
+          <h3 className="text-xl lg:text-3xl font-bold mb-6 text-secondary">
             {t('common.contact.informationTitle')}
           </h3>
           <ul className="space-y-4">
             <li className="flex gap-3">
-              <div className="w-6 h-6 shrink-0">
+              <div className="w-6 h-6 shrink-0 text-secondary">
                 <svg className="w-full h-full" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"
@@ -93,7 +93,7 @@ export default function GoogleMaps() {
               </div>
             </li>
             <li className="flex gap-3">
-              <div className="w-6 h-6 shrink-0">
+              <div className="w-6 h-6 shrink-0 text-secondary">
                 <svg className="w-full h-full" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
@@ -102,11 +102,16 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.phoneTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">+47 400 67 568</p>
+                <a
+                  href="tel:+4740067568"
+                  className="text-sm md:text-base xl:text-lg hover:underline"
+                >
+                  +47 400 67 568
+                </a>
               </div>
             </li>
             <li className="flex gap-3">
-              <div className="w-6 h-6 shrink-0">
+              <div className="w-6 h-6 shrink-0 text-secondary">
                 <svg className="w-full h-full" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -116,11 +121,16 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.emailTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">post@hovhyttegrend.no</p>
+                <a
+                  href="mailto:post@hovhyttegrend.no"
+                  className="text-sm md:text-base xl:text-lg hover:underline"
+                >
+                  post@hovhyttegrend.no
+                </a>
               </div>
             </li>
             <li className="flex gap-3">
-              <div className="w-6 h-6 shrink-0">
+              <div className="w-6 h-6 shrink-0 text-secondary">
                 <svg className="w-full h-full" fill="currentColor" viewBox="0 0 20 20">
                   <path
                     fillRule="evenodd"

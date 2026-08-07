@@ -1,0 +1,100 @@
+{
+  "explorePage": {
+    "title": "Die Umgebung erkunden",
+    "sightseeing": {
+      "title": "Sehenswürdigkeiten und Aussichtspunkte",
+      "1": {
+        "title": "Fossestien – 0 km",
+        "text": "Der Fossestien verläuft direkt bei Hov Hyttegrend und ist einer der bekanntesten Wanderwege in Sunnfjord. Der 21 Kilometer lange Weg folgt dem geschützten Gaular-Vassdrag mit beeindruckenden Wasserfällen, Stromschnellen und Bergseen entlang der Route. Das ist ein idealer Ort für kurze Pausen, Fotografie und Naturerlebnisse."
+      },
+      "2": {
+        "title": "Gaularfjellet und Utsikten – ca. 16 km",
+        "text": "Entlang der Nationalen Touriststraße Gaularfjellet findest du mehrere spektakuläre Haltepunkte. Der Aussichtspunkt „Utsikten“ bietet einen Panoramablick auf Täler, Berge und Wasserfälle und ist ein beliebter Halt für Reisende durch die Region. Die Touriststraße ist bekannt für schöne westnorwegische Natur und architektonisch schöne Rastplätze."
+      },
+      "3": {
+        "title": "Sognefjord in Balestrand – ca. 55 km",
+        "text": "Balestrand ist ein idyllischer Halt am Sognefjord mit herrlicher Aussicht auf Fjord und Berge. Hier kannst du eine Pause an der Fjordpromenade einlegen, lokale Cafés besuchen oder die Aussicht auf einen der längsten Fjorde der Welt genießen. Besuche das Norwegische Museum für Reise und Tourismus."
+      },
+      "4": {
+        "title": "Fjærland und das Norsk Bremuseum – ca. 100 km",
+        "text": "Fjærland liegt zwischen Sognefjord und Jostedalsbreen und ist ein beliebtes Reiseziel für Natur- und Kulturinteressierte. Hier findest du das Norsk Bremuseum, die Buchstadt Fjærland und mehrere schöne Aussichtspunkte auf die Gletscherarme des Jostedalsbreen."
+      },
+      "5": {
+        "title": "Aussichtspunkt Stegastein – ca. 155 km",
+        "text": "Stegastein in Aurland ist einer der meistfotografierten Aussichtspunkte Norwegens. Die Plattform ragt über die Bergflanke hinaus und bietet spektakuläre Blicke über den Aurlandsfjord. Der Ausflug hierher eignet sich gut als Tagesausflug von Hov Hyttegrend."
+      },
+      "6": {
+        "title": "Jostedalsbreen und Briksdalen – ca. 155 km",
+        "text": "Briksdalsbreen ist einer der meistbesuchten Gletscherarme Norwegens und ein toller Halt für Reisende, die die Gletscherlandschaft aus nächster Nähe erleben möchten. Das Gebiet bietet kurze Wanderungen, Aussichtspunkte und beeindruckende Natur."
+      },
+      "7": {
+        "title": "Sognefjellet – ca. 170 km",
+        "text": "Das Sognefjellet ist die höchste Gebirgspassage Nordeuropas und bietet spektakuläre Ausblicke auf Gletscher, Berge und Hochland. Entlang der Route findest du mehrere Rastplätze und Haltepunkte, die sich perfekt für Fotos und kurze Pausen eignen."
+      },
+      "8": {
+        "title": "Praktische Haltepunkte unterwegs",
+        "text": "Von Hov Hyttegrend aus sind es nur kurze Strecken zu Fjorderlebnissen, Gletschergebieten und nationalen Touriststraßen. Viele Haltepunkte haben Parkplätze, Informationstafeln und Rastplätze, die es einfach machen, die Region in eigenem Tempo zu erkunden."
+      }
+    },
+    "shopping": {
+      "title": "Einkaufen und lokale Geschäfte in der Nähe von Hov Hyttegrend",
+      "description": "Hov Hyttegrend in Viksdalen liegt zentral, wenn du Naturerlebnisse mit lokalem Einkaufen, kleinen Geschäften und Handel in den Fjordgemeinden rund um Sunnfjord und Sogn kombinieren möchtest. Hier findest du sowohl Supermärkte, lokale Lebensmittel, Handwerk als auch größere Einkaufszentren in kurzer Autofahrt.",
+      "1": {
+        "title": "Joker Viksdalen – ca. 12 km",
+        "text": "Der nächstgelegene Supermarkt zu Hov Hyttegrend ist Joker Viksdalen. Hier findest du Alltagswaren, Frischwaren und alles Wichtige, das du während deines Aufenthalts brauchst. Der Laden ist ein natürlicher Halt für Feriengäste und Reisende durch die Region."
+      },
+      "2": {
+        "title": "Førde Zentrum und Alti Førde – ca. 55 km",
+        "text": "Førde ist die größte Handelsstadt in Sunnfjord und bietet ein breites Sortiment an Geschäften, Restaurants und Einkaufszentren. In Alti Førde findest du Kleidung, Sport, Einrichtung, Elektronik und lokale Geschäfte an einem Ort. Die Stadt hat außerdem zahlreiche Cafés und Nischenläden im Zentrum."
+      },
+      "3": {
+        "title": "Balestrand – lokale Lebensmittel und Handwerk – ca. 55 km",
+        "text": "Balestrand ist bekannt für kleine Geschäfte mit lokal produzierten Lebensmitteln, Kunst und Handwerk. Hier kannst du Produkte aus Sogn, lokale Kunst, gestrickte Waren und Souvenirs mit Inspiration aus der Fjordlandschaft kaufen."
+      },
+      "4": {
+        "title": "Fjærland Buchstadt – ca. 105 km",
+        "text": "Fjærland ist als Buchstadt am Fjord bekannt und ein einzigartiger Halt für Buchliebhaber. Hier findest du kleine Buchhandlungen und Secondhand-Läden rund um das Dorf, von norwegischen Klassikern bis hin zu internationaler Literatur."
+      },
+      "5": {
+        "title": "Sogndal über Gaularfjellet – Einkaufen am Sognefjord – ca. 90 km",
+        "text": "Sogndal ist ein wichtiges Handelsgebiet in Sogn mit modernen Geschäften, Sportgeschäften und Einkaufszentren. Die Stadt ist besonders beliebt für Sport- und Outdoor-Ausrüstung und hat mehrere Läden, die sich an aktive Reisende und Bergwanderer richten."
+      },
+      "6": {
+        "title": "Byrkjelo und lokale Lebensmittel – ca. 95 km",
+        "text": "Byrkjelo ist ein beliebter Halt entlang der E39 und bietet lokale Lebensmittelgeschäfte, Bäckereien und Auslagen mit westnorwegischen Produkten. Viele machen hier einen Stopp, um lokale Käse, Delikatessen und Gebäck vor der Weiterreise durch die Fjorde zu kaufen."
+      },
+      "7": {
+        "title": "Lokale Erlebnisse und Hofauslagen",
+        "text": "Rund um Sunnfjord und Sogn findest du mehrere kleine Hofläden und Auslagen mit lokalen Lebensmitteln, Honig, Wurstwaren, Käse und Handwerk. Viele davon liegen entlang der Touriststraßen und bieten die Möglichkeit, die echte westnorwegische Esskultur unterwegs zu erleben."
+      },
+      "8": {
+        "title": "Praktische Informationen",
+        "text": "Von Hov Hyttegrend aus hast du kurze Wege zu kleinen Dorfgeschäften und größeren Einkaufszentren. Viele Geschäfte in der Region bieten lokale Produkte und Waren, die von der Natur der Fjordlandschaft inspiriert sind – und machen den Einkauf zu einem Erlebnis an sich."
+      }
+    },
+    "food": {
+      "title": "Essen und Restaurants / Cafés",
+      "description": "Rund um Hov Hyttegrend findest du mehrere gemütliche Gastronomiebetriebe mit lokalen Zutaten und echter westnorwegischer Atmosphäre. Hier kannst du von hausgemachter Traditionalküche bis hin zu modernen Restaurants in Sunnfjord alles genießen.",
+      "1": {
+        "title": "Eldalstunet – ca. 8 km",
+        "text": "Eldalstunet ist ein lokales Hofrestaurant in wunderschönen surroundings entlang des Gaularfjellet. Hier bekommst du hausgemachte Speisen, lokale Spezialitäten und traditionelle westnorwegische Atmosphäre. Das Restaurant ist saisonal geöffnet und hat in der Regel sonntags geöffnet, was es zu einem perfekten Halt für Sonntagsessen oder Kaffee in der Berggemeinde macht."
+      },
+      "2": {
+        "title": "Elvesus – ca. 55 km",
+        "text": "Elvesus liegt zentral in Førde mit Blick auf den Fluss und einer modernen Umgebung für sowohl Mittag- als auch Abendessen. Das Restaurant ist bekannt für hochwertige Zutaten, gemütliche Atmosphäre und eine Speisekarte, die von lokalen und internationalen Geschmäckern inspiriert ist."
+      },
+      "3": {
+        "title": "Naustdal Dampbakeri Cafe – ca. 50 km",
+        "text": "Diese beliebte Café in Førde ist bekannt für frische Backwaren, guten Kaffee und traditionelle Bäckerwaren. Ein schöner Halt für eine ruhige Kaffeepause nach Wanderung oder Sightseeing."
+      },
+      "4": {
+        "title": "Peppes Pizza Førde – ca. 55 km",
+        "text": "Für Familien und größere Gruppen ist Peppes Pizza eine beliebte Alternative im Zentrum von Førde. Hier findest du Pizza, kleine Gerichte und eine entspannte Atmosphäre nach einem Tag voller Erlebnisse in der Region."
+      },
+      "5": {
+        "title": "Lokale Geschmäcker aus Sunnfjord",
+        "text": "Die Region um Sunnfjord ist bekannt für lokale Spezialitäten wie Delikatessen, Fisch, Käse und hausgemachtes Gebäck. Entlang der Fjorde und Berge findest du mehrere kleine Cafés und Restaurants, die dir den echten westnorwegischen Geschmack vermitteln."
+      }
+    }
+  }
+}

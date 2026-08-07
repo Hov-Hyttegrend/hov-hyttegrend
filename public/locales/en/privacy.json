@@ -1,0 +1,37 @@
+{
+  "privacyPage": {
+    "title": "Privacy Policy and Cookies",
+    "updated": "Last updated: 04.11.25",
+    "intro": "At Hov Hyttegrend, we take your privacy seriously. Below is a brief explanation of how we handle personal data and use cookies on our website.",
+    "part_1": {
+      "title": "Personal Data",
+      "text": "When you contact us, send an enquiry, or book a stay, we store information such as your name, email address, phone number, and booking details.\nWe use this information only to:",
+      "listItem1": "Manage bookings and provide you with the best possible service",
+      "listItem2": "Send necessary information about your stay",
+      "listItem3": "Comply with legal requirements (for example, accounting obligations)"
+    },
+    "part_2": {
+      "title": "Sharing of Personal Data",
+      "text": "We do not share personal data with third parties except where necessary to deliver our services, such as payment providers, accountants, or technical service partners. All our partners comply with GDPR and process data in a secure manner."
+    },
+    "part_3": {
+      "title": "Storage and Deletion",
+      "text": "Personal data is stored only for as long as necessary for its purpose or as required by law. You may request access to, correction of, or deletion of your personal data at any time by contacting us at post@hovhyttegrend.no"
+    },
+    "part_4": {
+      "title": "Cookies",
+      "text": "We use cookies to provide a better experience on our website. Cookies help us to:",
+      "listItem1": "Remember settings and preferences",
+      "listItem2": "Understand how the website is used (for statistics and improvement purposes)",
+      "text2": "You can disable or limit the use of cookies in your browser settings. Please note that some website features may then function less optimally."
+    },
+    "contactInfo": {
+      "title": "Contact Us",
+      "intro": "Do you have questions about privacy or cookies? Please feel free to contact us:",
+      "name": "Hov Hyttegrend",
+      "email": "Email: post@hovhyttegrend.no",
+      "phone": "Phone: +47 400 67 568",
+      "address": "Address: Gaularfjellsvegen 2203, 6978 Viksdalen"
+    }
+  }
+}

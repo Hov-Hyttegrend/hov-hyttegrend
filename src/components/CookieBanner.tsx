@@ -4,19 +4,15 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
 export default function CookieBanner() {
-  const { acceptAll, declineAll, savePreferences } = useCookieConsent();
+  const { acceptAll, declineAll, savePreferences, hasAcceptedAnyCookies } = useCookieConsent();
   const { t } = useTranslation();
 
-  const [showBanner, setShowBanner] = useState(() => {
-    const consent = localStorage.getItem('cookieConsent');
-    return consent === null;
-  });
+  const [showBanner, setShowBanner] = useState(true);
 
   const [showCustomize, setShowCustomize] = useState(false);
-  const [marketing, setMarketing] = useState(false);
+  const [googleMaps, setGoogleMaps] = useState(false);
 
-  const consent = localStorage.getItem('cookieConsent');
-  if (!showBanner || consent !== null) {
+  if (!showBanner || hasAcceptedAnyCookies) {
     return null;
   }
 
@@ -31,7 +27,7 @@ export default function CookieBanner() {
   };
 
   const handleSaveCustom = () => {
-    savePreferences(false, marketing);
+    savePreferences(googleMaps);
     setShowBanner(false);
   };
 
@@ -58,20 +54,20 @@ export default function CookieBanner() {
             </p>
           </div>
 
-          {/* Marketing Cookies */}
+          {/* Google Maps Cookies */}
           <div className="mb-6 p-4 bg-gray-800 rounded-lg">
             <div className="flex items-center justify-between mb-2">
               <h3 className="font-semibold">{t('common.cookieBanner.marketing.title')}</h3>
               <label
-                htmlFor="marketing"
+                htmlFor="googleMaps"
                 className="relative inline-flex items-center cursor-pointer"
               >
                 <input
                   type="checkbox"
-                  id="marketing"
-                  name="marketing"
-                  checked={marketing}
-                  onChange={(e) => setMarketing(e.target.checked)}
+                  id="googleMaps"
+                  name="googleMaps"
+                  checked={googleMaps}
+                  onChange={(e) => setGoogleMaps(e.target.checked)}
                   className="sr-only peer"
                 />
                 <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-yellow-500 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>

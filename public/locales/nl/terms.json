@@ -1,0 +1,63 @@
+{
+  "termsPage": {
+    "title": "Algemene voorwaarden – Hutteverhuur en Campingplaats",
+    "description": "Van toepassing op alle boekingen bij HOV-HYTTEGREND AS – org.nr. 935 623 642 BTW",
+    "adress": "Adres: Gaularfjellsvegen 2203, 6978 Viksdalen, Noorwegen",
+    "part_1": {
+      "title": "1. Boeking en bevestiging",
+      "text": "Boekingen kunnen via onze website, per telefoon of per e-mail worden gedaan. Een boeking is bindend zodra u een schriftelijke bevestiging van ons hebt ontvangen. De klant is verantwoordelijk voor het waarborgen dat de verstrekte contactgegevens correct zijn."
+    },
+    "part_2": {
+      "title": "2. Betaling",
+      "listItem1": "Een factuur wordt na boeking of bij aankomst verzonden, afhankelijk van afspraak.",
+      "listItem2": "Betalingstermijn: 14 dagen vanaf factuurdatum, of voor aankomst als het verblijf aanstaande is.",
+      "listItem3": "Late betaling leidt tot rente op achterstallige bedragen en aanmaningskosten."
+    },
+    "part_3": {
+      "title": "3. Prijzen",
+      "text": "Alle prijzen zijn in Noorse kronen (NOK) en inclusief btw. Prijzen inclusief elektriciteit en normaal houtverbruik, tenzij anders afgesproken."
+    },
+    "part_4": {
+      "title": "4. Annulering – Verschillende prijscategorieën",
+      "listItem1": "Meer dan 1 dag voor aankomst: Volledig flexibel",
+      "listItem2": "Minder dan 30 dagen voor aankomst: Niet-terugbetaalbaar",
+      "text": "In geval van ziekte of overmacht kunnen uitzonderingen worden gegeven na documentatie en beoordeling."
+    },
+    "part_5": {
+      "title": "5. Inchecken en uitchecken",
+      "listItem1": "Inchecken: vanaf 15:00 uur",
+      "listItem2": "Uitchecken: uiterlijk 11:00 uur op vertrekdag",
+      "text": "Laat uitchecken moet van tevoren worden afgesproken en kan extra kosten met zich meebrengen."
+    },
+    "part_6": {
+      "title": "6. Schoonmaak en orde",
+      "text1": "De hutte moet in nette toestand worden achtergelaten. Eindschoonmaak is niet inbegrepen tenzij van tevoren afgesproken en betaald. Indien de hutte niet naar behoren is schoongemaakt bij uitchecken, worden extra schoonmaakkosten in rekening gebracht.",
+      "text2": "Alternatief: We bieden eindschoonmaak voor een extra vergoeding."
+    },
+    "part_7": {
+      "title": "7. Sleutels en toegang",
+      "text": "Sleutels worden bij inchecken verstrekt en moeten bij uitchecken worden ingeleverd. Verlies van sleutels kost NOK 500 voor vervanging van slot of sleutel."
+    },
+    "part_8": {
+      "title": "8. Schade en aansprakelijkheid",
+      "text": "De klant is financieel verantwoordelijk voor schade aan inventaris, eigendom of gebouwen veroorzaakt door nalatigheid of regelovertreding. Schade moet onmiddellijk worden gemeld. Roken is niet toegestaan binnenshuis. Huisdieren zijn toegestaan in geselecteerde hutten tegen een extra vergoeding."
+    },
+    "part_9": {
+      "title": "9. Overmacht",
+      "text": "We zijn niet aansprakelijk voor omstandigheden buiten onze controle, zoals extreem weer, stroomuitval, gesloten wegen of soortgelijke situaties die het onmogelijk maken om het verblijf uit te voeren zoals gepland."
+    },
+    "part_10": {
+      "title": "10. Klachten en geschillen",
+      "text": "Klachten moeten zo snel mogelijk en uiterlijk 7 dagen na vertrek schriftelijk worden ingediend. Bij geschillen streven we naar een minnelijke oplossing. Geschillen die niet door dialoog kunnen worden opgelost worden behandeld door de rechtbank Sunnfjord als bevoegde instantie."
+    },
+    "contactInfo": {
+      "title": "Contactgegevens",
+      "name": "HOV-HYTTEGREND AS",
+      "street": "Gaularfjellsvegen 2203",
+      "postal": "6978 Viksdalen, Noorwegen",
+      "email": "E-mail: post@hovhyttegrend.no",
+      "phone": "Telefoon: +47 400 67 568",
+      "website": "Website: www.hovhyttegrend.no"
+    }
+  }
+}

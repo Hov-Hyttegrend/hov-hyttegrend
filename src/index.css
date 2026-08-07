@@ -41,24 +41,28 @@ html {
   @apply text-base sm:text-lg md:text-lg xl:text-2xl;
 }
 
-.icon-button {
-  @apply min-w-28 min-h-28 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
+.text-2 {
+  @apply text-base md:text-lg xl:text-xl;
 }
 
-.icon-button svg {
-  @apply flex items-center justify-center h-[40%];
+.image-text-container {
+  @apply flex w-full flex-col items-center gap-10 lg:gap-52 lg:flex-row lg:px-10;
 }
 
 .icon-button:hover svg {
   @apply text-white;
 }
 
-.icon-button-top {
-  @apply aspect-square;
+.icon-button {
+  @apply h-30 md:h-30 lg:h-40 bg-secondary rounded-xl flex justify-center items-center hover:scale-102 transition-all duration-300 shadow-md shadow-black/30;
 }
 
-.icon-button-bottom {
-  @apply aspect-square md:aspect-video;
+.icon-home {
+  @apply h-12 md:h-15 w-12 md:w-15 lg:h-20 lg:w-20;
+}
+
+.activities-explore-sections {
+  @apply flex flex-col gap-15 lg:gap-30 items-center justify-center min-h-screen w-full py-16 md:py-20 lg:py-30 xl:py-40 px-6 sm:px-14 md:px-28 xl:px-30;
 }
 
 .footer-ul {
@@ -113,5 +117,65 @@ html {
 
   .animate-spin-slow {
     animation: spin-slow 2s linear infinite;
+  }
+}
+
+@layer utilities {
+  @keyframes decorative-tree-float {
+    0% {
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(var(--tree-scale, 1));
+    }
+
+    50% {
+      transform: translate3d(var(--tree-float-dx, 14px), var(--tree-float-dy, -14px), 0)
+        rotate(var(--tree-float-rotate, 1deg)) scale(var(--tree-scale, 1));
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) rotate(0deg) scale(var(--tree-scale, 1));
+    }
+  }
+
+  .decorative-float-tree {
+    animation: decorative-tree-float var(--tree-float-duration, 18s) ease-in-out
+      var(--tree-float-delay, 0s) infinite;
+    will-change: transform;
+  }
+}
+
+@layer utilities {
+  @keyframes pan-vertical {
+    from {
+      transform: translate3d(0, 0%, 0);
+    }
+
+    to {
+      transform: translate3d(0, -50%, 0);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .lg\:animate-pan-vertical {
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      animation: pan-vertical 28s linear infinite alternate;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-pan-vertical,
+  .lg\:animate-pan-vertical {
+    animation: none;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .decorative-float-tree {
+    animation: none;
+    transform: translate3d(0, 0, 0);
   }
 }

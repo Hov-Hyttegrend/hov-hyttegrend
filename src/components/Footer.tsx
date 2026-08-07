@@ -9,11 +9,9 @@ export default function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="text-white w-full flex flex-col">
-      <div className="w-full bg-primary flex justify-between items-baseline max-h-">
-        <GroupTrees3 className="text-secondary max-h-14 md:max-h-28 xl:max-h-56" />
-        <GroupTrees4 className="text-secondary max-h-12 md:max-h-24 xl:max-h-48" />
-      </div>
+    <footer className="relative text-white w-full flex flex-col">
+      <GroupTrees3 className="text-secondary absolute left-0 -translate-y-full max-h-14 md:max-h-28 xl:max-h-56" />
+      <GroupTrees4 className="text-secondary absolute right-0 -translate-y-full max-h-12 md:max-h-24 xl:max-h-48" />
 
       <div className="flex flex-col justify-center items-start md:items-center w-full bg-secondary pt-20 pb-10 px-7">
         <HovLogo className="h-16 md:h-24 mb-5" />
@@ -55,8 +53,16 @@ export default function Footer() {
             <div className="footer-ul">
               <h3 className="md:text-lg font-bold uppercase mb-2">{t('common.contact.title')}</h3>
               <ul>
-                <li className="footer-list">post@hovhyttegrend.no</li>
-                <li className="footer-list">+47 400 67 568</li>
+                <li className="footer-list">
+                  <a href="mailto:post@hovhyttegrend.no" className="hover:underline">
+                    post@hovhyttegrend.no
+                  </a>
+                </li>
+                <li className="footer-list">
+                  <a href="tel:+4740067568" className="hover:underline">
+                    +47 400 67 568
+                  </a>
+                </li>
                 <li className="footer-list flex flex-col">
                   {t('common.contact.openingHoursTitle')}
                   <span className="text-xs">{t('common.contact.openingHoursDescription')}</span>
@@ -99,14 +105,14 @@ export default function Footer() {
                   <img
                     className="h-full w-full object-cover"
                     src="https://content.r9cdn.net/seo-res/badges/v5/WHITE_MEDIUM_TRAVEL_AWARDS.png"
-                    alt="Kayak travel award badge"
+                    alt="KAYAK Travel Awards-merke"
                   />
                 </a>
                 <div className="h-12 w-12 md:h-16 md:w-16 shrink-0 overflow-hidden">
                   <img
                     className="h-full w-full object-cover"
                     src={ltgBadge}
-                    alt="LTG quality badge"
+                    alt="LTG kvalitetssikringsmerke"
                   />
                 </div>
               </div>
