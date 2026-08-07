@@ -3,12 +3,12 @@ import GoogleMaps from '../components/map/GoogleMaps';
 
 import Vector3 from '../assets/svg/Vector3.svg';
 
-import HOV_1 from '../assets/images/hov-resepsjon-1.jpg';
+import HOV_1 from '../assets/images/hov-vann-4.jpg';
 
 import HOV_2 from '../assets/images/hov-hytte-1.webp';
 import HOV_3 from '../assets/images/hov-camp-1.jpg';
-import HOV_4 from '../assets/images/hov-foss-3.jpg';
-import HOV_5 from '../assets/images/hov-utsikt-1.jpg';
+import HOV_4 from '../assets/images/hov-hytte-2.jpg';
+import HOV_5 from '../assets/images/hov-foss-3.jpg';
 
 export default function About() {
   const { t } = useTranslation(['translation', 'about']);
@@ -50,17 +50,24 @@ export default function About() {
             <p className="text-2">{t('about:aboutPage.text_part_1')}</p>
             <p className="text-2">{t('about:aboutPage.text_part_2')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden">
-              <div className="flex flex-col justify-center items-center max-h-100 ">
+              <div className="flex flex-col justify-center items-center max-h-100 bg-secondary p-1">
                 <img
                   src={HOV_2}
-                  alt="About Hov Hyttegrend"
+                  alt="Hytte i skogkanten på Hov Hyttegrend"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="flex flex-col justify-center items-center max-h-100 ">
+              <div className="flex flex-col justify-center items-center row-span-2 bg-secondary p-1">
                 <img
                   src={HOV_3}
-                  alt="About Hov Hyttegrend"
+                  alt="Campingvogn ved vann med foss og fjell"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex flex-col justify-center items-center max-h-100 bg-secondary p-1">
+                <img
+                  src={HOV_4}
+                  alt="Hytte i skogkanten på Hov Hyttegrend"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -68,18 +75,11 @@ export default function About() {
 
             <p className="text-2">{t('about:aboutPage.text_part_3')}</p>
             <p className="text-2">{t('about:aboutPage.text_part_4')}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 overflow-hidden">
-              <div className="flex flex-col justify-center items-center max-h-100 overflow-hidden">
-                <img
-                  src={HOV_4}
-                  alt="About Hov Hyttegrend"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="flex flex-col justify-center items-center max-h-100 overflow-hidden">
+            <div className="grid grid-cols-1 gap-10 overflow-hidden">
+              <div className="flex flex-col justify-center items-center max-h-120 overflow-hidden bg-secondary p-1">
                 <img
                   src={HOV_5}
-                  alt="About Hov Hyttegrend"
+                  alt="Gangbro over foss i skog og fjellandskap"
                   className="w-full h-full object-cover"
                 />
               </div>
