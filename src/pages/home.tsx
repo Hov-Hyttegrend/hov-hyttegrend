@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import renderTextWithParagraphs from '../utils/renderTextWithParagraphs';
 import GoogleMaps from '../components/map/GoogleMaps';
 import ImageTextSection from '../components/ImageTextSection';
@@ -9,6 +10,7 @@ import HOV_2 from '../assets/images/hov2.jpg';
 import HOV_5 from '../assets/images/hov5.jpg';
 import HOV_6 from '../assets/images/hov6.jpg';
 import HOV_7 from '../assets/images/hov7.webp';
+import HOV_8 from '../assets/images/hov-vann-5.jpg';
 
 import Vector3 from '../assets/svg/Vector3.svg';
 import Trees3 from '../assets/svg/3-trees.svg?react';
@@ -28,6 +30,32 @@ import BookingButton from '../components/BookingButton';
 
 export default function Home() {
   const { t } = useTranslation(['translation', 'home']);
+  const [currentHeaderImageIndex, setCurrentHeaderImageIndex] = useState(0);
+
+  const headerSlides = [
+    {
+      src: HOV_1,
+      alt: 'Vannkanten ved Hov Hyttegrend med naust og skog',
+    },
+    {
+      src: HOV_8,
+      alt: 'Vann omgitt av skog og fjell med en rød robåt og grønn kano i forgrunnen',
+    },
+    {
+      src: HOV_7,
+      alt: 'Elv som renner ut i innsjø omgitt av fjell',
+    },
+  ];
+
+  useEffect(() => {
+    const slideInterval = window.setInterval(() => {
+      setCurrentHeaderImageIndex((prevIndex) => (prevIndex + 1) % headerSlides.length);
+    }, 8000);
+
+    return () => {
+      window.clearInterval(slideInterval);
+    };
+  }, [headerSlides.length]);
 
   return (
     <>
@@ -35,11 +63,16 @@ export default function Home() {
       {/* Header */}
       <header className="flex h-screen w-full">
         <div className="relative w-full h-full">
-          <img
-            src={HOV_1}
-            alt="Vannkanten ved Hov Hyttegrend med naust og skog"
-            className="w-full h-full object-cover"
-          />
+          {headerSlides.map((slide, index) => (
+            <img
+              key={slide.src}
+              src={slide.src}
+              alt={slide.alt}
+              className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+                currentHeaderImageIndex === index ? 'opacity-100' : 'opacity-0'
+              }`}
+            />
+          ))}
           <div className="absolute inset-0 bg-[#00000035]"></div>
 
           <div className="absolute z-10 top-1/2 left-1/2 w-full translate-x-[-50%] translate-y-[-50%] text-center text-white gap-10 lg:gap-15 2xl:gap-20 flex flex-col items-center px-8">
