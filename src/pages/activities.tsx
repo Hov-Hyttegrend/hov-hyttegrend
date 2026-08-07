@@ -7,6 +7,9 @@ import HOV_2 from '../assets/images/hov-foss1.jpg';
 import HOV_3 from '../assets/images/hov-foss2.jpg';
 import HOV_4 from '../assets/images/hov-fiske-1.webp';
 import HOV_5 from '../assets/images/hov-vann-1.webp';
+import HOV_6 from '../assets/images/hov-vann-2.webp';
+import HOV_7 from '../assets/images/hov-utsikt-3.jpg';
+import HOV_8 from '../assets/images/hov-utsikt-2.jpg';
 
 import HikeIcon from '../assets/svg/hike.svg?react';
 import FishingIcon from '../assets/svg/fishing.svg?react';
@@ -127,6 +130,10 @@ export default function Activities() {
         textPart2={renderTextWithParagraphs(
           t('activities:activitiesPage.mountainHike.text_part_2'),
         )}
+        imageSrc1={HOV_7}
+        imageSrc2={HOV_8}
+        imageAlt1="Hov 1"
+        imageAlt2="Hov 1"
         icon={MountainHikeIcon}
         navigationItems={createNavigationItems('mountain-hiking')}
       />
@@ -138,7 +145,7 @@ export default function Activities() {
         title={t('activities:activitiesPage.swimming.title')}
         miniTitle={t('activities:activitiesPage.swimming.miniTitle')}
         textPart1={renderTextWithParagraphs(t('activities:activitiesPage.swimming.text_part_1'))}
-        imageSrc1={HOV_5}
+        imageSrc1={HOV_6}
         imageAlt1="Hov 1"
         icon={SwimmingIcon}
         navigationItems={createNavigationItems('swimming')}
