@@ -53,10 +53,12 @@ export default function ActivitiesContentSection({
           <Icon aria-hidden="true" className={`h-7 text-white -rotate-45 ${iconClassName}`} />
         </span>
         <div className="flex flex-col gap-2 mt-4 text-center 2xl:text-left">
-          <h2 className="gap-8 text-xl md:text-2xl lg:text-3xl xl:text-[40px] font-bold uppercase">
+          <h2 className="gap-8 text-xl md:text-2xl lg:text-3xl xl:text-[40px] font-bold uppercase text-secondary">
             {title}
           </h2>
-          {miniTitle ? <h3 className="font-semibold lg:text-lg xl:text-2xl">{miniTitle}</h3> : null}
+          {miniTitle ? (
+            <h3 className="font-semibold lg:text-lg xl:text-2xl text-secondary">{miniTitle}</h3>
+          ) : null}
         </div>
       </div>
 

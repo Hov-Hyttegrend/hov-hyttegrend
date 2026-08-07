@@ -49,10 +49,12 @@ export default function ExploreContentSection({
             <Icon aria-hidden="true" className={`h-7 text-white -rotate-45 ${iconClassName}`} />
           </span>
           <div className="flex flex-col gap-2 mt-6 text-center 2xl:text-left">
-            <h2 className=" gap-8 text-xl md:text-2xl lg:text-3xl xl:text-[36px] font-bold uppercase">
+            <h2 className=" gap-8 text-xl md:text-2xl lg:text-3xl xl:text-[36px] font-bold uppercase text-secondary">
               {title}
             </h2>
-            {description ? <p className="lg:text-lg xl:text-xl"> {description}</p> : null}
+            {description ? (
+              <p className="lg:text-lg xl:text-xl text-secondary"> {description}</p>
+            ) : null}
           </div>
         </div>
 
