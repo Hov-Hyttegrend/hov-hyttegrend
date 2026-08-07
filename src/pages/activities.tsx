@@ -75,7 +75,7 @@ export default function Activities() {
     <div className="flex flex-col items-center w-full">
       <Hero
         imageSrc={HOV_1}
-        imageAlt="Oversiktsbilde av dalføre med elv, fossefall og fjell i naturskjønne omgivelser."
+        imageAlt="Dronebilde av Hov Hyttegrend med elv og fjell"
         title={t('activities:activitiesPage.title')}
         backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
         sectionClassName="bg-primary "
@@ -97,8 +97,8 @@ export default function Activities() {
         textPart2={renderTextWithParagraphs(t('activities:activitiesPage.fossestien.text_part_2'))}
         imageSrc1={HOV_2}
         imageSrc2={HOV_3}
-        imageAlt1="Hov 1"
-        imageAlt2="Hov 1"
+        imageAlt1="Fossefall og stryk i Gaularvassdraget"
+        imageAlt2="Turstopp ved elva med utsikt mot fossen"
         icon={HikeIcon}
         navigationItems={createNavigationItems('hiking')}
       />
@@ -113,8 +113,8 @@ export default function Activities() {
         textPart2={renderTextWithParagraphs(t('activities:activitiesPage.fishing.text_part_2'))}
         imageSrc1={HOV_4}
         imageSrc2={HOV_5}
-        imageAlt1="Hov 1"
-        imageAlt2="Hov 1"
+        imageAlt1="Fisker ved stille fjellvatn"
+        imageAlt2="Stille fjellvatn med speilblank overflate"
         icon={FishingIcon}
         navigationItems={createNavigationItems('fishing')}
       />
@@ -132,8 +132,8 @@ export default function Activities() {
         )}
         imageSrc1={HOV_7}
         imageSrc2={HOV_8}
-        imageAlt1="Hov 1"
-        imageAlt2="Hov 1"
+        imageAlt1="Fjellutsikt med dal og fjell i bakgrunnen"
+        imageAlt2="Utsikt over vatn og fjell"
         icon={MountainHikeIcon}
         navigationItems={createNavigationItems('mountain-hiking')}
       />
@@ -146,7 +146,7 @@ export default function Activities() {
         miniTitle={t('activities:activitiesPage.swimming.miniTitle')}
         textPart1={renderTextWithParagraphs(t('activities:activitiesPage.swimming.text_part_1'))}
         imageSrc1={HOV_6}
-        imageAlt1="Hov 1"
+        imageAlt1="Fjellvatn i kveldssol med skog og strand"
         icon={SwimmingIcon}
         navigationItems={createNavigationItems('swimming')}
       />

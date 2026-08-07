@@ -29,7 +29,7 @@ export default function GoogleMaps() {
               <div className="absolute inset-0 bg-linear-to-br from-gray-300 to-gray-400 opacity-50">
                 <img
                   src={MAP_PLACEHOLDER}
-                  alt="Screenshot of google maps"
+                  alt="Kartutsnitt som viser Hov Hyttegrend"
                   className="w-full h-full object-cover"
                 />
               </div>

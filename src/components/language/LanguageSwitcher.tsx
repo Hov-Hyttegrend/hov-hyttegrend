@@ -8,11 +8,11 @@ import FR_flag from '../../assets/svg/Flag-FR.svg';
 import NL_flag from '../../assets/svg/Flag-NL.svg';
 
 const languages = [
-  { code: 'no', flag: NO_flag, alt: 'Norwegian flag' },
-  { code: 'en', flag: EN_flag, alt: 'English flag' },
-  { code: 'de', flag: DE_flag, alt: 'German flag' },
-  { code: 'fr', flag: FR_flag, alt: 'French flag' },
-  { code: 'nl', flag: NL_flag, alt: 'Dutch flag' },
+  { code: 'no', flag: NO_flag, alt: 'Norsk' },
+  { code: 'en', flag: EN_flag, alt: 'Engelsk' },
+  { code: 'de', flag: DE_flag, alt: 'Tysk' },
+  { code: 'fr', flag: FR_flag, alt: 'Fransk' },
+  { code: 'nl', flag: NL_flag, alt: 'Nederlandsk' },
 ];
 
 export default function LanguageSwitcher() {

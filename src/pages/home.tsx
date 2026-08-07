@@ -31,16 +31,13 @@ export default function Home() {
 
   return (
     <>
-      <Background
-        imageUrl={HOV_7}
-        imageAlt="Waterfall down to a lake surrounded by mountain and trees"
-      />
+      <Background imageUrl={HOV_7} imageAlt="Elv som renner ut i innsjø omgitt av fjell" />
       {/* Header */}
       <header className="flex h-screen w-full">
         <div className="relative w-full h-full">
           <img
             src={HOV_1}
-            alt="Lake with mountain view and forest trees"
+            alt="Vannkanten ved Hov Hyttegrend med naust og skog"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#00000035]"></div>
@@ -92,7 +89,7 @@ export default function Home() {
             title={t('home:homePage.section_2.title')}
             titleClassName="h2"
             text={t('home:homePage.section_2.text')}
-            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textClassName="text flex flex-col gap-5 md:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             buttonClassName="button-green"
             className="my-10"
@@ -218,11 +215,11 @@ export default function Home() {
         <div className="section-container  bg-primary">
           <ImageTextSection
             imageSrc={HOV_5}
-            imageAlt="Likholefossen med strømmende vann som renner over steiner og ned i en elv, omgitt av skog og blå himmel"
+            imageAlt="Likholefossen med gangbro og stryk"
             title={t('home:homePage.section_5.title')}
             titleClassName="h2"
             text={t('home:homePage.section_5.text')}
-            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textClassName="text flex flex-col gap-5 md:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 h-full"
           />
         </div>
@@ -231,11 +228,11 @@ export default function Home() {
         <div className="section-container bg-light-green">
           <ImageTextSection
             imageSrc={HOV_6}
-            imageAlt="Litlevatnet omgitt av skog og fjell, med stille vann som speiler blå himmel og skyer"
+            imageAlt="Vatn omgitt av skog og fjell"
             title={t('home:homePage.section_6.title')}
             titleClassName="h2"
             text={t('home:homePage.section_6.text')}
-            textClassName="text flex flex-col gap-5 mg:gap-8 xl:gap-10"
+            textClassName="text flex flex-col gap-5 md:gap-8 xl:gap-10"
             textBoxClassName="flex flex-col gap-5 lg:gap-10 w-full h-full"
             className="lg:flex-row-reverse"
             listItems={[

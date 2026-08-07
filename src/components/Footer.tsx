@@ -105,14 +105,14 @@ export default function Footer() {
                   <img
                     className="h-full w-full object-cover"
                     src="https://content.r9cdn.net/seo-res/badges/v5/WHITE_MEDIUM_TRAVEL_AWARDS.png"
-                    alt="Kayak travel award badge"
+                    alt="KAYAK Travel Awards-merke"
                   />
                 </a>
                 <div className="h-12 w-12 md:h-16 md:w-16 shrink-0 overflow-hidden">
                   <img
                     className="h-full w-full object-cover"
                     src={ltgBadge}
-                    alt="LTG quality badge"
+                    alt="LTG kvalitetssikringsmerke"
                   />
                 </div>
               </div>

@@ -18,7 +18,7 @@ export default function About() {
         <div className="relative w-full h-full">
           <img
             src={HOV_1}
-            alt="Lake with mountain view and forest trees"
+            alt="Resepsjonen på Hov Hyttegrend med fjell i bakgrunnen"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#00000035]"></div>

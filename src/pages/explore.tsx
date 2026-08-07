@@ -71,7 +71,7 @@ export default function Explore() {
     <div className="flex flex-col items-center w-full">
       <Hero
         imageSrc={HOV_1}
-        imageAlt="Oversiktsbilde av dalføre med elv, fossefall og fjell i naturskjønne omgivelser."
+        imageAlt="Utsikt over dal med svingete fjellvei og høye topper"
         title={t('explore:explorePage.title')}
         backgroundDecoration={<DecorativeFloatyTrees className="z-0" />}
         sectionClassName="bg-primary"
