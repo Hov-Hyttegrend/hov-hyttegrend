@@ -64,7 +64,7 @@ export default function Explore() {
     });
 
   const sightseeingItems = createTextItems('explorePage.sightseeing', 8);
-  const shoppingItems = createTextItems('explorePage.shopping', 9);
+  const shoppingItems = createTextItems('explorePage.shopping', 8);
   const foodItems = createTextItems('explorePage.food', 5);
 
   return (
