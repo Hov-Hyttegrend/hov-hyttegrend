@@ -1,10 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { useCookieConsent } from '../../contexts/useCookieConsent';
 import MAP_PLACEHOLDER from '../../assets/images/map-placeholder.png';
+import { useOpeningHours } from '../../hooks/useOpeningHours';
 
 export default function GoogleMaps() {
   const { googleMapsAccepted, setGoogleMaps } = useCookieConsent();
   const { t } = useTranslation();
+  const openingHours = useOpeningHours();
 
   const handleAcceptGoogleMaps = () => {
     setGoogleMaps(true);
@@ -143,9 +145,7 @@ export default function GoogleMaps() {
                 <p className="text-sm text-gray-600 font-medium">
                   {t('common.contact.openingHoursTitle')}
                 </p>
-                <p className="text-sm md:text-base xl:text-lg">
-                  {t('common.contact.openingHoursDescription')}
-                </p>
+                <p className="text-sm md:text-base xl:text-lg">{openingHours}</p>
               </div>
             </li>
           </ul>
