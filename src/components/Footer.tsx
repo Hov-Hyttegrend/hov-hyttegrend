@@ -4,9 +4,11 @@ import HovLogo from '../assets/svg/Hov-logo.svg?react';
 import GroupTrees3 from '../assets/svg/GroupTrees3.svg?react';
 import GroupTrees4 from '../assets/svg/GroupTrees4.svg?react';
 import ltgBadge from '../assets/images/ltg-badge.png';
+import { useOpeningHours } from '../hooks/useOpeningHours';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const openingHours = useOpeningHours();
 
   return (
     <footer className="relative text-white w-full flex flex-col">
@@ -65,7 +67,7 @@ export default function Footer() {
                 </li>
                 <li className="footer-list flex flex-col">
                   {t('common.contact.openingHoursTitle')}
-                  <span className="text-xs">{t('common.contact.openingHoursDescription')}</span>
+                  <span className="text-xs">{openingHours}</span>
                 </li>
               </ul>
             </div>
